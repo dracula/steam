@@ -44,3 +44,11 @@ This would be the same for any operating system:
 3. move the extracted folder into your Steam skin folder (which is in the Steam base folder)
 4. open Steam and go to `Steam -> Settings -> Preferences` and open the section `Interface`
 5. select the skin `Dracula-by-Trollwut` and restart Skin, done!
+
+## TODO
+
+- [ ] adjust background color in friends and chat windows
+- [ ] take in more colors, as it's a bit pink-heavy right now
+
+TBH I don't think that I'll do these adjustments. If I'd be a style guru, I wouldn't have needed Steam Customizer at all.
+But **you** are invited to take your hands on that skin and change it. Be sure to tell me how to edit it to be more Dracula-awesome or make a pull request. :)
