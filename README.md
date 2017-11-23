@@ -24,7 +24,7 @@ And here it is in action in a i3 environment:
 If you use the best OS available, the installation can be very easy. Please check beforehand, if the mentioned Steam folder is existing (it should be on every distribution, but you can never be sure).
 Use the terminal, Luke:
 
-1. cd ~/.local/share/Steam/skins/ && git clone https://github.com/Trollwut/Dracula-by-Trollwut.git
+1. `cd ~/.local/share/Steam/skins/ && git clone https://github.com/Trollwut/Dracula-by-Trollwut.git`
 2. open Steam and go to `Steam -> Settings -> Preferences` and open the section `Interface`
 3. select the skin `Dracula-by-Trollwut` and restart Skin, done!
 
