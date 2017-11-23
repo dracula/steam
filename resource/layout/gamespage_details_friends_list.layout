@@ -1,0 +1,103 @@
+"resource/layout/gamespage_details_friends_list.layout"	
+{
+	"controls"	
+	{
+		"infolabelplural"	
+		{
+			"controlname"		"Label"	
+			"style"		"infolabel"	
+		}
+		"infolabelsingular"	
+		{
+			"controlname"		"Label"	
+			"style"		"infolabel"	
+		}
+		"friendlabelmore"	
+		{
+			"controlname"		"Label"	
+			"style"		"friendlabelmore"	
+			"labeltext"		"#Steam_MoreFriends"	
+			"textAlignment"		"center"	
+			"tooltiptext"		"#Steam_ViewAllFriends"	
+		}
+	}
+	"colors"	
+	{
+		"GameDetailsFriends.ImageAreaMargin"		"14"	
+		"GameDetailsFriends.ImageAreaSpacing"		"10"	
+		"GameDetailsFriends.ImageWidth"		"42"	
+		"Tooltip.Anchor"		"Parent"	
+	}
+	"styles"	
+	{
+		"friendlabelmore"	
+		{
+			"inset"		"-3 0 0 0"	
+			"font-size"		"18"	
+			"textcolor"		"Text2"	
+			"font-family"		"basefont"	
+			"render_bg"	
+			{
+				"0"		"gradient( x0 + 1, y0 + 2, x1 - 4, y1 - 1, buttonface2, propertysheetbg )"	
+			}
+		}
+		"friendlabelmore:hover"	
+		{
+			"inset"		"-3 0 0 0"	
+			"font-size"		"18"	
+			"textcolor"		"Text"	
+			"font-family"		"basefont"	
+			"render_bg"	
+			{
+				"0"		"gradient( x0 + 1, y0 + 2, x1 - 4, y1 - 1, buttonfaceactive, propertysheetbg )"	
+			}
+		}
+		"infolabel"	
+		{
+			"font-size"		"16"	
+			"textcolor"		"ClientInnerTextColor"	
+		}
+	}
+	"layout"	
+	{
+		"region"	
+		{
+			"name"		"body"	
+			"margin"		"0"	
+			"width"		"max"	
+			"height"		"max"	
+		}
+		"region"	
+		{
+			"name"		"images"	
+			"region"		"body"	
+			"x"		"0"	
+			"y"		"20"	
+			"margin"		"2"	
+			"width"		"max"	
+		}
+		"place"	
+		{
+			"region"		"images"	
+			"control"		"*friendimage,friendlabelmore"	
+			"dir"		"right"	
+			"width"		"42"	
+			"height"		"40"	
+			"spacing"		"10"	
+		}
+		"place"	
+		{
+			"region"		"body"	
+			"control"		"infolabelplural"	
+			"y"		"0"	
+			"width"		"max"	
+		}
+		"place"	
+		{
+			"region"		"body"	
+			"control"		"infolabelsingular"	
+			"y"		"0"	
+			"width"		"max"	
+		}
+	}
+}

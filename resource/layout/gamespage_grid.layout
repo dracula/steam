@@ -1,0 +1,80 @@
+"resource/layout/gamespage_grid.layout"	
+{
+	"controls"	
+	{
+		"grid"	
+		{
+			"alignment"		"justify"	
+			"interiorspacing"		"18"	
+			"wheelpct"		"50"	
+			"tabposition"		"1"	
+		}
+		"emptylisttext"	
+		{
+			"control"		"RichText"	
+			"style"		"emptylisttext"	
+		}
+	}
+	"colors"	
+	{
+		"GridView.OriginalImageWidth"		"460"	
+		"GridView.OriginalImageHeight"		"215"	
+		"GridView.DropShadowLeading"		"10"	
+	}
+	"styles"	
+	{
+		"WrapPanel"	
+		{
+			"inset"		"1 0 0 2"	
+			"bgcolor"		"none"	
+			"render"	
+			{
+			}
+			"render_bg"	
+			{
+				"0"		"fill( x0+1, y0, x1-1, y1-2, ClientInnerBG, ClientInnerBG )"	
+			}
+		}
+		"emptylisttext"	
+		{
+			"textcolor"		"Text"	
+			"font-size"		"15"	
+			"render_bg"	
+			{
+			}
+		}
+		"GameItem_installed"	
+		{
+			"alpha"		"255"	
+		}
+		"GameItem_unInstalled"	
+		{
+			"alpha"		"255"	
+		}
+		"GameItem_Updating"	
+		{
+			"alpha"		"255"	
+		}
+	}
+	"layout"	
+	{
+		"place"	
+		{
+			"control"		"grid"	
+			"x"		"1"	
+			"y"		"2"	
+			"width"		"max"	
+			"height"		"max"	
+		}
+		"place"	
+		{
+			"control"		"emptylisttext"	
+			"x"		"0"	
+			"y"		"0"	
+			"margin"		"10"	
+			"margin-top"		"9"	
+			"width"		"max"	
+			"height"		"max"	
+		}
+	}
+}

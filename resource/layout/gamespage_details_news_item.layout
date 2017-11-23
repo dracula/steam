@@ -1,0 +1,130 @@
+"resource/layout/gamespage_details_news_item.layout"	
+{
+	"controls"	
+	{
+		"newsitem_title"	
+		{
+			"controlname"		"Label"	
+			"style"		"title_label"	
+		}
+		"newsitem_dateandauthor"	
+		{
+			"controlname"		"Label"	
+			"style"		"date_and_author"	
+		}
+		"newsitem_body"	
+		{
+			"controlname"		"RichText"	
+			"style"		"newsitem_body"	
+		}
+		"newsitem_more"	
+		{
+			"controlname"		"URLLabel"	
+			"style"		"more_link"	
+			"labeltext"		"#steam_newscontinued"	
+		}
+	}
+	"colors"	
+	{
+		"GameDetailsNewsItem.ExtraVerticalSpacing"		"76"	
+		"RichText.InsetX"		"0"	
+		"RichText.InsetY"		"3"	
+	}
+	"styles"	
+	{
+		"title_label"	
+		{
+			"font-size"		"17"	
+			"textcolor"		"ClientInnerTextColor"	
+			"font-weight"		"800"	
+		}
+		"date_and_author"	
+		{
+			"font-size"		"14"	
+			"textcolor"		"ClientInnerTextColor"	
+		}
+		"newsitem_body"	
+		{
+			"textcolor"		"ClientInnerTextColor"	
+			"selectedtextcolor"		"Label"	
+			"render_bg"	
+			{
+			}
+			"font-size"		"15"	
+			"font-family"		"basefont"	
+		}
+		"newsitem_body url"	
+		{
+			"font-size"		"15"	
+			"font-style"		"underline"	
+			"selectedtextcolor"		"Label"	
+		}
+		"newsitem_body url:hover"	
+		{
+			"font-size"		"15"	
+			"font-style"		"underline"	
+			"textcolor"		"text"	
+			"selectedtextcolor"		"label"	
+		}
+		"newsitem_body bold"	
+		{
+			"font-weight"		"1000"	
+			"textcolor"		"Label"	
+			"selectedtextcolor"		"Label"	
+		}
+		"more_link"	
+		{
+			"font-size"		"15"	
+			"font-style"		"underline"	
+			"font-weight"		"400"	
+			"font-family"		"basefont"	
+			"textcolor"		"ClientInnerTextColor"	
+			"selectedtextcolor"		"Label"	
+		}
+		"more_link:hover"	
+		{
+			"font-style"		"underline"	
+			"textcolor"		"text"	
+		}
+	}
+	"layout"	
+	{
+		"region"	
+		{
+			"name"		"body"	
+			"margin"		"0"	
+			"width"		"max"	
+		}
+		"place"	
+		{
+			"region"		"body"	
+			"control"		"newsitem_title"	
+			"x"		"0"	
+			"y"		"0"	
+			"width"		"max"	
+			"height"		"24"	
+		}
+		"place"	
+		{
+			"region"		"body"	
+			"y"		"17"	
+			"control"		"newsitem_dateandauthor"	
+			"width"		"max"	
+			"height"		"24"	
+		}
+		"place"	
+		{
+			"region"		"body"	
+			"y"		"36"	
+			"control"		"newsitem_body"	
+			"width"		"max"	
+		}
+		"place"	
+		{
+			"region"		"body"	
+			"control"		"newsitem_more"	
+			"align"		"bottom"	
+			"margin-bottom"		"26"	
+		}
+	}
+}
