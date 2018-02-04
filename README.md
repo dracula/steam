@@ -28,6 +28,8 @@ Use the terminal, Luke:
 2. open Steam and go to `Steam -> Settings -> Preferences` and open the section `Interface`
 3. select the skin `Dracula-by-Trollwut` and restart Skin, done!
 
+**or download the already ZIPed version here: [opendesktop.org/p/1212225/](https://www.opendesktop.org/p/1212225/)**
+
 ### Windows
 
 You have two option on how to do that:
@@ -44,6 +46,8 @@ This would be the same for any operating system:
 3. move the extracted folder into your Steam skin folder (which is in the Steam base folder)
 4. open Steam and go to `Steam -> Settings -> Preferences` and open the section `Interface`
 5. select the skin `Dracula-by-Trollwut` and restart Skin, done!
+
+**or download the already ZIPed version here: [opendesktop.org/p/1212225/](https://www.opendesktop.org/p/1212225/)**
 
 ## TODO
 
