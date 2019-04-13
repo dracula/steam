@@ -1,23 +1,10 @@
-# Dracula Steam skin
+# Dracula for [Steam](https://store.steampowered.com)
 
-#### by Trollwut
+> 😱 A dark theme for [Steam](https://store.steampowered.com)
 
-## Description
+![Screenshot](./dracula-steam-skin.png)
 
-We all agree that the [Dracula color scheme](https://github.com/dracula/dracula-theme#color-palette) looks freaking awesome. Unfortunatelly there hasn't been a fitting Steam skin.
-That's why I created one with the Dracula color scheme and the help of [Steam Customizer](http://steamcustomizer.com/) :)
-
-## Preview
-
-Here is the little preview thumb that Steam Customizer gave me:
-
-![thumbnail](./thumb.jpg)
-
-And here it is in action in a i3 environment:
-
-![in action](./dracula-steam-skin.png)
-
-## How to install
+## Install
 
 ### Linux
 
@@ -49,10 +36,14 @@ This would be the same for any operating system:
 
 **or download the already ZIPed version here: [opendesktop.org/p/1212225/](https://www.opendesktop.org/p/1212225/)**
 
-## TODO
+## Team
 
-- [ ] adjust background color in friends and chat windows
-- [ ] take in more colors, as it's a bit pink-heavy right now
+This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/template/graphs/contributors).
 
-TBH I don't think that I'll do these adjustments. If I'd be a style guru, I wouldn't have needed Steam Customizer at all.
-But **you** are invited to take your hands on that skin and change it. Be sure to tell me how to edit it to be more Dracula-awesome or make a pull request. :)
+| [![Trollwut](https://avatars1.githubusercontent.com/u/3462975?s=460&v=4)](https://github.com/Trollwut) |
+| --- |
+| [Trollwut](https://github.com/Trollwut) |
+
+## License
+
+I guess it's the same as Steam Customizer: Creative Commons Attribution-NonCommercial-NoDerivs 3.0 License
