@@ -40,9 +40,9 @@ This would be the same for any operating system:
 
 This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/template/graphs/contributors).
 
-| [![Trollwut](https://avatars1.githubusercontent.com/u/3462975?s=70&v=4)](https://github.com/Trollwut) |
-| --- |
-| [Trollwut](https://github.com/Trollwut) |
+| [![Trollwut](https://avatars1.githubusercontent.com/u/3462975?s=70&v=4)](https://github.com/Trollwut) | [![Zeno Rocha](https://avatars2.githubusercontent.com/u/398893?v=3&s=70)](https://github.com/zenorocha) |
+| --- | --- |
+| [Trollwut](https://github.com/Trollwut) | [Zeno Rocha](https://github.com/zenorocha) |
 
 ## License
 
