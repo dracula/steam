@@ -40,7 +40,7 @@ This would be the same for any operating system:
 
 This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/template/graphs/contributors).
 
-| [![Trollwut](https://avatars1.githubusercontent.com/u/3462975?s=460&v=4)](https://github.com/Trollwut) |
+| [![Trollwut](https://avatars1.githubusercontent.com/u/3462975?s=70&v=4)](https://github.com/Trollwut) |
 | --- |
 | [Trollwut](https://github.com/Trollwut) |
 
