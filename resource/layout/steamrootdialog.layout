@@ -23,13 +23,6 @@
 			"command"		"exitvr"	
 			"tooltiptext"		"#tooltip_view_vr_exit"	
 		}
-		"New"	
-		{
-			"ControlName"		"URLLabel"	
-			"style"		"new_label"	
-			"URLText"		"http://store.steampowered.com/uiupdate"	
-			"zpos"		"-2"	
-		}
 		"UINavigatorPanel"	
 		{
 			"ControlName"		"CUINavigatorPanel"	
@@ -53,6 +46,14 @@
 			"textAlignment"		"center"	
 			"command"		"OpenSupportAlertWindow"	
 		}
+		"EOLAlert"	
+		{
+			"ControlName"		"Button"	
+			"labelText"		"#Steam_EOLAlert"	
+			"style"		"support_alert"	
+			"textAlignment"		"center"	
+			"command"		"OpenEOLAlertWindow"	
+		}
 		"ParentalLockButton"	
 		{
 			"ControlName"		"ToggleButton"	
@@ -63,9 +64,20 @@
 		}
 		"InboxButton"	
 		{
-			"ControlName"		"MenuButton"	
+			"ControlName"		"CInboxButton"	
 			"style"		"inbox_button"	
 			"textAlignment"		"west"	
+		}
+		"AnnouncementButton"	
+		{
+			"ControlName"		"CAnnouncementButton"	
+			"style"		"announcement_button"	
+			"textAlignment"		"west"	
+		}
+		"AccountButton"	
+		{
+			"ControlName"		"CAccountButton"	
+			"style"		"AccountButtonStyle"	
 		}
 		"add_game"	
 		{
@@ -80,227 +92,30 @@
 			"textAlignment"		"west"	
 			"textAlignment"		"center"	[$OSX]
 		}
-		"account_url"	
-		{
-			"ControlName"		"MenuButton"	
-			"fieldName"		"account_url"	
-			"labelText"		"#Steam_Account_Name"	
-			"style"		"AccountURLStyle"	
-		}
-		"account_balance"	
-		{
-			"ControlName"		"URLLabel"	
-			"fieldName"		"account_balance"	
-			"labelText"		""	
-			"URLText"		"steam://url/StoreWallet/"	
-			"style"		"AccountBalanceStyle"	
-		}
-		"account_balance_seperator"	
-		{
-			"ControlName"		"Label"	
-			"fieldName"		"account_balance_seperator"	
-			"labelText"		"|"	
-			"style"		"AccountBalanceSeparatorStyle"	
-		}
 		"universe_label"	
 		{
 			"ControlName"		"Label"	
+			"fieldName"		"universe_label"	
 			"labelText"		"#Steam_Universe_Internal"	
+			"style"		"UniverseLabel"	
 		}
 		"view_friends"	
 		{
-			"ControlName"		"URLLabel"	
+			"ControlName"		"Button"	
 			"labelText"		"#Steam_ViewFriends"	
-			"URLText"		"steam://open/friends"	
+			"command"		"ViewFriends"	
 			"style"		"view_friends"	
 			"textAlignment"		"east"	
-		}
-		"online_friends"	
-		{
-			"ControlName"		"Label"	
-			"labelText"		"#Steam_OnlineFriends"	
-			"style"		"online_friends"	
-			"textAlignment"		"east"	
-			"zpos"		"-1"	
 		}
 	}
 	"styles"	
 	{
-		"AccountBalanceStyle"	
+		"CFriendPanel:hover"	
 		{
-			"textcolor"		"ClientTextColor"	
-			"bgcolor"		"none"	
-			"font-family"		"basefont"	
-			"font-size"		"14"	
-			"font-weight"		"400"	
-			"font-style"		"regular"	
-		}
-		"AccountBalanceStyle"	[$OSX]
-		{
-			"textcolor"		"labeldisabled"	
-			"bgcolor"		"none"	
-			"font-family"		"basefont"	
-			"font-size"		"13"	
-			"font-weight"		"400"	
-			"font-style"		"regular"	
-			"inset"		"0 1 0 0"	
-		}
-		"AccountBalanceStyle:Hover"	
-		{
-			"textcolor"		"texthover"	
-		}
-		"AccountBalanceSeparatorStyle"	
-		{
-			"textcolor"		"ClientTextColor"	
-			"font-family"		"basefont"	
-			"font-size"		"13"	
-			"font-weight"		"400"	
-			"font-style"		"regular"	
-			"inset"		"0 0 0 0"	
-		}
-		"new_label"	
-		{
-			"bgcolor"		"none"	
 			"render_bg"	
 			{
+				"0"		"fill( x0, y0, x1, y1, black)"	
 			}
-			"image"		"graphics/new_button"	
-			"inset"		"0 0 0 0"	
-		}
-		"new_label:hover"	
-		{
-			"bgcolor"		"none"	
-			"render_bg"	
-			{
-			}
-			"image"		"graphics/new_button_hover"	
-			"inset"		"0 0 0 0"	
-		}
-		"new_label_german"	
-		{
-			"bgcolor"		"none"	
-			"render_bg"	
-			{
-			}
-			"image"		"graphics/new_button_german"	
-			"inset"		"0 0 0 0"	
-		}
-		"new_label_german:hover"	
-		{
-			"bgcolor"		"none"	
-			"render_bg"	
-			{
-			}
-			"image"		"graphics/new_button_hover_german"	
-			"inset"		"0 0 0 0"	
-		}
-		"new_label_french"	
-		{
-			"bgcolor"		"none"	
-			"render_bg"	
-			{
-			}
-			"image"		"graphics/new_button_french"	
-			"inset"		"0 0 0 0"	
-		}
-		"new_label_french:hover"	
-		{
-			"bgcolor"		"none"	
-			"render_bg"	
-			{
-			}
-			"image"		"graphics/new_button_hover_french"	
-			"inset"		"0 0 0 0"	
-		}
-		"new_label_italian"	
-		{
-			"bgcolor"		"none"	
-			"render_bg"	
-			{
-			}
-			"image"		"graphics/new_button_italian"	
-			"inset"		"0 0 0 0"	
-		}
-		"new_label_italian:hover"	
-		{
-			"bgcolor"		"none"	
-			"render_bg"	
-			{
-			}
-			"image"		"graphics/new_button_hover_italian"	
-			"inset"		"0 0 0 0"	
-		}
-		"new_label_spanish"	
-		{
-			"bgcolor"		"none"	
-			"render_bg"	
-			{
-			}
-			"image"		"graphics/new_button_spanish"	
-			"inset"		"0 0 0 0"	
-		}
-		"new_label_spanish:hover"	
-		{
-			"bgcolor"		"none"	
-			"render_bg"	
-			{
-			}
-			"image"		"graphics/new_button_hover_spanish"	
-			"inset"		"0 0 0 0"	
-		}
-		"new_label_danish"	
-		{
-			"bgcolor"		"none"	
-			"render_bg"	
-			{
-			}
-			"image"		"graphics/new_button_danish"	
-			"inset"		"0 0 0 0"	
-		}
-		"new_label_danish:hover"	
-		{
-			"bgcolor"		"none"	
-			"render_bg"	
-			{
-			}
-			"image"		"graphics/new_button_hover_danish"	
-			"inset"		"0 0 0 0"	
-		}
-		"new_label_norwegian"	
-		{
-			"bgcolor"		"none"	
-			"render_bg"	
-			{
-			}
-			"image"		"graphics/new_button_norwegian"	
-			"inset"		"0 0 0 0"	
-		}
-		"new_label_norwegian:hover"	
-		{
-			"bgcolor"		"none"	
-			"render_bg"	
-			{
-			}
-			"image"		"graphics/new_button_hover_norwegian"	
-			"inset"		"0 0 0 0"	
-		}
-		"new_label_swedish"	
-		{
-			"bgcolor"		"none"	
-			"render_bg"	
-			{
-			}
-			"image"		"graphics/new_button_swedish"	
-			"inset"		"0 0 0 0"	
-		}
-		"new_label_swedish:hover"	
-		{
-			"bgcolor"		"none"	
-			"render_bg"	
-			{
-			}
-			"image"		"graphics/new_button_hover_swedish"	
-			"inset"		"0 0 0 0"	
 		}
 		"RootMenu"	
 		{
@@ -312,8 +127,7 @@
 			"font-size"		"13"	[$OSX]
 			"font-family"		"basefont"	
 			"textcolor"		"ClientTextColor"	
-			"padding-right"		"30"	
-			"padding-left"		"17"	
+			"padding-left"		"24"	
 			"font-style"		"uppercase"	
 			"render_bg"	
 			{
@@ -389,58 +203,6 @@
 			"bgcolor"		"none"	
 			"inset"		"0 12 0 0"	
 		}
-		"view_friends"	[!$OSX]
-		{
-			"textcolor"		"ClientTextColor"	
-			"bgcolor"		"none"	
-			"font-family"		"basefont"	
-			"font-size"		"14"	
-			"font-weight"		"400"	
-			"font-style"		"regular,uppercase"	
-			"padding-top"		"6"	
-			"padding-left"		"24"	
-			"padding-bottom"		"30"	
-		}
-		"view_friends"	[$OSX]
-		{
-			"textcolor"		"LabelFocus"	
-			"bgcolor"		"none"	
-			"font-family"		"basefont"	
-			"font-size"		"13"	
-			"font-weight"		"400"	
-			"font-style"		"regular,uppercase"	
-			"padding-top"		"6"	
-			"padding-left"		"24"	
-			"padding-bottom"		"30"	
-		}
-		"view_friends:Hover"	
-		{
-			"textcolor"		"ClientTextColorHover"	
-		}
-		"view_friends:disabled"	
-		{
-			"textcolor"		"TextDisabled"	
-		}
-		"online_friends"	[!$OSX]
-		{
-			"textcolor"		"ClientTextColor"	
-			"bgcolor"		"none"	
-			"font-family"		"basefont"	
-			"font-size"		"14"	
-			"font-style"		"regular"	
-		}
-		"online_friends"	[$OSX]
-		{
-			"textcolor"		"label2"	
-			"bgcolor"		"none"	
-			"font-family"		"basefont"	
-			"font-size"		"13"	
-			"font-style"		"regular"	
-		}
-		"online_friends:disabled"	
-		{
-			"textcolor"		"TextDisabled"	
-		}
 		"support_alert"	
 		{
 			"font-family"		"basefont"	
@@ -457,7 +219,7 @@
 			}
 			"render_bg"	
 			{
-				"0"		"fill( x0, y0 + 3, x1-1, y1, parental_lock_inactive1 )"	
+				"0"		"fill( x0, y0, x1, y1, parental_lock_inactive1 )"	
 			}
 		}
 		"support_alert:hover"	
@@ -476,7 +238,7 @@
 			}
 			"render_bg"	
 			{
-				"0"		"fill( x0, y0 + 3, x1-1, y1, parental_lock_inactive3 )"	
+				"0"		"fill( x0, y0, x1, y1, parental_lock_inactive3 )"	
 			}
 		}
 		"support_alert_ack"	
@@ -524,16 +286,15 @@
 			"font-weight"		"800"	
 			"font-style"		"none"	
 			"textcolor"		"0 0 0 255"	
-			"padding-left"		"0"	
-			"padding-right"		"0"	
-			"padding-top"		"6"	
-			"inset"		"0 -3 8 0"	
+			"padding-top"		"2"	
+			"padding-right"		"16"	
 			"render"	
 			{
 			}
 			"render_bg"	
 			{
-				"13"		"image( x1-22, y0+6, x1 -2, y1, graphics/i_clientIcon15 )"	
+				"0"		"fill( x0, y0, x1, y1, dark_blue )"	
+				"1"		"image( x1-24, y0+4, x1-2, y1+2, graphics/inbox_notification_inactive )"	
 			}
 		}
 		"inbox_button"	[$OSX]
@@ -543,49 +304,35 @@
 			"font-weight"		"800"	
 			"font-style"		"none"	
 			"textcolor"		"white"	
-			"padding-left"		"0"	
-			"padding-right"		"0"	
-			"padding-top"		"6"	
-			"inset"		"0 -2 8 0"	
+			"padding-top"		"3"	
+			"padding-right"		"16"	
 			"render"	
 			{
 			}
 			"render_bg"	
 			{
-				"13"		"image( x1-22, y0+6, x1 -2, y1, graphics/inbox_notification_inactive )"	
+				"0"		"fill( x0, y0, x1, y1, dark_blue )"	
+				"1"		"image( x1-22, y0+6, x1-2, y1, graphics/inbox_notification_inactive )"	
 			}
 		}
 		"inbox_button:hover"	
 		{
-			"render"	
-			{
-			}
 			"render_bg"	
 			{
-				"1"		"image( x1-22, y0+6, x1 -2, y1, graphics/i_clientIcon15 )"	
+				"0"		"fill(  x0, y0, x1, y1, darkblue )"	
+				"13"		"image( x1-24, y0+4, x1, y1, graphics/inbox_notification_inactive )"	
 			}
 		}
 		"inbox_button:selected"	
 		{
-			"render"	
-			{
-			}
 			"render_bg"	
 			{
-				"0"		"gradient(  x0 -3, y0 + 3, x1+1, y1, almostblack, none )"	
+				"0"		"fill(  x0, y0, x1, y1, green6 )"	
 			}
 		}
 		"inbox_button:disabled"	
 		{
 			"textcolor"		"labeldisabled"	
-			"padding-left"		"0"	
-			"padding-right"		"0"	
-			"padding-top"		"6"	
-			"inset"		"0 -3 8 0"	[!$OSX]
-			"inset"		"0 -2 8 0"	[$OSX]
-			"render"	
-			{
-			}
 			"render_bg"	
 			{
 				"1"		"image( x1-22, y0+6, x1 -2, y1, graphics/i_clientIcon16 )"	
@@ -593,14 +340,6 @@
 		}
 		"inbox_button_active"	
 		{
-			"padding-left"		"3"	
-			"padding-right"		"10"	
-			"padding-top"		"6"	
-			"inset"		"0 -3 8 0"	[!$OSX]
-			"inset"		"0 -2 8 0"	[$OSX]
-			"render"	
-			{
-			}
 			"render_bg"	
 			{
 				"0"		"fill(  x0 + 1, y0 + 3, x1+1, y1, InboxButtonActive )"	
@@ -609,14 +348,6 @@
 		}
 		"inbox_button_active:hover"	
 		{
-			"padding-left"		"3"	
-			"padding-right"		"10"	
-			"padding-top"		"6"	
-			"inset"		"0 -3 8 0"	[!$OSX]
-			"inset"		"0 -2 8 0"	[$OSX]
-			"render"	
-			{
-			}
 			"render_bg"	
 			{
 				"0"		"fill(  x0 + 1, y0 + 3, x1+1, y1, InboxButtonActiveHover )"	
@@ -625,14 +356,6 @@
 		}
 		"inbox_button_active:selected"	
 		{
-			"padding-left"		"3"	
-			"padding-right"		"10"	
-			"padding-top"		"6"	
-			"inset"		"0 -3 8 0"	[!$OSX]
-			"inset"		"0 -2 8 0"	[$OSX]
-			"render"	
-			{
-			}
 			"render_bg"	
 			{
 				"0"		"gradient(  x0 + 1, y0 + 3, x1+1, y1, InboxButtonActiveSelected, InboxButtonActiveSelected )"	
@@ -641,17 +364,36 @@
 		}
 		"inbox_button_active:disabled"	
 		{
-			"padding-left"		"3"	
-			"padding-right"		"10"	
-			"padding-top"		"6"	
-			"inset"		"0 -3 8 0"	[!$OSX]
-			"inset"		"0 -2 8 0"	[$OSX]
 			"render"	
 			{
 			}
 			"render_bg"	
 			{
 				"1"		"image( x1-22, y0+6, x1 -2, y1, graphics/i_clientIcon13 )"	
+			}
+		}
+		"announcement_button"	
+		{
+			"render_bg"	
+			{
+				"0"		"fill( x0, y0, x1, y1, dark_blue )"	
+				"1"		"image( x1-24, y0+4, x1 -2, y1 + 1, graphics/updatenone_notification )"	
+			}
+		}
+		"announcement_button:hover"	
+		{
+			"render_bg"	
+			{
+				"0"		"fill( x0, y0, x1, y1, darkblue )"	
+				"1"		"image( x1-24, y0+4, x1 -2, y1 + 1, graphics/updatenone_notification )"	
+			}
+		}
+		"announcement_button_active"	
+		{
+			"render_bg"	
+			{
+				"0"		"fill(  x0, y0, x1, y1, AnnouncementBlue )"	
+				"1"		"image( x1-24, y0+4, x1 -2, y1 + 1, graphics/updatenew_notification )"	
 			}
 		}
 		"Menu"	
@@ -671,99 +413,40 @@
 		}
 		"parental_lock_button"	
 		{
-			"padding-left"		"3"	
-			"padding-right"		"7"	
-			"padding-top"		"-1"	
-			"image"		"resource/notfamilyview"	
-			"render"	
-			{
-			}
 			"render_bg"	
 			{
-				"0"		"fill( x0 + 1, y0, x1 - 1, y1, parental_lock_inactive1 )"	
+				"0"		"fill( x0, y0, x1, y1, parental_lock_inactive1 )"	
+				"1"		"image( x0+9, y0+2, x1, y1, resource/notfamilyview )"	
 			}
 		}
 		"parental_lock_button:hover"	
 		{
-			"padding-left"		"3"	
-			"padding-right"		"7"	
-			"padding-top"		"-1"	
-			"image"		"resource/notfamilyview"	
-			"render"	
-			{
-			}
 			"render_bg"	
 			{
-				"0"		"fill( x0 + 1, y0, x1 - 1, y1, parental_lock_inactive3 )"	
+				"0"		"fill( x0, y0, x1, y1, parental_lock_inactive3 )"	
+				"1"		"image( x0+9, y0+2, x1, y1, resource/notfamilyview )"	
 			}
 		}
 		"parental_lock_button:selected"	
 		{
-			"padding-left"		"3"	
-			"padding-right"		"7"	
-			"padding-top"		"-1"	
-			"image"		"resource/familyview"	
-			"render"	
-			{
-			}
 			"render_bg"	
 			{
-				"0"		"fill( x0 + 1, y0, x1 - 1, y1, green6 )"	
+				"0"		"fill( x0, y0, x1, y1, green6 )"	
+				"1"		"image( x0+9, y0+2, x1, y1, resource/familyview )"	
 			}
 		}
 		"parental_lock_button:selected:hover"	
 		{
-			"padding-left"		"3"	
-			"padding-right"		"7"	
-			"padding-top"		"-1"	
-			"image"		"resource/familyview"	
-			"render"	
-			{
-			}
 			"render_bg"	
 			{
-				"0"		"fill( x0 + 1, y0, x1 - 1, y1, green5 )"	
+				"0"		"fill( x0, y0, x1, y1, green5 )"	
+				"1"		"image( x0+9, y0+2, x1, y1, resource/familyview )"	
 			}
-		}
-		"FullscreenButton"	[!$OSX]
-		{
-			"padding-left"		"0"	
-			"padding-top"		"0"	
-			"padding-right"		"0"	
-			"padding-bottom"		"0"	
-		}
-		"FullscreenButton"	[$OSX]
-		{
-			"padding-left"		"0"	
-			"padding-top"		"3"	
-			"padding-right"		"0"	
-			"padding-bottom"		"0"	
-		}
-		"VRButton"	[!$OSX]
-		{
-			"padding-left"		"0"	
-			"padding-top"		"6"	
-			"padding-right"		"0"	
-			"padding-bottom"		"0"	
-		}
-		"VRButton"	[$OSX]
-		{
-			"padding-left"		"0"	
-			"padding-top"		"3"	
-			"padding-right"		"0"	
-			"padding-bottom"		"0"	
-		}
-		"VRButtonExit"	[!$OSX]
-		{
-			"padding-left"		"0"	
-			"padding-top"		"6"	
-			"padding-right"		"0"	
-			"padding-bottom"		"0"	
 		}
 		"VRButtonExit"	[$OSX]
 		{
 			"padding-left"		"0"	
-			"padding-top"		"3"	
+			"padding-top"		"8"	
 			"padding-right"		"0"	
 			"padding-bottom"		"0"	
 		}
@@ -779,24 +462,6 @@
 		{
 			"textcolor"		"ClientTextColorHover"	
 		}
-		"AccountURLStyle"	
-		{
-			"textcolor"		"ClientTextColor"	
-			"padding-top"		"-4"	
-			"padding-right"		"-14"	
-		}
-		"AccountURLStyle:hover"	
-		{
-			"textcolor"		"ClientTextColorHover"	
-		}
-		"AccountURLStyle:selected"	
-		{
-			"textcolor"		"ClientTextColorSelected"	
-		}
-		"AccountURLStyle:disabled"	
-		{
-			"textcolor"		"ClientTextColorDisabled"	
-		}
 		"FrameMinimizeButton"	
 		{
 			"render_bg"	
@@ -804,7 +469,9 @@
 			}
 			"image"		"graphics/i_clientIcon0"	
 			"inset"		"0 0 4 0"	
+			"inset"		"0 0 4 -8"	[$OSX]
 			"image"		"graphics/osx_win_dis"	[$OSX]
+			"image"		"graphics/osx_win_dis_new_dark"	[$OSX1010]
 		}
 		"FrameMinimizeButton:hover"	
 		{
@@ -813,24 +480,37 @@
 			}
 			"bgcolor"		"none"	
 			"inset"		"0 0 4 0"	
+			"inset"		"0 0 4 -8"	[$OSX]
 			"image"		"graphics/i_clientIcon6"	
 			"image"		"graphics/osx_min_hov"	[$OSX]
+			"image"		"graphics/osx_min_hov_new"	[$OSX1010]
 		}
 		"FrameMinimizeButton:framefocus"	[$OSX]
 		{
 			"render_bg"	
 			{
 			}
-			"inset"		"0 0 4 0"	
+			"inset"		"0 0 4 -8"	
 			"image"		"graphics/i_clientIcon0"	
+			"image"		"graphics/osx_min_def_new"	[$OSX1010]
 		}
 		"FrameMinimizeButton:framefocus:hover"	[$OSX]
 		{
 			"render_bg"	
 			{
 			}
-			"inset"		"0 0 4 0"	
+			"inset"		"0 0 4 -8"	
 			"image"		"graphics/i_clientIcon6"	
+			"image"		"graphics/osx_min_hov_new"	[$OSX1010]
+		}
+		"FrameMinimizeButton:active"	[$OSX]
+		{
+			"render_bg"	
+			{
+			}
+			"inset"		"0 0 4 -8"	
+			"image"		"graphics/i_clientIcon6"	
+			"image"		"graphics/osx_min_down_new"	[$OSX1010]
 		}
 		"FrameMaximizeButton"	
 		{
@@ -838,8 +518,10 @@
 			{
 			}
 			"inset"		"0 0 4 0"	
+			"inset"		"0 0 -2 -8"	[$OSX]
 			"image"		"graphics/i_clientIcon1"	
 			"image"		"graphics/osx_win_dis"	[$OSX]
+			"image"		"graphics/osx_win_dis_new_dark"	[$OSX1010]
 		}
 		"FrameMaximizeButton:hover"	
 		{
@@ -847,9 +529,11 @@
 			{
 			}
 			"inset"		"0 0 4 0"	
+			"inset"		"0 0 -2 -8"	[$OSX]
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon7"	
 			"image"		"graphics/osx_max_hov"	[$OSX]
+			"image"		"graphics/osx_max_hov_new"	[$OSX1010]
 		}
 		"FrameMaximizeButton:framefocus"	
 		{
@@ -857,9 +541,11 @@
 			{
 			}
 			"inset"		"0 0 4 0"	
+			"inset"		"0 0 -2 -8"	[$OSX]
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon1"	
 			"image"		"graphics/osx_max_def"	[$OSX]
+			"image"		"graphics/osx_max_def_new"	[$OSX1010]
 		}
 		"FrameMaximizeButton:framefocus:hover"	
 		{
@@ -867,9 +553,11 @@
 			{
 			}
 			"inset"		"0 0 4 0"	
+			"inset"		"0 0 -2 -8"	[$OSX]
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon7"	
 			"image"		"graphics/osx_max_hov"	[$OSX]
+			"image"		"graphics/osx_max_hov_new"	[$OSX1010]
 		}
 		"FrameMaximizeButton:active"	
 		{
@@ -877,9 +565,11 @@
 			{
 			}
 			"inset"		"0 0 4 0"	
+			"inset"		"0 0 -2 -8"	[$OSX]
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon7"	
 			"image"		"graphics/osx_max_down"	[$OSX]
+			"image"		"graphics/osx_max_down_new"	[$OSX1010]
 		}
 		"FrameRestoreButton"	
 		{
@@ -887,8 +577,10 @@
 			{
 			}
 			"inset"		"0 0 4 0"	
+			"inset"		"0 0 -2 -8"	[$OSX]
 			"image"		"graphics/i_clientIcon4"	
 			"image"		"graphics/osx_win_dis"	[$OSX]
+			"image"		"graphics/osx_win_dis_new_dark"	[$OSX1010]
 		}
 		"FrameRestoreButton:hover"	
 		{
@@ -896,9 +588,11 @@
 			{
 			}
 			"inset"		"0 0 4 0"	
+			"inset"		"0 0 -2 -8"	[$OSX]
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon10"	
 			"image"		"graphics/osx_max_hov"	[$OSX]
+			"image"		"graphics/osx_max_hov_new"	[$OSX1010]
 		}
 		"FrameRestoreButton:framefocus"	
 		{
@@ -906,9 +600,11 @@
 			{
 			}
 			"inset"		"0 0 4 0"	
+			"inset"		"0 0 -2 -8"	[$OSX]
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon4"	
 			"image"		"graphics/osx_max_def"	[$OSX]
+			"image"		"graphics/osx_max_def_new"	[$OSX1010]
 		}
 		"FrameRestoreButton:framefocus:hover"	
 		{
@@ -916,9 +612,11 @@
 			{
 			}
 			"inset"		"0 0 4 0"	
+			"inset"		"0 0 -2 -8"	[$OSX]
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon10"	
 			"image"		"graphics/osx_max_hov"	[$OSX]
+			"image"		"graphics/osx_max_hov_new"	[$OSX1010]
 		}
 		"FrameRestoreButton:active"	
 		{
@@ -926,9 +624,11 @@
 			{
 			}
 			"inset"		"0 0 4 0"	
+			"inset"		"0 0 -2 -8"	[$OSX]
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon10"	
 			"image"		"graphics/osx_max_down"	[$OSX]
+			"image"		"graphics/osx_max_down_new"	[$OSX1010]
 		}
 		"FrameCloseButton"	
 		{
@@ -936,8 +636,10 @@
 			{
 			}
 			"inset"		"0 0 4 0"	
+			"inset"		"-7 0 4 -8"	[$OSX]
 			"image"		"graphics/i_clientIcon2"	
 			"image"		"graphics/osx_win_dis"	[$OSX]
+			"image"		"graphics/osx_win_dis_new_dark"	[$OSX1010]
 		}
 		"FrameCloseButton:hover"	
 		{
@@ -945,34 +647,40 @@
 			{
 			}
 			"inset"		"0 0 4 0"	
+			"inset"		"-7 0 4 -8"	[$OSX]
 			"image"		"graphics/i_clientIcon8"	
 			"image"		"graphics/osx_close_hov"	[$OSX]
+			"image"		"graphics/osx_close_hov_new"	[$OSX1010]
 		}
 		"FrameCloseButton:framefocus"	[$OSX]
 		{
 			"render_bg"	
 			{
 			}
-			"inset"		"0 0 4 0"	
+			"inset"		"-7 0 4 -8"	
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon2"	
+			"image"		"graphics/osx_close_def_new"	[$OSX1010]
 		}
 		"FrameCloseButton:framefocus:hover"	[$OSX]
 		{
 			"render_bg"	
 			{
 			}
+			"inset"		"-7 0 4 -8"	
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon8"	
+			"image"		"graphics/osx_close_hov_new"	[$OSX1010]
 		}
 		"FrameCloseButton:active"	[$OSX]
 		{
 			"render_bg"	
 			{
 			}
-			"inset"		"0 0 4 0"	
+			"inset"		"-7 0 4 -8"	
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon8"	
+			"image"		"graphics/osx_close_down_new"	[$OSX1010]
 		}
 		"FrameCloseButton:disabled"	
 		{
@@ -980,9 +688,15 @@
 			{
 			}
 			"inset"		"0 0 4 0"	
+			"inset"		"-7 0 4 -8"	[$OSX]
 			"bgcolor"		"none"	
 			"image"		"graphics/win32_win_close_disabled"	
 			"image"		"graphics/osx_win_dis"	[$OSX]
+			"image"		"graphics/osx_win_dis_new_dark"	[$OSX1010]
+		}
+		"UniverseLabel"	
+		{
+			"padding-top"		"11"	
 		}
 	}
 	"colors"	
@@ -997,26 +711,6 @@
 	}
 	"layout"	
 	{
-		"place"	[!$OSX]
-		{
-			"control"		"New"	
-			"width"		"0"	
-			"height"		"0"	
-			"y"		"0"	
-			"width"		"max"	
-			"align"		"right"	
-			"margin-right"		"56"	
-		}
-		"place"	[$OSX]
-		{
-			"control"		"New"	
-			"width"		"0"	
-			"height"		"0"	
-			"y"		"0"	
-			"width"		"max"	
-			"align"		"right"	
-			"margin-right"		"-20"	
-		}
 		"place"	
 		{
 			"control"		"UINavigatorPanel"	
@@ -1044,106 +738,9 @@
 		}
 		"place"	[!$OSX]
 		{
-			"control"		"account_balance, account_balance_seperator, account_URL, universe_label, startvr, exitvr, fullscreen"	
-			"align"		"right"	
-			"margin-top"		"12"	
-			"margin-right"		"88"	
-			"spacing"		"7"	
-		}
-		"place"	[$OSX]
-		{
-			"control"		"account_balance, account_balance_seperator, account_URL, universe_label, startvr, exitvr, fullscreen"	
-			"align"		"right"	
-			"margin-top"		"12"	
-			"margin-right"		"15"	
-			"spacing"		"7"	
-		}
-		"place"	[!$OSX]
-		{
-			"control"		"fullscreen"	
-			"align"		"right"	
-			"y"		"7"	
-			"height"		"20"	
-			"spacing"		"0"	
-			"margin-right"		"78"	
-			"margin-top"		"1"	
-			"width"		"30"	
-		}
-		"place"	[$OSX]
-		{
-			"control"		"fullscreen"	
-			"align"		"right"	
-			"y"		"7"	
-			"height"		"20"	
-			"spacing"		"0"	
-			"margin-right"		"8"	
-			"margin-top"		"1"	
-			"width"		"30"	
-		}
-		"place"	[!$OSX]
-		{
-			"control"		"startvr"	
-			"end-right"		"fullscreen"	
-			"align"		"right"	
-			"margin-right"		"6"	
-			"margin-top"		"1"	
-		}
-		"place"	[$OSX]
-		{
-			"control"		"startvr"	
-			"end-right"		"fullscreen"	
-			"align"		"right"	
-			"margin-right"		"6"	
-			"margin-top"		"1"	
-		}
-		"place"	[!$OSX]
-		{
-			"control"		"exitvr"	
-			"end-right"		"fullscreen"	
-			"align"		"right"	
-			"margin-right"		"6"	
-			"margin-top"		"1"	
-		}
-		"place"	[$OSX]
-		{
-			"control"		"exitvr"	
-			"end-right"		"fullscreen"	
-			"align"		"right"	
-			"margin-right"		"6"	
-			"margin-top"		"1"	
-		}
-		"place"	
-		{
-			"control"		"InboxButton"	
-			"align"		"right"	
-			"end-right"		"account_balance"	
-			"margin-top"		"4"	
-			"margin-right"		"16"	
-			"height"		"26"	
-		}
-		"place"	
-		{
-			"control"		"ParentalLockButton"	
-			"align"		"right"	
-			"end-right"		"InboxButton"	
-			"margin-top"		"7"	
-			"margin-right"		"10"	
-			"height"		"23"	
-		}
-		"place"	
-		{
-			"control"		"SupportAlert"	
-			"align"		"right"	
-			"end-right"		"ParentalLockButton"	
-			"margin-top"		"4"	
-			"margin-right"		"10"	
-			"height"		"26"	
-		}
-		"place"	[!$OSX]
-		{
 			"control"		"frame_minimize,frame_maximize,frame_close"	
 			"align"		"right"	
-			"margin-top"		"10"	
+			"margin-top"		"13"	
 			"margin-right"		"9"	
 			"spacing"		"-5"	
 		}
@@ -1151,16 +748,101 @@
 		{
 			"control"		"frame_close,frame_minimize,frame_maximize"	
 			"align"		"left"	
-			"margin-top"		"10"	
-			"margin-left"		"4"	
+			"margin-top"		"13"	
+			"margin-left"		"11"	
 			"spacing"		"-7"	
+		}
+		"place"	[$OSX]
+		{
+			"control"		"universe_label, EOLAlert, SupportAlert"	
+			"spacing"		"8"	
+			"start"		"frame_maximize"	
+			"align"		"left"	
+			"margin-top"		"-4"	
+			"margin-left"		"13"	
+			"height"		"24"	
+		}
+		"place"	[!$OSX]
+		{
+			"control"		"fullscreen"	
+			"align"		"right"	
+			"end-right"		"frame_minimize"	
+			"height"		"20"	
+			"width"		"30"	
+			"margin-right"		"8"	
+			"margin-top"		"11"	
+		}
+		"place"	[$OSX]
+		{
+			"control"		"fullscreen"	
+			"align"		"right"	
+			"height"		"20"	
+			"width"		"30"	
+			"margin-right"		"16"	
+			"margin-top"		"11"	
+		}
+		"place"	
+		{
+			"control"		"startvr, exitvr"	
+			"align"		"right"	
+			"end-right"		"fullscreen"	
+			"margin-right"		"4"	
+			"margin-top"		"10"	
+		}
+		"place"	
+		{
+			"control"		"AccountButton"	
+			"align"		"right"	
+			"end-right"		"startvr"	
+			"margin-top"		"9"	
+			"margin-right"		"8"	
+			"height"		"24"	
+		}
+		"place"	
+		{
+			"control"		"InboxButton"	
+			"align"		"right"	
+			"end-right"		"AccountButton"	
+			"margin-top"		"9"	
+			"margin-right"		"8"	
+			"height"		"24"	
+		}
+		"place"	
+		{
+			"control"		"AnnouncementButton"	
+			"align"		"right"	
+			"end-right"		"InboxButton"	
+			"margin-top"		"9"	
+			"margin-right"		"8"	
+			"height"		"24"	
+			"width"		"34"	
+		}
+		"place"	
+		{
+			"control"		"ParentalLockButton"	
+			"align"		"right"	
+			"end-right"		"AnnouncementButton"	
+			"margin-top"		"9"	
+			"margin-right"		"8"	
+			"height"		"24"	
+			"width"		"44"	
+		}
+		"place"	[!$OSX]
+		{
+			"control"		"universe_label, EOLAlert, SupportAlert"	
+			"spacing"		"8"	
+			"align"		"right"	
+			"end-right"		"ParentalLockButton"	
+			"margin-top"		"9"	
+			"margin-right"		"8"	
+			"height"		"24"	
 		}
 		"region"	
 		{
 			"name"		"bottom"	
 			"align"		"bottom"	
 			"width"		"max"	
-			"height"		"75"	
+			"height"		"62"	
 		}
 		"place"	
 		{
@@ -1172,33 +854,13 @@
 		}
 		"place"	
 		{
-			"control"		"FriendPanel"	
-			"height"		"48"	
-			"width"		"48"	
-			"region"		"bottom"	
-			"align"		"right"	
-			"margin-right"		"2"	
-			"margin-top"		"16"	
-		}
-		"place"	
-		{
 			"control"		"view_friends"	
-			"height"		"62"	
-			"y"		"12"	
+			"height"		"64"	
+			"width"		"160"	
 			"region"		"bottom"	
 			"align"		"right"	
 			"dir"		"right"	
-			"margin-right"		"56"	
-		}
-		"place"	
-		{
-			"control"		"online_friends"	
-			"height"		"12"	
-			"y"		"38"	
-			"region"		"bottom"	
-			"align"		"right"	
-			"dir"		"right"	
-			"margin-right"		"56"	
+			"margin-right"		"16"	
 		}
 		"place"	
 		{

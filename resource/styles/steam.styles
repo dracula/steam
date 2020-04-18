@@ -3,47 +3,47 @@
 	"colors"	
 	{
 		"black"		"0 0 0 255"	
-		"dark"		"35 35 35 255"	
-		"almostBlack"		"22 22 22 255"	
-		"almostBlackTrans"		"22 22 22 204"	
+		"dark"		"28 33 42 255"	
+		"almostBlack"		"22 25 28 255"	
+		"almostBlackTrans"		"22 25 28 204"	
 		"white"		"255 255 255 255"	
-		"grey"		"153 153 153 255"	
+		"grey"		"142 152 167 255"	
 		"none"		"0 0 0 0"	
 		"yellow"		"255 255 0 255"	
-		"offwhite"		"164 164 164 255"	
+		"offwhite"		"159 162 168 255"	
 		"dullgreen"		"216 222 211 255"	
 		"maize"		"203 191 87 255"	
 		"red"		"255 51 51 255"	
-		"darkblue"		"39 100 130 255"	
-		"blue"		"54 143 179 255"	
+		"darkblue"		"35 55 75 255"	
+		"blue"		"94 109 140 255"	
 		"darkred"		"128 0 0 255"	
 		"darkpurple"		"64 0 64 255"	
-		"dark_blue"		"2 15 23 255"	
-		"med_blue"		"13 52 82 255"	
-		"bg_blue"		"10 36 56 255"	
-		"bordercolor"		"102 102 102 255"	
-		"darkcorner"		"73 73 73 255"	
+		"dark_blue"		"27 44 61 255"	
+		"med_blue"		"13 36 82 255"	
+		"bg_blue"		"10 25 56 255"	
+		"bordercolor"		"82 95 122 255"	
+		"darkcorner"		"58 68 88 255"	
 		"buttontext"		"Text"	
 		"buttontextactive"		"Text"	
 		"basefont"		"Arial"	
 		"basefont"		"Helvetica"	[$OSX]
-		"ButtonFace"		"102 102 102 200"	
-		"ButtonFace2"		"80 80 80 255"	
-		"ButtonFace3"		"92 92 92 255"	
-		"ButtonFaceDisabled"		"102 102 102 15"	
-		"ButtonFaceHover"		"99 99 99  240"	
-		"ButtonFaceActive"		"102 102 102  240"	
-		"ButtonFaceFocus"		"105 105 105  240"	
-		"ButtonFaceActiveFocus"		"105 105 105  255"	
-		"BlueBorder"		"33 33 33 255"	
-		"ButtonBorder"		"89 89 89 255"	
-		"ButtonBorderSubtle"		"79 79 79 255"	
+		"ButtonFace"		"98 108 119 20"	
+		"ButtonFace2"		"67 73 83 255"	
+		"ButtonFace3"		"86 93 106 255"	
+		"ButtonFaceDisabled"		"86 93 106 15"	
+		"ButtonFaceHover"		"84 91 104  240"	
+		"ButtonFaceActive"		"86 93 106  240"	
+		"ButtonFaceFocus"		"89	97	110  240"	
+		"ButtonFaceActiveFocus"		"89 97 110  255"	
+		"BlueBorder"		"26 31 40 255"	
+		"ButtonBorder"		"75 84 102 255"	
+		"ButtonBorderSubtle"		"75 84 102 255"	
 		"ButtonBorderPage"		"124 124 124 255"	
-		"ButtonBorderDisabled"		"75 75 75 255"	
-		"ButtonBorderDisabled2"		"65 65 65 255"	
-		"ButtonBorderActive"		"125 125 125 255"	
-		"ButtonBorderFocus"		"137 137 137 255"	
-		"ButtonBorderFocusSubtle"		"122 122 122 255"	
+		"ButtonBorderDisabled"		"112 120 136 255"	
+		"ButtonBorderDisabled2"		"52 61 78 255"	
+		"ButtonBorderActive"		"112 120 137 255"	
+		"ButtonBorderFocus"		"125 133 148 255"	
+		"ButtonBorderFocusSubtle"		"110 118 134 255"	
 		"Text"		"169 169 169 255"	
 		"Text2"		"169 169 169 255"	
 		"TextDisabled"		"$ClientTextColorDisabled"	
@@ -51,71 +51,71 @@
 		"TextSelected"		"208 208 208 255"	
 		"TextentrySelected"		"208 208 208 255"	
 		"TextSelectedBG"		"255 121 198 255"	
-		"TextGlowHover"		"124 124 124 255"	
-		"TextGlowSelected"		"169 169 169 255"	
+		"TextGlowHover"		"100 110 125 255"	
+		"TextGlowSelected"		"163 173 186 255"	
 		"TextGlowHoverSm"		"123 123 123 255"	
 		"TextGlowSelectedSm"		"142 142 142 255"	
 		"redborder"		"169 72 71 255"	
-		"NavLabel"		"153 153 153 255"	
+		"NavLabel"		"149 153 163 255"	
 		"Label"		"169 169 169 255"	
 		"Label2"		"182 182 182 255"	
 		"LabelDisabled"		"182 182 182 255"	
 		"LabelFocus"		"208 208 208 255"	
 		"SuperNav"		"white"	
 		"SuperNavHover"		"white"	
-		"ScrollGlyph"		"198 198 198 255"	
-		"ScrollGlyphDisabled"		"74 74 74 255"	
+		"ScrollGlyph"		"98 108 119 255"	
+		"ScrollGlyphDisabled"		"67 73 83 255"	
 		"ScrollGlyphFocus"		"242 242 242 255"	
-		"ScrollBG"		"54 54 54 255"	
-		"HeaderClient"		"53 53 53 255"	
-		"HeaderDialog"		"92 92 92 255"	
-		"TitleBar"		"26 26 26 80"	
+		"ScrollBG"		"53 59 66 255"	
+		"HeaderClient"		"42 49 63 255"	
+		"HeaderDialog"		"87 90 97 255"	
+		"TitleBar"		"21 24 31 80"	
 		"TitleBarFocus"		"14 31 56 80"	
 		"MenuBG"		"40 42 54 255"	
 		"Focus0"		"23 51 77 255"	
 		"Focus"		"255 121 198 255"	
 		"Focus2"		"21 70 107 255"	
-		"Focus3"		"82 82 82 255"	
-		"Focus4"		"67 158 191 255"	
+		"Focus3"		"75 80 89 255"	
+		"Focus4"		"61 102 143 255"	
 		"FocusGrid"		"85 117 161 240"	
 		"Highlight"		"16 53 82 120"	
-		"Highlight1"		"92 193 229 255"	
+		"Highlight1"		"118 202 235 255"	
 		"Highlight2"		"76 159 191 255"	
 		"Highlight3"		"173 69 71 255"	
 		"Highlight5"		"24 53 82 255"	
 		"Highlight5a"		"30 66 102 255"	
 		"Highlight5b"		"17 42 86 255"	
-		"BackgroundStartSubtle"		"20 20 20 155"	
-		"BackgroundStartSubtle"		"31 31 31 45"	[$OSX]
-		"BackgroundStartSubtlest"		"22 22 22 100"	
-		"BackgroundStart"		"22 22 22 180"	
-		"BackgroundStartOpaque"		"35 35 35 255"	
-		"ClientBG"		"30 30 30 255"	
+		"BackgroundStartSubtle"		"0 13 40 155"	
+		"BackgroundStartSubtle"		"0 15 46 45"	[$OSX]
+		"BackgroundStartSubtlest"		"0 15 44 100"	
+		"BackgroundStart"		"31 35 41 180"	
+		"BackgroundStartOpaque"		"31 35 41 255"	
+		"ClientBG"		"18 26 42 255"	
 		"ClientBGTop"		"25 32 46 255"	
 		"ClientGrouper"		"68 71 90 255"	
 		"DialogBG"		"40 42 54 255"	
-		"DialogBGFade1"		"56 56 56 255"	
-		"DialogBGFade2"		"56 56 56  0"	
-		"DarkClientBG"		"35 35 35 255"	
+		"DialogBGFade1"		"42 46 51 255"	
+		"DialogBGFade2"		"42 46 51 0"	
+		"DarkClientBG"		"31 34 41 255"	
 		"DarkDialogBG"		"34 34 34 255"	
-		"DarkClientBGTransparent"		"35 35 35 19"	
-		"DarkDialogBGTransparent"		"55 55 55 170"	
+		"DarkClientBGTransparent"		"28 31 37 19"	
+		"DarkDialogBGTransparent"		"41 47 55 170"	
 		"GameDetailsBlueTransparent"		"71 148 179 60"	
 		"GameDetailsGreenTransparent"		"71 148 179 160"	
 		"GameDetailsRedTransparent"		"71 148 179 160"	
 		"GameDetailsBlue"		"71 148 179 255"	
 		"GameDetailsGreen"		"71 148 179 255"	
 		"GameDetailsRed"		"71 148 179 255"	
-		"PropertySheetBG"		"58 58 58 255"	
-		"InteriorColor"		"52 52 52 255"	
-		"DialogBorder"		"117 117 117 255"	
-		"FillBG1"		"62 62 62 255"	
-		"FillBG2"		"69 69 69 255"	
+		"PropertySheetBG"		"50 55 61 255"	
+		"InteriorColor"		"46 49 54 255"	
+		"DialogBorder"		"110 113 119 255"	
+		"FillBG1"		"61 63 66 255"	
+		"FillBG2"		"64 65 69 255"	
 		"MenuBG1"		"40 42 54 255"	
 		"MenuBG2"		"40 42 54 255"	
-		"Divider"		"86 86 86 255"	
-		"SuperDivider"		"71 71 71 255"	
-		"DarkImageBorder"		"48 48 48 255"	
+		"Divider"		"76 84 93 255"	
+		"SuperDivider"		"66 72 80 255"	
+		"DarkImageBorder"		"46 50 58 255"	
 		"DarkImageOverlay"		"0 0 0 80"	
 		"inbox_active"		"158 194 29 255"	
 		"inbox_active2"		"155 199 9 255"	
@@ -144,6 +144,7 @@
 		"red6"		"38 1 1 255"	
 		"support_lock_ack1"		"187 157 47 255"	
 		"support_lock_ack2"		"193 166 67 255"	
+		"AnnouncementBlue"		"61 146 175 255"	
 		"ClayBG"		"70 70 70 255"	
 		"ClayButtonBG"		"85 85 85 255"	
 		"ClayEnabled"		"88 88 88 255"	
@@ -221,11 +222,11 @@
 		"TextEntry.IMEBGColor"		"225 225 225 255"	
 		"TextEntry.IMEFGColor"		"black"	
 		"Friends.InGameColor"		"80 250 123 255"	
-		"Friends.InGameHoverColor"		"130 251 160 255"	
+		"Friends.InGameHoverColor"		"80 250 123 255"	
 		"Friends.OnlineColor"		"139 233 253 255"	
-		"Friends.OnlineHoverColor"		"189 243 254 255"	
+		"Friends.OnlineHoverColor"		"139 233 253 255"	
 		"Friends.OfflineColor"		"68 71 90 255"	
-		"Friends.OfflineHoverColor"		"90 94 119 255"	
+		"Friends.OfflineHoverColor"		"68 71 90 255"	
 		"Friends.PanelDefault"		"Label"	
 		"Friends.PanelOver"		"Text"	
 		"Friends.PanelSelected"		"ClientBG"	
@@ -259,10 +260,10 @@
 		"ClientInnerBG"		"40 42 54 255"	
 		"ClientInnerItemsBG"		"68 71 90 224"	
 		"ClientInnerTextColor"		"205 205 205 255"	
-		"ClientInnerTextColorHalf"		"205 205 205 96.9"	
+		"ClientInnerTextColorHalf"		"205 205 205 255"	
 		"GameItem_Installed"		"205 205 205 255"	
 		"GameItem_Installed:hover"		"76 76 76 255"	
-		"GameItem_Uninstalled"		"205 205 205 96.9"	
+		"GameItem_Uninstalled"		"205 205 205 255"	
 		"GameItem_UnInstalled:hover"		"76 76 76 255"	
 		"cButton"		"68 71 90 255"	
 		"cButtonHover"		"68 71 90 255"	
@@ -439,7 +440,7 @@
 		}
 		"CFriendPanel"	
 		{
-			"inset"		"0 2 0 0"	
+			"inset"		"0 0 0 0"	
 			"bgcolor"		"none"	
 			"font-family"		"basefont"	
 			"font-size"		"14"	
@@ -739,6 +740,7 @@
 			}
 			"image"		"graphics/i_clientIcon0"	
 			"image"		"graphics/osx_win_dis"	[$OSX]
+			"image"		"graphics/osx_win_dis_new_dark"	[$OSX1010]
 		}
 		"FrameMinimizeButton:hover"	
 		{
@@ -748,6 +750,7 @@
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon6"	
 			"image"		"graphics/osx_min_hov"	[$OSX]
+			"image"		"graphics/osx_min_hov_new"	[$OSX1010]
 		}
 		"FrameMinimizeButton:framefocus"	[$OSX]
 		{
@@ -756,6 +759,7 @@
 			}
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon0"	
+			"image"		"graphics/osx_min_def_new"	[$OSX1010]
 		}
 		"FrameMinimizeButton:framefocus:hover"	[$OSX]
 		{
@@ -764,6 +768,7 @@
 			}
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon6"	
+			"image"		"graphics/osx_min_hov_new"	[$OSX1010]
 		}
 		"FrameMinimizeButton:active"	[$OSX]
 		{
@@ -772,6 +777,7 @@
 			}
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon6"	
+			"image"		"graphics/osx_min_down_new"	[$OSX1010]
 		}
 		"FrameMaximizeButton"	
 		{
@@ -780,6 +786,7 @@
 			}
 			"image"		"graphics/i_clientIcon1"	
 			"image"		"graphics/osx_win_dis"	[$OSX]
+			"image"		"graphics/osx_win_dis_new_dark"	[$OSX1010]
 		}
 		"FrameMaximizeButton:hover"	
 		{
@@ -789,6 +796,7 @@
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon7"	
 			"image"		"graphics/osx_max_hov"	[$OSX]
+			"image"		"graphics/osx_max_hov_new"	[$OSX1010]
 		}
 		"FrameMaximizeButton:framefocus"	
 		{
@@ -798,6 +806,7 @@
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon1"	
 			"image"		"graphics/osx_max_def"	[$OSX]
+			"image"		"graphics/osx_max_def_new"	[$OSX1010]
 		}
 		"FrameMaximizeButton:framefocus:hover"	
 		{
@@ -807,6 +816,7 @@
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon7"	
 			"image"		"graphics/osx_max_hov"	[$OSX]
+			"image"		"graphics/osx_max_hov_new"	[$OSX1010]
 		}
 		"FrameMaximizeButton:active"	
 		{
@@ -816,6 +826,7 @@
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon7"	
 			"image"		"graphics/osx_max_down"	[$OSX]
+			"image"		"graphics/osx_max_down_new"	[$OSX1010]
 		}
 		"FrameRestoreButton"	
 		{
@@ -824,6 +835,7 @@
 			}
 			"image"		"graphics/i_clientIcon4"	
 			"image"		"graphics/osx_win_dis"	[$OSX]
+			"image"		"graphics/osx_win_dis_new"	[$OSX1010]
 		}
 		"FrameRestoreButton:hover"	
 		{
@@ -833,6 +845,7 @@
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon10"	
 			"image"		"graphics/osx_max_hov"	[$OSX]
+			"image"		"graphics/osx_max_hov_new"	[$OSX1010]
 		}
 		"FrameRestoreButton:framefocus"	
 		{
@@ -842,6 +855,7 @@
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon4"	
 			"image"		"graphics/osx_max_def"	[$OSX]
+			"image"		"graphics/osx_max_def_new"	[$OSX1010]
 		}
 		"FrameRestoreButton:framefocus:hover"	
 		{
@@ -851,6 +865,7 @@
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon10"	
 			"image"		"graphics/osx_max_hov"	[$OSX]
+			"image"		"graphics/osx_max_hov_new"	[$OSX1010]
 		}
 		"FrameRestoreButton:active"	
 		{
@@ -860,6 +875,7 @@
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon10"	
 			"image"		"graphics/osx_max_down"	[$OSX]
+			"image"		"graphics/osx_max_down_new"	[$OSX1010]
 		}
 		"FrameCloseButton"	
 		{
@@ -868,6 +884,7 @@
 			}
 			"image"		"graphics/i_clientIcon2"	
 			"image"		"graphics/osx_win_dis"	[$OSX]
+			"image"		"graphics/osx_win_dis_new_dark"	[$OSX1010]
 		}
 		"FrameCloseButton:hover"	
 		{
@@ -876,6 +893,7 @@
 			}
 			"image"		"graphics/i_clientIcon8"	
 			"image"		"graphics/osx_close_hov"	[$OSX]
+			"image"		"graphics/osx_close_hov_new"	[$OSX1010]
 		}
 		"FrameCloseButton:framefocus"	[$OSX]
 		{
@@ -884,6 +902,7 @@
 			}
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon2"	
+			"image"		"graphics/osx_close_def_new"	[$OSX1010]
 		}
 		"FrameCloseButton:framefocus:hover"	[$OSX]
 		{
@@ -892,6 +911,7 @@
 			}
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon8"	
+			"image"		"graphics/osx_close_hov_new"	[$OSX1010]
 		}
 		"FrameCloseButton:active"	[$OSX]
 		{
@@ -900,6 +920,7 @@
 			}
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon8"	
+			"image"		"graphics/osx_close_down_new"	[$OSX1010]
 		}
 		"FrameCloseButton:disabled"	
 		{
@@ -909,6 +930,7 @@
 			"bgcolor"		"none"	
 			"image"		"graphics/win32_win_close_disabled"	
 			"image"		"graphics/osx_win_dis"	[$OSX]
+			"image"		"graphics/osx_win_dis_new_dark"	[$OSX1010]
 		}
 		"FrameTitle"	
 		{
@@ -975,6 +997,10 @@
 				"0"		"fill( x0, y0, x1, y1, almostblack )"	
 			}
 			"inset"		"2 2 2 2"	
+		}
+		"HTMLFramelessPopup HTML"	
+		{
+			"inset"		"0 0 0 0"	
 		}
 		"Label"	
 		{
@@ -3148,6 +3174,48 @@
 		{
 			"textcolor"		"Friends.IgnoredColor"	
 		}
+		"view_friends"	[!$OSX]
+		{
+			"textcolor"		"LabelFocus"	
+			"bgcolor"		"none"	
+			"font-family"		"basefont"	
+			"font-size"		"14"	
+			"font-weight"		"400"	
+			"font-style"		"regular,uppercase"	
+			"padding-top"		"0"	
+			"padding-right"		"28"	
+			"render_bg"	
+			{
+				"1"		"image( x1-30, y0+20, x1, y1, graphics/icon_friendslist )"	
+			}
+		}
+		"view_friends"	[$OSX]
+		{
+			"textcolor"		"LabelFocus"	
+			"bgcolor"		"none"	
+			"font-family"		"basefont"	
+			"font-size"		"13"	
+			"font-weight"		"400"	
+			"font-style"		"regular,uppercase"	
+			"padding-top"		"-1"	
+			"padding-right"		"28"	
+			"render_bg"	
+			{
+				"1"		"image( x1-30, y0+20, x0, y0, graphics/icon_friendslist )"	
+			}
+		}
+		"view_friends:Hover"	
+		{
+			"textcolor"		"white"	
+			"render_bg"	
+			{
+				"1"		"image( x1-30, y0+20, x1, y1, graphics/icon_friendslist_over )"	
+			}
+		}
+		"view_friends:disabled"	
+		{
+			"textcolor"		"TextDisabled"	
+		}
 		"TabPageCloseButton"	
 		{
 			"padding-right"		"16"	
@@ -3202,6 +3270,10 @@
 		"NotifyRemoteClientInfo"	
 		{
 			"textcolor"		"176 172 165 255"	
+		}
+		"NotifyRemotePlayTogetherTitle"	
+		{
+			"textcolor"		"white"	
 		}
 		"SuperNavMenuItem:hover"	
 		{
@@ -3212,47 +3284,47 @@
 	"colors"	
 	{
 		"black"		"0 0 0 255"	
-		"dark"		"35 35 35 255"	
-		"almostBlack"		"22 22 22 255"	
-		"almostBlackTrans"		"22 22 22 204"	
+		"dark"		"28 33 42 255"	
+		"almostBlack"		"22 25 28 255"	
+		"almostBlackTrans"		"22 25 28 204"	
 		"white"		"255 255 255 255"	
-		"grey"		"153 153 153 255"	
+		"grey"		"142 152 167 255"	
 		"none"		"0 0 0 0"	
 		"yellow"		"255 255 0 255"	
-		"offwhite"		"164 164 164 255"	
+		"offwhite"		"159 162 168 255"	
 		"dullgreen"		"216 222 211 255"	
 		"maize"		"203 191 87 255"	
 		"red"		"255 51 51 255"	
-		"darkblue"		"39 100 130 255"	
-		"blue"		"54 143 179 255"	
+		"darkblue"		"35 55 75 255"	
+		"blue"		"94 109 140 255"	
 		"darkred"		"128 0 0 255"	
 		"darkpurple"		"64 0 64 255"	
-		"dark_blue"		"2 15 23 255"	
-		"med_blue"		"13 52 82 255"	
-		"bg_blue"		"10 36 56 255"	
-		"bordercolor"		"102 102 102 255"	
-		"darkcorner"		"73 73 73 255"	
+		"dark_blue"		"27 44 61 255"	
+		"med_blue"		"13 36 82 255"	
+		"bg_blue"		"10 25 56 255"	
+		"bordercolor"		"82 95 122 255"	
+		"darkcorner"		"58 68 88 255"	
 		"buttontext"		"Text"	
 		"buttontextactive"		"Text"	
 		"basefont"		"Arial"	
 		"basefont"		"Helvetica"	[$OSX]
-		"ButtonFace"		"102 102 102 200"	
-		"ButtonFace2"		"80 80 80 255"	
-		"ButtonFace3"		"92 92 92 255"	
-		"ButtonFaceDisabled"		"102 102 102 15"	
-		"ButtonFaceHover"		"99 99 99  240"	
-		"ButtonFaceActive"		"102 102 102  240"	
-		"ButtonFaceFocus"		"105 105 105  240"	
-		"ButtonFaceActiveFocus"		"105 105 105  255"	
-		"BlueBorder"		"33 33 33 255"	
-		"ButtonBorder"		"89 89 89 255"	
-		"ButtonBorderSubtle"		"79 79 79 255"	
+		"ButtonFace"		"98 108 119 20"	
+		"ButtonFace2"		"67 73 83 255"	
+		"ButtonFace3"		"86 93 106 255"	
+		"ButtonFaceDisabled"		"86 93 106 15"	
+		"ButtonFaceHover"		"84 91 104  240"	
+		"ButtonFaceActive"		"86 93 106  240"	
+		"ButtonFaceFocus"		"89	97	110  240"	
+		"ButtonFaceActiveFocus"		"89 97 110  255"	
+		"BlueBorder"		"26 31 40 255"	
+		"ButtonBorder"		"75 84 102 255"	
+		"ButtonBorderSubtle"		"75 84 102 255"	
 		"ButtonBorderPage"		"124 124 124 255"	
-		"ButtonBorderDisabled"		"75 75 75 255"	
-		"ButtonBorderDisabled2"		"65 65 65 255"	
-		"ButtonBorderActive"		"125 125 125 255"	
-		"ButtonBorderFocus"		"137 137 137 255"	
-		"ButtonBorderFocusSubtle"		"122 122 122 255"	
+		"ButtonBorderDisabled"		"112 120 136 255"	
+		"ButtonBorderDisabled2"		"52 61 78 255"	
+		"ButtonBorderActive"		"112 120 137 255"	
+		"ButtonBorderFocus"		"125 133 148 255"	
+		"ButtonBorderFocusSubtle"		"110 118 134 255"	
 		"Text"		"169 169 169 255"	
 		"Text2"		"169 169 169 255"	
 		"TextDisabled"		"$ClientTextColorDisabled"	
@@ -3260,71 +3332,71 @@
 		"TextSelected"		"208 208 208 255"	
 		"TextentrySelected"		"208 208 208 255"	
 		"TextSelectedBG"		"255 121 198 255"	
-		"TextGlowHover"		"124 124 124 255"	
-		"TextGlowSelected"		"169 169 169 255"	
+		"TextGlowHover"		"100 110 125 255"	
+		"TextGlowSelected"		"163 173 186 255"	
 		"TextGlowHoverSm"		"123 123 123 255"	
 		"TextGlowSelectedSm"		"142 142 142 255"	
 		"redborder"		"169 72 71 255"	
-		"NavLabel"		"153 153 153 255"	
+		"NavLabel"		"149 153 163 255"	
 		"Label"		"169 169 169 255"	
 		"Label2"		"182 182 182 255"	
 		"LabelDisabled"		"182 182 182 255"	
 		"LabelFocus"		"208 208 208 255"	
 		"SuperNav"		"white"	
 		"SuperNavHover"		"white"	
-		"ScrollGlyph"		"198 198 198 255"	
-		"ScrollGlyphDisabled"		"74 74 74 255"	
+		"ScrollGlyph"		"98 108 119 255"	
+		"ScrollGlyphDisabled"		"67 73 83 255"	
 		"ScrollGlyphFocus"		"242 242 242 255"	
-		"ScrollBG"		"54 54 54 255"	
-		"HeaderClient"		"53 53 53 255"	
-		"HeaderDialog"		"92 92 92 255"	
-		"TitleBar"		"26 26 26 80"	
+		"ScrollBG"		"53 59 66 255"	
+		"HeaderClient"		"42 49 63 255"	
+		"HeaderDialog"		"87 90 97 255"	
+		"TitleBar"		"21 24 31 80"	
 		"TitleBarFocus"		"14 31 56 80"	
 		"MenuBG"		"40 42 54 255"	
 		"Focus0"		"23 51 77 255"	
 		"Focus"		"255 121 198 255"	
 		"Focus2"		"21 70 107 255"	
-		"Focus3"		"82 82 82 255"	
-		"Focus4"		"67 158 191 255"	
+		"Focus3"		"75 80 89 255"	
+		"Focus4"		"61 102 143 255"	
 		"FocusGrid"		"85 117 161 240"	
 		"Highlight"		"16 53 82 120"	
-		"Highlight1"		"92 193 229 255"	
+		"Highlight1"		"118 202 235 255"	
 		"Highlight2"		"76 159 191 255"	
 		"Highlight3"		"173 69 71 255"	
 		"Highlight5"		"24 53 82 255"	
 		"Highlight5a"		"30 66 102 255"	
 		"Highlight5b"		"17 42 86 255"	
-		"BackgroundStartSubtle"		"20 20 20 155"	
-		"BackgroundStartSubtle"		"31 31 31 45"	[$OSX]
-		"BackgroundStartSubtlest"		"22 22 22 100"	
-		"BackgroundStart"		"22 22 22 180"	
-		"BackgroundStartOpaque"		"35 35 35 255"	
-		"ClientBG"		"30 30 30 255"	
+		"BackgroundStartSubtle"		"0 13 40 155"	
+		"BackgroundStartSubtle"		"0 15 46 45"	[$OSX]
+		"BackgroundStartSubtlest"		"0 15 44 100"	
+		"BackgroundStart"		"31 35 41 180"	
+		"BackgroundStartOpaque"		"31 35 41 255"	
+		"ClientBG"		"18 26 42 255"	
 		"ClientBGTop"		"25 32 46 255"	
 		"ClientGrouper"		"68 71 90 255"	
 		"DialogBG"		"40 42 54 255"	
-		"DialogBGFade1"		"56 56 56 255"	
-		"DialogBGFade2"		"56 56 56  0"	
-		"DarkClientBG"		"35 35 35 255"	
+		"DialogBGFade1"		"42 46 51 255"	
+		"DialogBGFade2"		"42 46 51 0"	
+		"DarkClientBG"		"31 34 41 255"	
 		"DarkDialogBG"		"34 34 34 255"	
-		"DarkClientBGTransparent"		"35 35 35 19"	
-		"DarkDialogBGTransparent"		"55 55 55 170"	
+		"DarkClientBGTransparent"		"28 31 37 19"	
+		"DarkDialogBGTransparent"		"41 47 55 170"	
 		"GameDetailsBlueTransparent"		"71 148 179 60"	
 		"GameDetailsGreenTransparent"		"71 148 179 160"	
 		"GameDetailsRedTransparent"		"71 148 179 160"	
 		"GameDetailsBlue"		"71 148 179 255"	
 		"GameDetailsGreen"		"71 148 179 255"	
 		"GameDetailsRed"		"71 148 179 255"	
-		"PropertySheetBG"		"58 58 58 255"	
-		"InteriorColor"		"52 52 52 255"	
-		"DialogBorder"		"117 117 117 255"	
-		"FillBG1"		"62 62 62 255"	
-		"FillBG2"		"69 69 69 255"	
+		"PropertySheetBG"		"50 55 61 255"	
+		"InteriorColor"		"46 49 54 255"	
+		"DialogBorder"		"110 113 119 255"	
+		"FillBG1"		"61 63 66 255"	
+		"FillBG2"		"64 65 69 255"	
 		"MenuBG1"		"40 42 54 255"	
 		"MenuBG2"		"40 42 54 255"	
-		"Divider"		"86 86 86 255"	
-		"SuperDivider"		"71 71 71 255"	
-		"DarkImageBorder"		"48 48 48 255"	
+		"Divider"		"76 84 93 255"	
+		"SuperDivider"		"66 72 80 255"	
+		"DarkImageBorder"		"46 50 58 255"	
 		"DarkImageOverlay"		"0 0 0 80"	
 		"inbox_active"		"158 194 29 255"	
 		"inbox_active2"		"155 199 9 255"	
@@ -3353,6 +3425,7 @@
 		"red6"		"38 1 1 255"	
 		"support_lock_ack1"		"187 157 47 255"	
 		"support_lock_ack2"		"193 166 67 255"	
+		"AnnouncementBlue"		"61 146 175 255"	
 		"ClayBG"		"70 70 70 255"	
 		"ClayButtonBG"		"85 85 85 255"	
 		"ClayEnabled"		"88 88 88 255"	
@@ -3430,11 +3503,11 @@
 		"TextEntry.IMEBGColor"		"225 225 225 255"	
 		"TextEntry.IMEFGColor"		"black"	
 		"Friends.InGameColor"		"80 250 123 255"	
-		"Friends.InGameHoverColor"		"130 251 160 255"	
+		"Friends.InGameHoverColor"		"80 250 123 255"	
 		"Friends.OnlineColor"		"139 233 253 255"	
-		"Friends.OnlineHoverColor"		"189 243 254 255"	
+		"Friends.OnlineHoverColor"		"139 233 253 255"	
 		"Friends.OfflineColor"		"68 71 90 255"	
-		"Friends.OfflineHoverColor"		"90 94 119 255"	
+		"Friends.OfflineHoverColor"		"68 71 90 255"	
 		"Friends.PanelDefault"		"Label"	
 		"Friends.PanelOver"		"Text"	
 		"Friends.PanelSelected"		"ClientBG"	
@@ -3468,10 +3541,10 @@
 		"ClientInnerBG"		"40 42 54 255"	
 		"ClientInnerItemsBG"		"68 71 90 224"	
 		"ClientInnerTextColor"		"205 205 205 255"	
-		"ClientInnerTextColorHalf"		"205 205 205 96.9"	
+		"ClientInnerTextColorHalf"		"205 205 205 255"	
 		"GameItem_Installed"		"205 205 205 255"	
 		"GameItem_Installed:hover"		"76 76 76 255"	
-		"GameItem_Uninstalled"		"205 205 205 96.9"	
+		"GameItem_Uninstalled"		"205 205 205 255"	
 		"GameItem_UnInstalled:hover"		"76 76 76 255"	
 		"cButton"		"68 71 90 255"	
 		"cButtonHover"		"68 71 90 255"	
@@ -3648,7 +3721,7 @@
 		}
 		"CFriendPanel"	
 		{
-			"inset"		"0 2 0 0"	
+			"inset"		"0 0 0 0"	
 			"bgcolor"		"none"	
 			"font-family"		"basefont"	
 			"font-size"		"14"	
@@ -3948,6 +4021,7 @@
 			}
 			"image"		"graphics/i_clientIcon0"	
 			"image"		"graphics/osx_win_dis"	[$OSX]
+			"image"		"graphics/osx_win_dis_new_dark"	[$OSX1010]
 		}
 		"FrameMinimizeButton:hover"	
 		{
@@ -3957,6 +4031,7 @@
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon6"	
 			"image"		"graphics/osx_min_hov"	[$OSX]
+			"image"		"graphics/osx_min_hov_new"	[$OSX1010]
 		}
 		"FrameMinimizeButton:framefocus"	[$OSX]
 		{
@@ -3965,6 +4040,7 @@
 			}
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon0"	
+			"image"		"graphics/osx_min_def_new"	[$OSX1010]
 		}
 		"FrameMinimizeButton:framefocus:hover"	[$OSX]
 		{
@@ -3973,6 +4049,7 @@
 			}
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon6"	
+			"image"		"graphics/osx_min_hov_new"	[$OSX1010]
 		}
 		"FrameMinimizeButton:active"	[$OSX]
 		{
@@ -3981,6 +4058,7 @@
 			}
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon6"	
+			"image"		"graphics/osx_min_down_new"	[$OSX1010]
 		}
 		"FrameMaximizeButton"	
 		{
@@ -3989,6 +4067,7 @@
 			}
 			"image"		"graphics/i_clientIcon1"	
 			"image"		"graphics/osx_win_dis"	[$OSX]
+			"image"		"graphics/osx_win_dis_new_dark"	[$OSX1010]
 		}
 		"FrameMaximizeButton:hover"	
 		{
@@ -3998,6 +4077,7 @@
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon7"	
 			"image"		"graphics/osx_max_hov"	[$OSX]
+			"image"		"graphics/osx_max_hov_new"	[$OSX1010]
 		}
 		"FrameMaximizeButton:framefocus"	
 		{
@@ -4007,6 +4087,7 @@
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon1"	
 			"image"		"graphics/osx_max_def"	[$OSX]
+			"image"		"graphics/osx_max_def_new"	[$OSX1010]
 		}
 		"FrameMaximizeButton:framefocus:hover"	
 		{
@@ -4016,6 +4097,7 @@
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon7"	
 			"image"		"graphics/osx_max_hov"	[$OSX]
+			"image"		"graphics/osx_max_hov_new"	[$OSX1010]
 		}
 		"FrameMaximizeButton:active"	
 		{
@@ -4025,6 +4107,7 @@
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon7"	
 			"image"		"graphics/osx_max_down"	[$OSX]
+			"image"		"graphics/osx_max_down_new"	[$OSX1010]
 		}
 		"FrameRestoreButton"	
 		{
@@ -4033,6 +4116,7 @@
 			}
 			"image"		"graphics/i_clientIcon4"	
 			"image"		"graphics/osx_win_dis"	[$OSX]
+			"image"		"graphics/osx_win_dis_new"	[$OSX1010]
 		}
 		"FrameRestoreButton:hover"	
 		{
@@ -4042,6 +4126,7 @@
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon10"	
 			"image"		"graphics/osx_max_hov"	[$OSX]
+			"image"		"graphics/osx_max_hov_new"	[$OSX1010]
 		}
 		"FrameRestoreButton:framefocus"	
 		{
@@ -4051,6 +4136,7 @@
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon4"	
 			"image"		"graphics/osx_max_def"	[$OSX]
+			"image"		"graphics/osx_max_def_new"	[$OSX1010]
 		}
 		"FrameRestoreButton:framefocus:hover"	
 		{
@@ -4060,6 +4146,7 @@
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon10"	
 			"image"		"graphics/osx_max_hov"	[$OSX]
+			"image"		"graphics/osx_max_hov_new"	[$OSX1010]
 		}
 		"FrameRestoreButton:active"	
 		{
@@ -4069,6 +4156,7 @@
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon10"	
 			"image"		"graphics/osx_max_down"	[$OSX]
+			"image"		"graphics/osx_max_down_new"	[$OSX1010]
 		}
 		"FrameCloseButton"	
 		{
@@ -4077,6 +4165,7 @@
 			}
 			"image"		"graphics/i_clientIcon2"	
 			"image"		"graphics/osx_win_dis"	[$OSX]
+			"image"		"graphics/osx_win_dis_new_dark"	[$OSX1010]
 		}
 		"FrameCloseButton:hover"	
 		{
@@ -4085,6 +4174,7 @@
 			}
 			"image"		"graphics/i_clientIcon8"	
 			"image"		"graphics/osx_close_hov"	[$OSX]
+			"image"		"graphics/osx_close_hov_new"	[$OSX1010]
 		}
 		"FrameCloseButton:framefocus"	[$OSX]
 		{
@@ -4093,6 +4183,7 @@
 			}
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon2"	
+			"image"		"graphics/osx_close_def_new"	[$OSX1010]
 		}
 		"FrameCloseButton:framefocus:hover"	[$OSX]
 		{
@@ -4101,6 +4192,7 @@
 			}
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon8"	
+			"image"		"graphics/osx_close_hov_new"	[$OSX1010]
 		}
 		"FrameCloseButton:active"	[$OSX]
 		{
@@ -4109,6 +4201,7 @@
 			}
 			"bgcolor"		"none"	
 			"image"		"graphics/i_clientIcon8"	
+			"image"		"graphics/osx_close_down_new"	[$OSX1010]
 		}
 		"FrameCloseButton:disabled"	
 		{
@@ -4118,6 +4211,7 @@
 			"bgcolor"		"none"	
 			"image"		"graphics/win32_win_close_disabled"	
 			"image"		"graphics/osx_win_dis"	[$OSX]
+			"image"		"graphics/osx_win_dis_new_dark"	[$OSX1010]
 		}
 		"FrameTitle"	
 		{
@@ -4184,6 +4278,10 @@
 				"0"		"fill( x0, y0, x1, y1, almostblack )"	
 			}
 			"inset"		"2 2 2 2"	
+		}
+		"HTMLFramelessPopup HTML"	
+		{
+			"inset"		"0 0 0 0"	
 		}
 		"Label"	
 		{
@@ -6357,6 +6455,48 @@
 		{
 			"textcolor"		"Friends.IgnoredColor"	
 		}
+		"view_friends"	[!$OSX]
+		{
+			"textcolor"		"LabelFocus"	
+			"bgcolor"		"none"	
+			"font-family"		"basefont"	
+			"font-size"		"14"	
+			"font-weight"		"400"	
+			"font-style"		"regular,uppercase"	
+			"padding-top"		"0"	
+			"padding-right"		"28"	
+			"render_bg"	
+			{
+				"1"		"image( x1-30, y0+20, x1, y1, graphics/icon_friendslist )"	
+			}
+		}
+		"view_friends"	[$OSX]
+		{
+			"textcolor"		"LabelFocus"	
+			"bgcolor"		"none"	
+			"font-family"		"basefont"	
+			"font-size"		"13"	
+			"font-weight"		"400"	
+			"font-style"		"regular,uppercase"	
+			"padding-top"		"-1"	
+			"padding-right"		"28"	
+			"render_bg"	
+			{
+				"1"		"image( x1-30, y0+20, x0, y0, graphics/icon_friendslist )"	
+			}
+		}
+		"view_friends:Hover"	
+		{
+			"textcolor"		"white"	
+			"render_bg"	
+			{
+				"1"		"image( x1-30, y0+20, x1, y1, graphics/icon_friendslist_over )"	
+			}
+		}
+		"view_friends:disabled"	
+		{
+			"textcolor"		"TextDisabled"	
+		}
 		"TabPageCloseButton"	
 		{
 			"padding-right"		"16"	
@@ -6411,6 +6551,10 @@
 		"NotifyRemoteClientInfo"	
 		{
 			"textcolor"		"176 172 165 255"	
+		}
+		"NotifyRemotePlayTogetherTitle"	
+		{
+			"textcolor"		"white"	
 		}
 		"SuperNavMenuItem:hover"	
 		{

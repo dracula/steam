@@ -42,6 +42,12 @@
 			"controlname"		"CDetailsGameSubHeaderPanel"	
 			"zpos"		"2"	
 		}
+		"compatsubheader"	
+		{
+			"controlname"		"CDetailsCompatSubHeaderPanel"	
+			"visible"		"1"	
+			"zpos"		"2"	
+		}
 		"linkslabel"	
 		{
 			"controlname"		"Label"	
@@ -540,6 +546,14 @@
 			"region"		"headertext"	
 			"dir"		"down"	
 			"margin-top"		"10"	
+		}
+		"place"	
+		{
+			"control"		"compatsubheader"	
+			"start"		"gamesubheader"	
+			"region"		"headertext"	
+			"dir"		"right"	
+			"margin-left"		"10"	
 		}
 		"place"	
 		{

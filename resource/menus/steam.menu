@@ -55,20 +55,20 @@
 	"View"	
 	{
 		"text"		"#steam_menu_view"	
-		"GamesDetails"	
+		"Library"	
 		{
-			"text"		"#steam_menu_games_details"	
-			"shellcmd"		"steam://nav/games/details"	
+			"text"		"#steam_menu_library"	
+			"shellcmd"		"steam://nav/games"	
 		}
-		"GamesList"	
+		"Hidden"	
 		{
-			"text"		"#steam_menu_games_list"	
-			"shellcmd"		"steam://nav/games/list"	
+			"text"		"#steam_menu_hidden_games"	
+			"shellcmd"		"steam://nav/library/collection/hidden"	
 		}
-		"GamesGrid"	
+		"Downloads"	
 		{
-			"text"		"#steam_menu_games_grid"	
-			"shellcmd"		"steam://nav/games/grid"	
+			"text"		"#steam_menu_downloads"	
+			"shellcmd"		"steam://open/downloads"	
 		}
 		"Divider"	
 		{
@@ -175,6 +175,11 @@
 			"text"		"#steam_menu_add_friend"	
 			"shellcmd"		"steam://friends/add"	
 		}
+		"EditProfileNameAvatar"	
+		{
+			"text"		"#steam_menu_edit_profile_name_avatar"	
+			"shellcmd"		"steam://url/SteamIDEditPage"	
+		}
 		"Divider"	
 		{
 		}
@@ -210,6 +215,13 @@
 		{
 			"text"		"#friends_busy"	
 			"shellcmd"		"steam://friends/status/busy"	
+			"checkable"		"1"	
+			"autocheck"		"0"	
+		}
+		"Invisible"	
+		{
+			"text"		"#friends_invisible"	
+			"shellcmd"		"steam://friends/status/invisible"	
 			"checkable"		"1"	
 			"autocheck"		"0"	
 		}

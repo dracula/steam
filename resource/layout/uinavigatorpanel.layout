@@ -148,6 +148,20 @@
 			"style"		"TextEntryURL"	
 			"group"		"url"	
 		}
+		"URLAnchor"	
+		{
+			"ControlName"		"Label"	
+			"labelText"		""	
+			"group"		"url"	
+			"zpos"		"-5"	
+		}
+		"LibraryAnchor"	
+		{
+			"ControlName"		"Label"	
+			"labelText"		""	
+			"group"		"library"	
+			"zpos"		"-5"	
+		}
 		"WebPanel"	
 		{
 			"style"		"WebPanelStyle"	
@@ -169,6 +183,7 @@
 			"style"		"LibrarySearch"	
 			"group"		"library"	
 			"tabposition"		"2"	
+			"unicode"		"1"	
 		}
 		"label_search_icon"	
 		{
@@ -680,7 +695,11 @@
 			}
 			"image"		"graphics/i_viewIcon10"	
 		}
-		"WebPanelStyle"	
+		"CBroadcastView"	
+		{
+			"inset"		"0 0 0 0"	
+		}
+		"CWebPanel"	
 		{
 			"bgcolor"		"none"	
 			"textcolor"		"label"	
@@ -728,7 +747,7 @@
 		}
 		"CSteamRootDialog TextEntryURL"	
 		{
-			"textcolor"		"101 101 101 255"	
+			"textcolor"		"101 105 112 255"	
 		}
 		"CSteamRootDialog TextEntryURL:hover"	
 		{
@@ -896,7 +915,7 @@
 	{
 		"place"	
 		{
-			"control"		"label_store,label_library,label_community,label_me,label_news,label_console"	
+			"control"		"label_store,label_library,label_community,label_me,label_news,label_console,label_oldlibrary"	
 			"x"		"72"	
 			"y"		"9"	
 			"spacing"		"9"	
@@ -1065,21 +1084,41 @@
 		}
 		"place"	
 		{
+			"control"		"URLAnchor"	
+			"align"		"left"	
+			"y"		"54"	
+			"height"		"28"	
+			"width"		"max"	
+		}
+		"place"	
+		{
+			"control"		"LibraryAnchor"	
+			"height"		"28"	
+			"width"		"max"	
+			"start"		"URLAnchor"	
+			"dir"		"down"	
+		}
+		"place"	
+		{
 			"control"		"emailreminderbar"	
-			"margin-top"		"81"	
-			"margin-left"		"8"	
-			"margin-right"		"8"	
+			"margin-top"		"0"	
+			"margin-left"		"6"	
+			"margin-right"		"6"	
 			"width"		"max"	
 			"height"		"48"	
+			"start"		"LibraryAnchor"	
+			"dir"		"down"	
 		}
 		"place"	
 		{
 			"control"		"phonereminderbar"	
-			"margin-top"		"81"	
-			"margin-left"		"8"	
-			"margin-right"		"8"	
+			"margin-top"		"0"	
+			"margin-left"		"0"	
+			"margin-right"		"6"	
 			"width"		"max"	
 			"height"		"80"	
+			"start"		"emailreminderbar"	
+			"dir"		"down"	
 		}
 		"place"	
 		{
@@ -1087,8 +1126,8 @@
 			"width"		"max"	
 			"height"		"max"	
 			"margin-top"		"0"	
-			"margin-left"		"0"	
-			"margin-right"		"8"	
+			"margin-left"		"2"	
+			"margin-right"		"7"	
 			"margin-bottom"		"20"	
 			"start"		"phonereminderbar"	
 			"dir"		"down"	
@@ -1099,8 +1138,8 @@
 			"width"		"max"	
 			"height"		"max"	
 			"margin-top"		"0"	
-			"margin-left"		"0"	
-			"margin-right"		"8"	
+			"margin-left"		"2"	
+			"margin-right"		"7"	
 			"margin-bottom"		"20"	
 			"start"		"phonereminderbar"	
 			"dir"		"down"	
@@ -1111,8 +1150,8 @@
 			"width"		"max"	
 			"height"		"max"	
 			"margin-top"		"0"	
-			"margin-left"		"0"	
-			"margin-right"		"9"	
+			"margin-left"		"2"	
+			"margin-right"		"8"	
 			"margin-bottom"		"21"	
 			"start"		"phonereminderbar"	
 			"dir"		"down"	
@@ -1123,8 +1162,8 @@
 			"width"		"max"	
 			"height"		"max"	
 			"margin-top"		"0"	
-			"margin-left"		"0"	
-			"margin-right"		"9"	
+			"margin-left"		"2"	
+			"margin-right"		"8"	
 			"margin-bottom"		"21"	
 			"start"		"phonereminderbar"	
 			"dir"		"down"	
@@ -1135,8 +1174,8 @@
 			"width"		"max"	
 			"height"		"max"	
 			"margin-top"		"0"	
-			"margin-left"		"0"	
-			"margin-right"		"9"	
+			"margin-left"		"2"	
+			"margin-right"		"8"	
 			"margin-bottom"		"20"	
 			"start"		"phonereminderbar"	
 			"dir"		"down"	
@@ -1147,8 +1186,8 @@
 			"width"		"max"	
 			"height"		"max"	
 			"margin-top"		"0"	
-			"margin-left"		"0"	
-			"margin-right"		"9"	
+			"margin-left"		"-7"	
+			"margin-right"		"0"	
 			"margin-bottom"		"21"	
 			"start"		"phonereminderbar"	
 			"dir"		"down"	
@@ -1159,8 +1198,8 @@
 			"width"		"max"	
 			"height"		"max"	
 			"margin-top"		"0"	
-			"margin-left"		"0"	
-			"margin-right"		"9"	
+			"margin-left"		"2"	
+			"margin-right"		"8"	
 			"margin-bottom"		"21"	
 			"start"		"phonereminderbar"	
 			"dir"		"down"	
@@ -1168,10 +1207,10 @@
 		"place"	
 		{
 			"control"		"BroadcastPageMin"	
-			"width"		"300"	
+			"width"		"298"	
 			"height"		"168"	
 			"margin-top"		"0"	
-			"margin-left"		"0"	
+			"margin-left"		"2"	
 			"margin-right"		"30"	
 			"margin-bottom"		"26"	
 			"dir"		"down"	
@@ -1180,10 +1219,10 @@
 		"place"	
 		{
 			"control"		"BroadcastPageMinHoriz"	
-			"width"		"300"	
+			"width"		"298"	
 			"height"		"168"	
 			"margin-top"		"0"	
-			"margin-left"		"0"	
+			"margin-left"		"2"	
 			"margin-right"		"30"	
 			"margin-bottom"		"40"	
 			"dir"		"down"	
@@ -1195,8 +1234,20 @@
 			"width"		"max"	
 			"height"		"max"	
 			"margin-top"		"0"	
-			"margin-left"		"0"	
-			"margin-right"		"9"	
+			"margin-left"		"-7"	
+			"margin-right"		"0"	
+			"margin-bottom"		"21"	
+			"start"		"phonereminderbar"	
+			"dir"		"down"	
+		}
+		"place"	
+		{
+			"control"		"NewLibraryPage"	
+			"width"		"max"	
+			"height"		"max"	
+			"margin-top"		"0"	
+			"margin-left"		"-6"	
+			"margin-right"		"0"	
 			"margin-bottom"		"21"	
 			"start"		"phonereminderbar"	
 			"dir"		"down"	
@@ -1207,7 +1258,7 @@
 			"width"		"max"	
 			"height"		"max"	
 			"margin-top"		"0"	
-			"margin-left"		"0"	
+			"margin-left"		"2"	
 			"margin-right"		"8"	
 			"margin-bottom"		"20"	
 			"start"		"phonereminderbar"	
@@ -1219,7 +1270,7 @@
 			"width"		"max"	
 			"height"		"max"	
 			"margin-top"		"0"	
-			"margin-left"		"0"	
+			"margin-left"		"2"	
 			"margin-right"		"8"	
 			"margin-bottom"		"20"	
 			"start"		"phonereminderbar"	
@@ -1231,7 +1282,7 @@
 			"width"		"max"	
 			"height"		"max"	
 			"margin-top"		"0"	
-			"margin-left"		"0"	
+			"margin-left"		"2"	
 			"margin-right"		"8"	
 			"margin-bottom"		"20"	
 			"start"		"phonereminderbar"	
