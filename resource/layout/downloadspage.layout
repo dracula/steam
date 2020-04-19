@@ -1,90 +1,87 @@
-"resource/layout/downloadspage.layout"	
+"resource/layout/downloadspage.layout"
 {
-	"controls"	
+	controls
 	{
-		"DownloadsPage"	
+		// the container
+		"DownloadsPage"
 		{
-			"ControlName"		"CDownloadsPage"	
-			"Style"		"DownloadsPageStyle"	
+			"ControlName"		"CDownloadsPage"
+			Style=DownloadsPageStyle
 		}
-		"downloadsummarypanel"	
+		
+		"downloadsummarypanel"
 		{
-			"ControlName"		"DownloadSummaryPanel"	
+			"ControlName"	"DownloadSummaryPanel"
 		}
-		"panel_list"	
+	
+		"panel_list"
 		{
-			"ControlName"		"SectionedListPanel"	
-			"Style"		"ListPanelStyle"	
+			"ControlName"	"SectionedListPanel"
+			Style=ListPanelStyle
 		}
+				
 	}
-	"styles"	
+	
+	styles
 	{
-		"SectionedListPanelCollapser"	
+		SectionedListPanelCollapser
 		{
-			"inset"		"0 0 0 -2"	
-			"bgcolor"		"ButtonBorderDisabled"	
+			inset = "0 0 0 -2"
+			bgcolor=ButtonBorderDisabled
 		}
-		"SectionHeaderStyle"	
+		SectionHeaderStyle
 		{
-			"font-style"		"uppercase"	
-			"render_bg"	
-			{
-				"0"		"gradient_horizontal( x0 - 2, y0, x1, y1, ButtonBorderDisabled, none )"	
+			font-style="uppercase"
+			render_bg 
+			{	
+				// background gradient
+				0="fill( x0, y0, x1, y1, draculaSelection )"
 			}
-			"render"	
+			render
 			{
-			}
-		}
-		"SectionHeaderStyleLabel"	
-		{
-			"inset"		"0 4 0 0"	
-			"font-style"		"uppercase"	
-		}
-		"DownloadsPageStyle"	
-		{
-			"bgcolor"		"none"	
-			"render"	
-			{
+				
 			}
 		}
-		"ListPanelStyle"	
+		SectionHeaderStyleLabel
 		{
-			"inset"		"0 0 0 0"	
-			"bgcolor"		"clientbg"	
-			"font-family"		"basefont"	
-			"font-size"		"14"	
-			"font-weight"		"400"	
-			"textcolor"		"Text"	
-			"selectedtextcolor"		"TextSelected"	
-			"selectedbgcolor"		"Focus"	
-			"shadowtextcolor"		"TextDisabled"	
-			"render"	
-			{
-			}
-			"render_bg"	
-			{
-				"0"		"gradient( x0, y0, x1, y0 + 149, ClientInnerBG, ClientInnerBG )"	
-				"1"		"fill( x0, y0 + 149, x1, y1, ClientInnerBG )"	
-			}
+			inset = "0 4 0 0"
+			font-style="uppercase"
 		}
+		DownloadsPageStyle
+		{
+
+			bgcolor=none
+			render
+			{
+
+			}			
+		}
+		ListPanelStyle
+		{
+			inset = "0 0 0 0"
+			bgcolor=clientbg
+			font-family=basefont
+			font-size=14
+			font-weight=400
+			textcolor="Text"
+			selectedtextcolor="TextSelected"
+			selectedbgcolor="Focus"
+			shadowtextcolor="TextDisabled"	// the color of disabled line items		
+			render
+			{
+
+			}
+			render_bg 
+			{	
+				// background gradient
+				0="fill( x0, y0, x1, y1, ClientBG)"
+			}
+		}	
 	}
-	"layout"	
+
+	layout
 	{
-		"region"	
-		{
-			"name"		"main"	
-			"x"		"0"	
-			"y"		"0"	
-			"margin"		"5"	
-		}
-		"place"	
-		{
-			"control"		"downloadsummarypanel,panel_list"	
-			"dir"		"down"	
-			"region"		"main"	
-			"width"		"max"	
-			"height"		"max"	
-			"spacing"		"0"	
-		}
+		region { name=main x=0 y=0 margin=5 }
+		place { control="downloadsummarypanel,panel_list" dir=down region=main width=max height=max spacing=0 }
 	}
 }
