@@ -18,7 +18,7 @@
 			render_bg
 			{
 				// top area and graphic
-				0="gradient( x0, y0, x1, y1, MenuBG1, MenuBG2 )"
+				0="fill( x0, y0, x1, y1, MenuBG )"
 
 				1="fill( x0 + 1, y0, x1 - 1, y0 + 1, blueborder )"  // top
 				2="fill( x0 + 1, y1 - 1, x1 - 1, y1, blueborder )"  // bottom

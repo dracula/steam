@@ -207,8 +207,8 @@
 			render_bg
 			{
 				// background fill
-				0="fill( x0 + 2, y0 + 1, x0 + 273, y1 - 1, clientgrouper )"
-	      1="fill( x0 + 279, y0 + 1, x1 - 10, y1 - 1, clientgrouper )"
+				0="fill( x0 + 2, y0 + 1, x0 + 273, y1 - 1, ClientBG )"
+	            1="fill( x0 + 279, y0 + 1, x1 - 10, y1 - 1, ClientBG )"
 
 
 			}
@@ -642,7 +642,7 @@
 			inset="1 1 1 1"
 			render_bg
 			{
-				0="fill( x0, y0, x1, y1, almostblack )" // bg
+				0="fill( x0, y0, x1, y1, ClientBG )" // bg
 			}
 		}
 
@@ -653,7 +653,7 @@
 			inset="0 0 0 0"
 			render_bg
 			{
-				0="fill( x0, y0, x1, y1, almostblack )" // bg
+				0="fill( x0, y0, x1, y1, ClientBG )" // bg
 			}
 		}
 

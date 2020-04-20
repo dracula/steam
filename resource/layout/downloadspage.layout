@@ -27,7 +27,7 @@
 		SectionedListPanelCollapser
 		{
 			inset = "0 0 0 -2"
-			bgcolor=ButtonBorderDisabled
+			bgcolor=draculaSelection
 		}
 		SectionHeaderStyle
 		{
@@ -35,7 +35,7 @@
 			render_bg 
 			{	
 				// background gradient
-				0="fill( x0, y0, x1, y1, draculaSelection )"
+				0="fill( x0 - 2, y0, x1, y1, draculaSelection )"
 			}
 			render
 			{

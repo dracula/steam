@@ -28,9 +28,9 @@ steam.styles
     darkred="128 0 0 255"
     darkpurple="64 0 64 255"
 
-    dark_blue "27 44 61 255"
-    med_blue "13 36 82 255"
-    bg_blue "10 25 56 255"
+    dark_blue "40 42 54 255"
+    med_blue "40 42 54 255"
+    bg_blue "40 42 54 255"
 
     // control colors
     bordercolor="82 95 122 255"
@@ -119,8 +119,9 @@ steam.styles
     BackgroundStartOpaque="31 35 41 255"
 
     ClientBG="40 42 54 255"
+    ClientInnerBG="40 42 54 255"
     ClientBGTop="25 32 46 255"
-    ClientGrouper="40 46 54 255"
+    ClientGrouper="40 42 54 255"
     DialogBG="40 42 54 255"
     DialogBGFade1="42 46 51 255"
     DialogBGFade2="42 46 51 0"
@@ -143,11 +144,11 @@ steam.styles
 
     DialogBorder="68 71 90 255" // border color around any dialog
 
-    FillBG1="61 63 66 255" //gradient colors
-    FillBG2="64 65 69 255"
+    FillBG1="40 42 54 255" //gradient colors
+    FillBG2="40 42 54 255"
 
-    MenuBG1="56 60 68 255" //gradient colors
-    MenuBG2="41 45 51 255"
+    MenuBG1="40 42 54 255" //gradient colors
+    MenuBG2="40 42 54 255"
 
     Divider="76 84 93 255"
     SuperDivider="66 72 80 255"
@@ -504,7 +505,7 @@ steam.styles
       inset="0 2 0 0"
       render_bg
 			{
-				0="gradient_horizontal( x0-21, y0+1, x0+230, y1+1, propertysheetbg, Friends.ListHeaderFadeOut )"
+				0="fill( x0, y0, x1, y1, ClientBG )"
 			}
     }
 
@@ -1066,7 +1067,7 @@ steam.styles
 		font-weight=400
 		textcolor="Text"
 		selectedtextcolor="TextSelected"
-		selectedbgcolor="Focus"
+		selectedbgcolor="ClientBG"
 		shadowtextcolor="TextDisabled"	// the color of disabled line items
 		render
 			{	}
@@ -1113,7 +1114,7 @@ steam.styles
 		font-weight=400
 		textcolor="text2"
 		selectedtextcolor="TextSelected"
-		selectedbgcolor="Focus"
+		selectedbgcolor="draculaSelection"
 		shadowtextcolor="TextDisabled"	// the color of disabled line items
 		inset="0 -1 1 1"
 		render
@@ -1133,7 +1134,7 @@ steam.styles
 		font-weight=400
 		textcolor="Text2"
 		selectedtextcolor="TextSelected"
-		selectedbgcolor="Focus"
+		selectedbgcolor="ClientBG"
 		inset="0 -1 1 1"
 		bgcolor=none
     render_bg
@@ -1151,15 +1152,14 @@ steam.styles
       font-weight=400
       textcolor="Text"
       selectedtextcolor="textselected"
-      selectedbgcolor="Focus"
+      selectedbgcolor="DialogBG"
       shadowtextcolor="TextDisabled"
       inset="0 -1 1 1"
       render_bg {
         // background gradient
-        0="gradient( x0, y0, x1, y0 + 432, dialogbg, almostblack )"
-        1="fill( x0, y0 + 432, x1, y1, almostblack )"
-        2="gradient( x0, y0, x1, y0 + 31, dialogbgFade1, dialogbgFade2 )"
-
+                0="gradient( x0, y0, x1, y0 + 432, ClientInnerBG, ClientInnerBG )"	
+				1="fill( x0, y0 + 432, x1, y1, ClientInnerBG )"	
+				2="gradient( x0, y0, x1, y0 + 31, ClientInnerBG, ClientInnerBG )"	
         }
     }
 
@@ -1413,7 +1413,7 @@ steam.styles
 		render_bg
 		{
 			// fill
-			0="fill (x0, y0 + 1, x1, y1, propertysheetbg )" // bg fill
+			0="fill (x0, y0, x1, y1, ClientBG )" // bg fill
 		}
 	}
 
@@ -1429,7 +1429,7 @@ steam.styles
 		bgcolor=none
 		render_bg
 		{
-			1="fill( x0 , y0, x1, y1 - 1, propertysheetbg  )"
+			1="fill( x0 , y0, x1, y1 - 1, ClientBG  )"
 		}
 	}
 
@@ -1453,7 +1453,7 @@ steam.styles
           0="image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse )"
         }
         render_bg {
-        1="fill( x0 + 1, y0, x1 - 1, y1, propertysheetbg )"
+        1="fill( x0 + 1, y0, x1 - 1, y1, ClientBG )"
         }
 	}
 
@@ -1465,7 +1465,7 @@ steam.styles
           0="image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse_over )"
         }
         render_bg {
-        1="fill( x0 + 1, y0, x1 - 1, y1, propertysheetbg )"
+        1="fill( x0 + 1, y0, x1 - 1, y1, ClientBG )"
 		  }
   }
   ListPanelColumnSelectButton:selected
@@ -1476,7 +1476,7 @@ steam.styles
           0="image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse_over )"
         }
         render_bg {
-        1="fill( x0 + 1, y0, x1 - 1, y1, propertysheetbg )"
+        1="fill( x0 + 1, y0, x1 - 1, y1, ClientBG)"
 		  }
   }
 
@@ -1605,7 +1605,7 @@ steam.styles
 		render_bg
 		{
 			// background gradient
-			0="gradient( x0, y0, x1+16, y1, dialogbg, almostblack )"
+			0="fill( x0, y0, x1, y1, draculaSelection)"
 		}
 	}
 
@@ -1724,12 +1724,11 @@ steam.styles
 		}
 
 		render {}
-		corner_rounding=1
     }
 
     MenuBar
     {
-		bgcolor=dialogbg
+		bgcolor="MenuBG"
 		padding-right=1
 		padding-left=6
 		padding-top=2
@@ -1859,7 +1858,7 @@ steam.styles
 		render_bg
 		{
 			// background gradient
-			0="gradient( x0, y0 + 18, x1, y1, DialogBG, PropertySheetBG )"
+			0="fill( x0, y0, x1, y1, DialogBG)"
 		}
     }
 
@@ -2399,7 +2398,7 @@ steam.styles
 
     SectionedListPanel
     {
-			bgcolor="propertysheetbg"
+			bgcolor="ClientBG"
 			font-family=basefont
 			font-size=14
 			font-weight=400
@@ -2414,8 +2413,8 @@ steam.styles
 		      render_bg
       {
        	// background fill
-	   		0="gradient( x0, y0, x1, y0 + 140, dialogbg, almostblack )"
-	   		1="fill( x0, y0 + 140, x1, y1, almostblack )"
+	   		0="gradient( x0, y0, x1, y0 + 140, dialogbg, ClientBG )"
+	   		1="fill( x0, y0 + 140, x1, y1, ClientBG )"
       }
       inset="1 -1 1 1"
     }
@@ -2433,8 +2432,7 @@ steam.styles
       render_bg
       {
        	// background fill
-	   		0="gradient( x0, y0, x1, y0 + 140, dialogbg, almostblack )"
-	   		1="fill( x0, y0 + 140, x1, y1, almostblack )"
+	   		0="fill( x0, y0, x1, y1, DialogBG )"
       }
     }
 
@@ -2932,7 +2930,7 @@ steam.styles
 			render_bg
 			{
 				// background gradient
-				1="gradient( x0, y0, x1, y1, dialogbg, almostblack )"
+				1="fill( x0, y0, x1, y1, dialogbg)"
 			}
     }
 
@@ -3446,7 +3444,7 @@ steam.styles
 
 		render_bg
 			{
-						 0="gradient( x0, y0, x1 -16, y1, darkdialogbg, almostblack )"
+						 0="fill( x0, y0, x1, y1, ClientBG )"
 			}
 		}
 
@@ -3589,9 +3587,8 @@ steam.styles
 		render_bg
 		{
 			// top area and graphic
-			0="fill( x0, y0, x1, y1, MenuBg )"
-			1="image( x0, y0, x1, y1, graphics/clienttexture8)"
-
+			0="fill( x0, y0, x1, y1, MenuBG )"
+			1="fill( x0, y0, x1, y1, MenuBG )"
 								// lines around
 				2="fill( x0 + 1, y0, x1 - 1, y0 + 1, blueborder )"  // top
 				3="fill( x0 + 1, y1 - 1, x1 - 1, y1, blueborder )"  // bottom
