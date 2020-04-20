@@ -1036,7 +1036,7 @@ steam.styles
 		bgcolor="none"
 		render_bg
 			{
-				1="gradient( x0, y0, x1, y0 + 48, titlebar, none )"
+				1="gradient( x0, y0, x1, y0 + 48, none, none )"
 
 			}
     }
@@ -1053,7 +1053,7 @@ steam.styles
 		textcolor="texthover" [$OSX]
 	  render_bg
 	    {
-		     2="gradient( x0, y0, x1, y0 + 48, TitleBarfocus, none )"
+		     2="gradient( x0, y0, x1, y0 + 48, none, none )"
 	    }
     }
 
