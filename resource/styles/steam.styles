@@ -1616,7 +1616,7 @@ steam.styles
 		font-style="uppercase"
 		render_bg
 		{
-			0="fill( x0, y0, x1, y1, draculaSelection  )"
+			0="fill( x0, y0, x1, y1, MenuBG)"
 		}
     }
 
@@ -1802,16 +1802,16 @@ steam.styles
 		render_bg {}
     }
 
-  MenuItem:selected
+  	MenuItem:selected
     {
 		textcolor="TextHover"
 		bgcolor="none"
     }
 
-  MenuItem:hover
+	MenuItem:hover
     {
 		textcolor="white"
-		bgcolor="none"
+		bgcolor="draculaSelection"
     }
 
     MenuItem:disabled
