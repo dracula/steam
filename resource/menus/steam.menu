@@ -111,4 +111,11 @@
 		SystemInfo						{	text="#steam_menu_systeminfo"			command="SystemInfo" }
 		About							{	text="#steam_about"						command="About" }
 	}
+	Dracula
+	{
+		"Report Bug"
+		{
+			shellcmd="steam://openurl/https://github.com/tintinmaster/steam/issues/new/choose"
+		}
+	}
 }

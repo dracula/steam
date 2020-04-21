@@ -54,9 +54,9 @@ steam.styles
     basefont="Helvetica" [$OSX]
 
     // new control colors
-    ButtonFace="98 108 119 20"
-    ButtonFace2="67 73 83 255" // for use in main client list panel column header, some button states
-    ButtonFace3="86 93 106 255" // button cornering pixels
+    ButtonFace="40 42 54 20"
+    ButtonFace2="40 42 54 255" // for use in main client list panel column header, some button states
+    ButtonFace3="40 42 54 255" // button cornering pixels
     ButtonFaceDisabled="86 93 106 15"
     ButtonFaceHover="84 91 104  240"   /// hover!
     ButtonFaceActive="86 93 106  240"  // not sure what this state is...
@@ -103,8 +103,8 @@ steam.styles
     HeaderClient="42 49 63 255" // the color of the List box header in the main client window
     HeaderDialog="87 90 97 255" // the color of the list box header in other windows
 
-    TitleBar="21 24 31 80"
-    TitleBarFocus="14 31 56 80"
+    TitleBar="40 42 54 80"
+    TitleBarFocus="40 42 54 80"
     MenuBG="40 42 54 255"
 
     Focus0="23 51 77 255" // used in window frame borders
@@ -424,7 +424,7 @@ steam.styles
 			textcolor="TextHover"
 			render_bg
 	      {
-	        0="gradient( x0, y0, x1, y1, buttonfacefocus, propertysheetbg )"
+	        0="fill( x0, y0, x1, y1, draculaCFAccent )"
 	      }
     }
 
@@ -433,7 +433,7 @@ steam.styles
       textcolor="TextHover"
       render_bg
       {
-        0="gradient( x0, y0, x1, y1,  buttonfacefocus, propertysheetbg )"
+        0="fill( x0, y0, x1, y1,  draculaCFAccent )"
       }
     }
 
@@ -443,7 +443,7 @@ steam.styles
        render_bg
       {
         // background fill
-        0="gradient( x0, y0, x1, y1, DialogBG, propertysheetbg )"
+        0="fill( x0, y0, x1, y1, draculaCFAccent )"
       }
     }
 
