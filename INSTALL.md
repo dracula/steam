@@ -16,8 +16,8 @@ Use the terminal, Luke:
 
 1. download or clone this repository
 2. extract (if downloaded compressed)
-3. move the extracted folder into your Steam skin folder (which is in the Steam base folder)
-   default location: C: -> Program Files -> Steam -> Skins
+3. move the extracted folder into your Steam skin folder (which is in the Steam base folder)  
+   default location: `C: -> Program Files -> Steam -> Skins`
 4. open Steam and go to `Steam -> Settings -> Preferences` and open the section `Interface`
 5. select the skin `Dracula` and restart Steam, done!
 
