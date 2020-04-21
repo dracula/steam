@@ -10,8 +10,8 @@ steam.styles
     // If you want to make everything colorful, change this value to your prefered Color; default is "098 114 164 255"
     draculaAccent   =   "098 114 164 255"
     
-    //Change this color to one of the values below, to set your prefered ColorFul accent color; default is pink
-    draculaCFAccent =   "255 121 198 255"
+    // If you want to change the color of the notifications left of your accountmenu you can do it here; default is pink
+    notificationColor=   "255 121 198 255"
 
     draculaCyan	    =   "139 233 253 255"
     draculaGreen    =   "080 250 123 255"
@@ -424,7 +424,7 @@ steam.styles
 			textcolor="TextHover"
 			render_bg
 	      {
-	        0="fill( x0, y0, x1, y1, draculaCFAccent )"
+	        0="fill( x0, y0, x1, y1, draculaSelection )"
 	      }
     }
 
@@ -433,7 +433,7 @@ steam.styles
       textcolor="TextHover"
       render_bg
       {
-        0="fill( x0, y0, x1, y1,  draculaCFAccent )"
+        0="fill( x0, y0, x1, y1,  draculaSelection )"
       }
     }
 
@@ -443,7 +443,7 @@ steam.styles
        render_bg
       {
         // background fill
-        0="fill( x0, y0, x1, y1, draculaCFAccent )"
+        0="fill( x0, y0, x1, y1, draculaSelection )"
       }
     }
 
@@ -453,7 +453,7 @@ steam.styles
        render_bg
       {
         // background fill
-        0="fill( x0, y0, x1, y1, draculaCFAccent )"
+        0="fill( x0, y0, x1, y1, draculaSelection )"
       }
     }
 
@@ -463,7 +463,7 @@ steam.styles
       render_bg
       {
         // background fill
-        0="fill( x0, y0, x1, y1, draculaCFAccent)"
+        0="fill( x0, y0, x1, y1, draculaSelection)"
       }
     }
 
@@ -473,7 +473,7 @@ steam.styles
       render_bg
       {
         // background fill
-        0="fill( x0, y0, x1, y1, draculaCFAccent )"
+        0="fill( x0, y0, x1, y1, draculaSelection )"
       }
     }
 
@@ -674,7 +674,7 @@ steam.styles
     render_bg
       {
         // background fill
-        0="fill( x0, y0, x1, y1, draculaCFAccent)"
+        0="fill( x0, y0, x1, y1, draculaSelection)"
       }
     }
 
@@ -685,7 +685,7 @@ steam.styles
     render_bg
       {
         // background fill
-        0="fill( x0, y0, x1, y1, draculaCFAccent)"
+        0="fill( x0, y0, x1, y1, draculaAccent)"
       }
     }
 
@@ -703,7 +703,7 @@ steam.styles
       render_bg
       {
         // background fill
-        0="fill( x0, y0, x1, y1, draculaCFAccent )"
+        0="fill( x0, y0, x1, y1, draculaSelection )"
       }
     }
 
@@ -721,7 +721,7 @@ steam.styles
       render_bg
       {
         // background fill
-        0="fill( x0, y0, x1, y1, draculaCFAccent )"
+        0="fill( x0, y0, x1, y1, draculaAccent )"
       }
     }
 
@@ -2274,7 +2274,7 @@ steam.styles
 		render_bg
 		{
 			// center fill
-			0="fill( x0 + 2, y0 + 6, x1 - 4, y1 - 5, ButtonFace )"
+			0="fill( x0 + 2, y0 + 6, x1 - 4, y1 - 5, ButtonFaceActive )"
 		}
     }
 
@@ -2336,11 +2336,9 @@ steam.styles
 		bgcolor="none"
 		render{ }
 		render_bg
-		{
-
+		{	
 			//background fill
-					1="gradient( x0, y0, x1, y1, dialogbg, almostblack )"
-			2="gradient( x0 + 2, y0 + 6, x1 - 4, y0 + 200, draculaSelection, none)"
+			0="fill( x0, y0, x1, y1, draculaAccent)"
 		}
     }
 
@@ -2702,7 +2700,7 @@ steam.styles
 	 		render_bg
 		{
 			// background fill
-			0="fill( x0, y0, x1, y1, draculaCFAccent)"
+			0="fill( x0, y0, x1, y1, draculaSelection)"
 		}
     }
 
@@ -2726,7 +2724,7 @@ steam.styles
       render_bg
       {
         	// background fill
-		0="fill( x0, y0, x1, y1, draculaCFAccent )"
+		0="fill( x0, y0, x1, y1, draculaSelection )"
       }
     }
 
@@ -2761,7 +2759,7 @@ steam.styles
       bgcolor="none"
       render_bg
       {
-		0="fill( x0, y0, x1, y1, draculaCFAccent )"
+		0="fill( x0, y0, x1, y1, draculaSelection )"
       }
     }
 
@@ -2771,7 +2769,7 @@ steam.styles
       bgcolor="none"
       render_bg
       {
-		0="fill( x0, y0, x1, y1, draculaCFAccent )"
+		0="fill( x0, y0, x1, y1, draculaSelection )"
       }
     }
 
