@@ -354,7 +354,7 @@
 			render_bg
 			{
 				// background fill
-				0="fill(  x0, y0, x1, y1, draculaCFAccent )"
+				0="fill(  x0, y0, x1, y1, draculaAccent )"
 				1="image( x1-24, y0+4, x1 -2, y1 + 2, graphics/inbox_notification_inactive )"
 
 			}
@@ -375,7 +375,7 @@
 			render_bg
 			{
 				// background fill
-				0="fill( x0 , y0, x1, y1, draculaCFAccent )"
+				0="fill( x0 , y0, x1, y1, notificationColor )"
 				1="image( x1-21, y0+4, x1-2, y1+2, graphics/inbox_notification )"
 			}
 		}
@@ -385,7 +385,7 @@
 			render_bg
 			{
 				// background fill
-				0="fill( x0 , y0, x1, y1, draculaCFAccent )"
+				0="fill( x0 , y0, x1, y1, notificationColor )"
 				1="image( x1-21, y0+4, x1-2, y1+2, graphics/inbox_notification )"
 			}
 		}
@@ -395,7 +395,7 @@
 			{
 				// background fill
 
-				0="fill(  x0, y0, x1, y1, draculaCFAccent )"
+				0="fill(  x0, y0, x1, y1, draculaAccent )"
 				1="image( x1-21, y0+4, x1-2, y1+2, graphics/inbox_notification )"
 			}
 		}
@@ -436,7 +436,7 @@
 			render_bg
 			{
 				// background fill
-				0="fill(  x0, y0, x1, y1, draculaCFAccent )"
+				0="fill(  x0, y0, x1, y1, notificationColor )"
 				1="image( x1-24, y0+4, x1 -2, y1 + 1, graphics/updatenew_notification )"
 			}
 		}
