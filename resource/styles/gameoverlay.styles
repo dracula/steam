@@ -16,7 +16,7 @@ gameoverlay.styles
 		{
 			render_bg
 			{
-				0="gradient( x0, y0, x1, y1, mostly_black, semi_gray )"
+				0="fill( x0, y0, x1, y1, ClientBG )"
 			}		
 		}	
 		
@@ -24,7 +24,7 @@ gameoverlay.styles
 		{
 			font-size=28
 			font-style=uppercase
-			textcolor="80 154 191 255"
+			textcolor="98 114 164 255"
 		}
 	}
 }

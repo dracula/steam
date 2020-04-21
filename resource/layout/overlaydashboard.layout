@@ -68,19 +68,19 @@
 		{
 			render_bg
 			{
-				0="gradient( x0, y0, x1, y1, backgroundOverlayTop, none )"
+				//0="gradient( x0, y0, x1, y1, backgroundOverlayTop, none )"
 			}
 		}
 		bottomfade
 		{
 			render_bg
 			{
-				0="gradient( x0, y0, x1, y1, none, black )"
+				//0="gradient( x0, y0, x1, y1, none, black )"
 			}
 		}	
 		overlaymain
 		{
-			bgcolor = "43 43 43 96"
+			bgcolor = "40 42 54 96"
 		}	
 				
 		topbar
@@ -91,7 +91,7 @@
 		}
 		detailsboxtitle
 		{
-				textcolor=Highlight2
+			textcolor=Highlight2
 		}
 				
 		OverlayURLLabel
