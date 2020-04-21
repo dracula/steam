@@ -120,7 +120,7 @@ steam.styles
 
     ClientBG="40 42 54 255"
     ClientInnerBG="40 42 54 255"
-    ClientBGTop="25 32 46 255"
+    ClientBGTop="40 42 54 255"
     ClientGrouper="40 42 54 255"
     DialogBG="40 42 54 255"
     DialogBGFade1="42 46 51 255"
@@ -1798,7 +1798,7 @@ steam.styles
 		font-weight=400
 		inset="0 0 0 0"
 		padding-right=6
-		bgcolor="none"
+		bgcolor="MenuBG"
 		render_bg {}
     }
 
