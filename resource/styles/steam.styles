@@ -5,11 +5,22 @@ steam.styles
     // colors section can include colors in "R G B A" form, or references to already defined colors;
     // it can also include just general settings controls can pull from for extra customization
 
-    draculaAccent="98 114 164 255"
-    draculaCFAccent="255 121 198 255"
-    draculaSelection="68 71 90 255"
+    draculaSelection=   "068 071 090 255"
 
-    draculaGreen="80 250 123 255"
+    // If you want to make everything colorful, change this value to your prefered Color; default is "098 114 164 255"
+    draculaAccent   =   "098 114 164 255"
+    
+    //Change this color to one of the values below, to set your prefered ColorFul accent color; default is pink
+    draculaCFAccent =   "255 121 198 255"
+
+    draculaCyan	    =   "139 233 253 255"
+    draculaGreen    =   "080 250 123 255"
+    draculaOrange   =   "255 184 108 255"
+    draculaPink     =   "255 121 198 255"
+    draculaPurple   =   "189 147 249 255"
+    draculaRed      =   "255 085 085 255"
+    draculaYellow   =   "241 250 140 255"
+
 
     black="0 0 0 255"
     dark="28 33 42 255"
