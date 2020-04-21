@@ -115,7 +115,7 @@
 	{
 		"Report Bug"
 		{
-			shellcmd="steam://openurl/https://github.com/tintinmaster/steam/issues/new/choose"
+			shellcmd="steam://openurl/https://github.com/dracula/steam/issues/new/choose"
 		}
 	}
 }
