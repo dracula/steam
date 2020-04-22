@@ -1,873 +1,797 @@
-"resource/layout/steamrootdialog.layout"	
+"resource/layout/steamrootdialog.layout"
 {
-	"controls"	
+	controls
 	{
-		"fullscreen"	
+		"fullscreen"
 		{
-			"ControlName"		"Button"	
-			"style"		"FullscreenButton"	
-			"command"		"fullscreen"	
-			"tooltiptext"		"#tooltip_view_fullscreen"	
+			"ControlName"		"Button"
+			style="FullscreenButton"
+			command="fullscreen"
+			tooltiptext="#tooltip_view_fullscreen"
 		}
-		"startvr"	
+
+		"startvr"
 		{
-			"ControlName"		"Button"	
-			"style"		"VRButton"	
-			"command"		"startvr"	
-			"tooltiptext"		"#tooltip_view_vr_start"	
+			"ControlName"		"Button"
+			style="VRButton"
+			command="startvr"
+			tooltiptext="#tooltip_view_vr_start"
 		}
-		"exitvr"	
+
+		"exitvr"
 		{
-			"ControlName"		"Button"	
-			"style"		"VRButtonExit"	
-			"command"		"exitvr"	
-			"tooltiptext"		"#tooltip_view_vr_exit"	
+			"ControlName"		"Button"
+			style="VRButtonExit"
+			command="exitvr"
+			tooltiptext="#tooltip_view_vr_exit"
 		}
-		"UINavigatorPanel"	
+
+		"UINavigatorPanel"
 		{
-			"ControlName"		"CUINavigatorPanel"	
-			"zpos"		"-2"	
+			"ControlName"		"CUINavigatorPanel"
+			zpos=-2
 		}
-		"UIStatusPanel"	
+
+		"UIStatusPanel"
 		{
-			"ControlName"		"CUIStatusPanel"	
-			"zpos"		"-2"	
+			"ControlName"		"CUIStatusPanel"
+			zpos=-2
 		}
-		"MenuBar"	
+
+		"MenuBar"
 		{
-			"ControlName"		"MenuBar"	
-			"style"		"RootMenu"	
+			"ControlName"		"MenuBar"
+			style=RootMenu
 		}
-		"SupportAlert"	
+
+		SupportAlert
 		{
-			"ControlName"		"Button"	
-			"labelText"		"#Steam_SupportAlert"	
-			"style"		"support_alert"	
-			"textAlignment"		"center"	
-			"command"		"OpenSupportAlertWindow"	
+			ControlName=Button
+			labelText="#Steam_SupportAlert"
+			style="support_alert"
+			textAlignment=center
+			command="OpenSupportAlertWindow"
 		}
-		"EOLAlert"	
+
+		EOLAlert
 		{
-			"ControlName"		"Button"	
-			"labelText"		"#Steam_EOLAlert"	
-			"style"		"support_alert"	
-			"textAlignment"		"center"	
-			"command"		"OpenEOLAlertWindow"	
+			ControlName=Button
+			labelText="#Steam_EOLAlert"
+			style="support_alert"
+			textAlignment=center
+			command="OpenEOLAlertWindow"
 		}
-		"ParentalLockButton"	
+
+		ParentalLockButton
 		{
-			"ControlName"		"ToggleButton"	
-			"style"		"parental_lock_button"	
-			"labelText"		""	
-			"text"		""	
-			"command"		"ParentalLock"	
+			ControlName=ToggleButton
+			style="parental_lock_button"
+			labelText=""
+			text=""
+			command="ParentalLock"
 		}
-		"InboxButton"	
+
+		InboxButton
 		{
-			"ControlName"		"CInboxButton"	
-			"style"		"inbox_button"	
-			"textAlignment"		"west"	
+			ControlName=CInboxButton
+			style="inbox_button"
+			textAlignment=west
 		}
-		"AnnouncementButton"	
+
+		AnnouncementButton
 		{
-			"ControlName"		"CAnnouncementButton"	
-			"style"		"announcement_button"	
-			"textAlignment"		"west"	
+			ControlName=CAnnouncementButton
+			style="announcement_button"
+			textAlignment=west
 		}
-		"AccountButton"	
+
+		AccountButton
 		{
-			"ControlName"		"CAccountButton"	
-			"style"		"AccountButtonStyle"	
+			ControlName=CAccountButton
+			style="AccountButtonStyle"
 		}
-		"add_game"	
+
+		add_game
 		{
-			"ControlName"		"MenuButton"	
-			"labelText"		"#steam_client_add_game"	
-			"style"		"AddGameButton"	
+			"ControlName"		"MenuButton"
+			labelText="#steam_client_add_game"
+			style="AddGameButton"
 		}
-		"frame_title"	
+
+		frame_title
 		{
-			"ControlName"		"Label"	
-			"style"		"ClientTitle"	
-			"textAlignment"		"west"	
-			"textAlignment"		"center"	[$OSX]
+			ControlName=Label
+
+			style="ClientTitle"
+			"textAlignment"   "west"
+			"textAlignment"   "center" [$OSX]
 		}
-		"universe_label"	
+
+		universe_label
 		{
-			"ControlName"		"Label"	
-			"fieldName"		"universe_label"	
-			"labelText"		"#Steam_Universe_Internal"	
-			"style"		"UniverseLabel"	
+			"ControlName"	"Label"
+			"fieldName"		"universe_label"
+			"labelText"		"#Steam_Universe_Internal"
+			style="UniverseLabel"
 		}
-		"view_friends"	
+
+		view_friends
 		{
-			"ControlName"		"Button"	
-			"labelText"		"#Steam_ViewFriends"	
-			"command"		"ViewFriends"	
-			"style"		"view_friends"	
-			"textAlignment"		"east"	
+			ControlName=Button
+			labelText="#Steam_ViewFriends"
+			command="ViewFriends"
+			style="view_friends"
+			textAlignment=east
 		}
 	}
-	"styles"	
+
+	styles
 	{
-		"CFriendPanel:hover"	
+		CFriendPanel:hover
 		{
-			"render_bg"	
+		render_bg {
+			0="fill( x0, y0, x1, y1, black)"
+		}
+		}
+
+		RootMenu
+		{
+			bgcolor="none"
+		}
+
+		AddGameButton
+		{
+			font-size=14
+			font-size=13 [$OSX]
+			font-family=basefont
+			textcolor="labelfocus"
+			padding-left=24
+			font-style=uppercase
+			render_bg
 			{
-				"0"		"fill( x0, y0, x1, y1, black)"	
+				0="image( x0 + 2, y0 + 4, x1, y1, graphics/icon_addgame )"
 			}
 		}
-		"RootMenu"	
+
+		AddGameButton:hover
 		{
-			"bgcolor"		"none"	
-		}
-		"AddGameButton"	
-		{
-			"font-size"		"14"	
-			"font-size"		"13"	[$OSX]
-			"font-family"		"basefont"	
-			"textcolor"		"ClientTextColor"	
-			"padding-left"		"24"	
-			"font-style"		"uppercase"	
-			"render_bg"	
+			textcolor="white"
+			render_bg
 			{
-				"0"		"image( x0 + 2, y0 + 7, x1, y1, graphics/i_clientIcon5 )"	
+				0="image( x0 + 2, y0 + 4, x1, y1, graphics/icon_addgame_over )"
 			}
 		}
-		"AddGameButton:hover"	
+
+
+
+		CSteamRootDialog
 		{
-			"textcolor"		"ClientTextColorHover"	
-			"render_bg"	
+			bgcolor=none
+
+			render_bg
 			{
-				"0"		"image( x0 + 2, y0 + 7, x1, y1, graphics/i_clientIcon11 )"	
+				// top area and graphic
+				5="fill( x0, y0, x1, y1, DialogBG )"
 			}
 		}
-		"CSteamRootDialog"	
+
+
+
+
+		FrameTitle
 		{
-			"bgcolor"		"DialogBG"	
-			"render_bg"	
+			font-family=basefont
+			font-size=15
+			font-weight=400
+			textcolor="Label"
+			bgcolor="none"
+			render_bg
 			{
-				"0"		"gradient( x0, y0, x1, y0+175, DialogBG, DialogBG )"	
-				"2"		"image( x1-400, y0, x1, y0+120, graphics/logo_right)"	
-				"3"		"fill( x0, y0+175, x0+20, y1-62, DialogBG )"	
-				"4"		"fill( x1-20, y0+175, x1, y1-62, DialogBG )"	
-				"5"		"fill( x0, y1 - 62, x1, y1, ClientBGBottom )"	
+				1="gradient( x0, y0 - 4, x1, y1 + 18, TitleBar, none )"
+				1="gradient( x0, y0, x1, y1 + 18, TitleBar, none )" [$OSX]
 			}
 		}
-		"FrameTitle"	
+
+		FrameTitle:framefocus
 		{
-			"font-family"		"basefont"	
-			"font-size"		"15"	
-			"font-weight"		"400"	
-			"textcolor"		"Label"	
-			"bgcolor"		"none"	
-			"render_bg"	
+			font-family=basefont
+			font-size=15
+			font-weight=400
+			textcolor="Label"
+			bgcolor="none"
+			textcolor="Text"
+
+			render_bg
 			{
-				"1"		"gradient( x0, y0 - 4, x1, y1 + 18, none, none )"	
-				"1"		"gradient( x0, y0, x1, y1 + 18, TitleBar, none )"	[$OSX]
+				1="gradient( x0, y0 - 4, x1, y1 + 18, titlebarfocus, none )"
+				1="gradient( x0, y0, x1, y1 + 18, titlebarfocus, none )" [$OSX]
 			}
 		}
-		"FrameTitle:framefocus"	
+
+		ClientTitle [!$OSX]
 		{
-			"font-family"		"basefont"	
-			"font-size"		"15"	
-			"font-weight"		"400"	
-			"textcolor"		"Label"	
-			"bgcolor"		"none"	
-			"textcolor"		"Text"	
-			"render_bg"	
-			{
-				"1"		"gradient( x0, y0 - 4, x1, y1 + 18, none, none )"	
-				"1"		"gradient( x0, y0, x1, y1 + 18, titlebarfocus, none )"	[$OSX]
+			textcolor=none
+		}
+
+		ClientTitle [$OSX]
+		{
+			font-family=basefont
+			font-size=15
+      		font-weight=400
+      		textcolor="textdisabled"
+      		bgcolor="none"
+      		inset="0 12 0 0"
+		}
+
+		ClientTitle:FrameFocus [$OSX]
+		{
+			font-family=basefont
+   			font-size=15
+   			font-weight=400
+   			textcolor="texthover"
+   			bgcolor="none"
+   			inset="0 12 0 0"
+		}
+
+		support_alert
+		{
+			font-family=basefont
+			font-size=14
+			font-weight=1000
+			font-style=none
+			textcolor=white
+			padding-left=50
+			padding-right=50
+			padding-top=6
+			inset="-8 -3 8 0"
+			render {}
+			render_bg {
+				0="fill( x0, y0, x1, y1, parental_lock_inactive1 )"
+
 			}
 		}
-		"ClientTitle"	[!$OSX]
+
+		support_alert:hover
 		{
-			"textcolor"		"none"	
-		}
-		"ClientTitle"	[$OSX]
-		{
-			"font-family"		"basefont"	
-			"font-size"		"15"	
-			"font-weight"		"400"	
-			"textcolor"		"textdisabled"	
-			"bgcolor"		"none"	
-			"inset"		"0 12 0 0"	
-		}
-		"ClientTitle:FrameFocus"	[$OSX]
-		{
-			"font-family"		"basefont"	
-			"font-size"		"15"	
-			"font-weight"		"400"	
-			"textcolor"		"texthover"	
-			"bgcolor"		"none"	
-			"inset"		"0 12 0 0"	
-		}
-		"support_alert"	
-		{
-			"font-family"		"basefont"	
-			"font-size"		"14"	
-			"font-weight"		"1000"	
-			"font-style"		"none"	
-			"textcolor"		"white"	
-			"padding-left"		"50"	
-			"padding-right"		"50"	
-			"padding-top"		"6"	
-			"inset"		"-8 -3 8 0"	
-			"render"	
-			{
-			}
-			"render_bg"	
-			{
-				"0"		"fill( x0, y0, x1, y1, parental_lock_inactive1 )"	
+			font-family=basefont
+			font-size=14
+			font-weight=1000
+			font-style=none
+			textcolor=white
+			padding-left=50
+			padding-right=50
+			padding-top=6
+			inset="-8 -3 8 0"
+			render {}
+			render_bg {
+				0="fill( x0, y0, x1, y1, parental_lock_inactive3 )"
 			}
 		}
-		"support_alert:hover"	
+
+		support_alert_ack
 		{
-			"font-family"		"basefont"	
-			"font-size"		"14"	
-			"font-weight"		"1000"	
-			"font-style"		"none"	
-			"textcolor"		"white"	
-			"padding-left"		"50"	
-			"padding-right"		"50"	
-			"padding-top"		"6"	
-			"inset"		"-8 -3 8 0"	
-			"render"	
-			{
-			}
-			"render_bg"	
-			{
-				"0"		"fill( x0, y0, x1, y1, parental_lock_inactive3 )"	
+			font-family=basefont
+			font-size=14
+			font-weight=1000
+			font-style=none
+			textcolor=white
+			padding-left=50
+			padding-right=50
+			padding-top=6
+			inset="-8 -3 8 0"
+			render {}
+			render_bg {
+				0="fill( x0, y0 + 3, x1-1, y1, support_lock_ack1 )"
+
 			}
 		}
-		"support_alert_ack"	
+
+		support_alert_ack:hover
 		{
-			"font-family"		"basefont"	
-			"font-size"		"14"	
-			"font-weight"		"1000"	
-			"font-style"		"none"	
-			"textcolor"		"white"	
-			"padding-left"		"50"	
-			"padding-right"		"50"	
-			"padding-top"		"6"	
-			"inset"		"-8 -3 8 0"	
-			"render"	
-			{
-			}
-			"render_bg"	
-			{
-				"0"		"fill( x0, y0 + 3, x1-1, y1, support_lock_ack1 )"	
+			font-family=basefont
+			font-size=14
+			font-weight=1000
+			font-style=none
+			textcolor=white
+			padding-left=50
+			padding-right=50
+			padding-top=6
+			inset="-8 -3 8 0"
+			render {}
+			render_bg {
+				0="fill( x0, y0 + 3, x1-1, y1, support_lock_ack2 )"
 			}
 		}
-		"support_alert_ack:hover"	
+
+		inbox_button [!$OSX]
 		{
-			"font-family"		"basefont"	
-			"font-size"		"14"	
-			"font-weight"		"1000"	
-			"font-style"		"none"	
-			"textcolor"		"white"	
-			"padding-left"		"50"	
-			"padding-right"		"50"	
-			"padding-top"		"6"	
-			"inset"		"-8 -3 8 0"	
-			"render"	
+			font-family=basefont
+			font-size=14
+			font-weight=800
+			font-style=none
+			textcolor=white
+
+			padding-top=2
+			padding-right=16
+
+			render {}
+			render_bg
 			{
-			}
-			"render_bg"	
-			{
-				"0"		"fill( x0, y0 + 3, x1-1, y1, support_lock_ack2 )"	
-			}
-		}
-		"inbox_button"	[!$OSX]
-		{
-			"font-family"		"basefont"	
-			"font-size"		"14"	
-			"font-weight"		"800"	
-			"font-style"		"none"	
-			"textcolor"		"0 0 0 255"	
-			"padding-top"		"2"	
-			"padding-right"		"16"	
-			"render"	
-			{
-			}
-			"render_bg"	
-			{
-				"0"		"fill( x0, y0, x1, y1, dark_blue )"	
-				"1"		"image( x1-24, y0+4, x1-2, y1+2, graphics/inbox_notification_inactive )"	
+				0="fill( x0, y0, x1, y1, draculaSelection )"
+				1="image( x1-24, y0+4, x1-2, y1+2, graphics/inbox_notification_inactive )"
 			}
 		}
-		"inbox_button"	[$OSX]
+
+		inbox_button [$OSX]
 		{
-			"font-family"		"basefont"	
-			"font-size"		"13"	
-			"font-weight"		"800"	
-			"font-style"		"none"	
-			"textcolor"		"white"	
-			"padding-top"		"3"	
-			"padding-right"		"16"	
-			"render"	
+			font-family=basefont
+			font-size=13
+			font-weight=800
+			font-style=none
+			textcolor=white
+			padding-top=3
+			padding-right=16
+
+			render {}
+			render_bg
 			{
-			}
-			"render_bg"	
-			{
-				"0"		"fill( x0, y0, x1, y1, dark_blue )"	
-				"1"		"image( x1-22, y0+6, x1-2, y1, graphics/inbox_notification_inactive )"	
-			}
-		}
-		"inbox_button:hover"	
-		{
-			"render_bg"	
-			{
-				"0"		"fill(  x0, y0, x1, y1, darkblue )"	
-				"13"		"image( x1-24, y0+4, x1, y1, graphics/inbox_notification_inactive )"	
+				0="fill( x0, y0, x1, y1, draculaSelection)"
+				1="image( x1-22, y0+6, x1-2, y1, graphics/inbox_notification_inactive )"
 			}
 		}
-		"inbox_button:selected"	
+
+		inbox_button:hover
 		{
-			"render_bg"	
+			render_bg
 			{
-				"0"		"fill(  x0, y0, x1, y1, green6 )"	
+				0="fill(  x0, y0, x1, y1, draculaAccent )"
+				13="image( x1-24, y0+4, x1, y1, graphics/inbox_notification_inactive )"
 			}
 		}
-		"inbox_button:disabled"	
+
+		inbox_button:selected
 		{
-			"textcolor"		"labeldisabled"	
-			"render_bg"	
+			render_bg
 			{
-				"1"		"image( x1-22, y0+6, x1 -2, y1, graphics/i_clientIcon16 )"	
+				// background fill
+				0="fill(  x0, y0, x1, y1, draculaAccent )"
+				1="image( x1-24, y0+4, x1 -2, y1 + 2, graphics/inbox_notification_inactive )"
+
 			}
 		}
-		"inbox_button_active"	
+
+		inbox_button:disabled
 		{
-			"render_bg"	
+			textcolor=labeldisabled
+			render_bg
 			{
-				"0"		"fill(  x0 + 1, y0 + 3, x1+1, y1, InboxButtonActive )"	
-				"1"		"image( x1-22, y0+6, x1 -2, y1, graphics/i_clientIcon12 )"	
+				// background fill
+				1="image( x1-24, y0+4, x1-2, y1+2, graphics/inbox_notification_inactive_disabled )"
 			}
 		}
-		"inbox_button_active:hover"	
+
+		inbox_button_active
 		{
-			"render_bg"	
+			render_bg
 			{
-				"0"		"fill(  x0 + 1, y0 + 3, x1+1, y1, InboxButtonActiveHover )"	
-				"1"		"image( x1-22, y0+6, x1 -2, y1, graphics/i_clientIcon12 )"	
+				// background fill
+				0="fill( x0 , y0, x1, y1, notificationColor )"
+				1="image( x1-21, y0+4, x1-2, y1+2, graphics/inbox_notification )"
 			}
 		}
-		"inbox_button_active:selected"	
+
+		inbox_button_active:hover
 		{
-			"render_bg"	
+			render_bg
 			{
-				"0"		"gradient(  x0 + 1, y0 + 3, x1+1, y1, InboxButtonActiveSelected, InboxButtonActiveSelected )"	
-				"1"		"image( x1-22, y0+6, x1 -2, y1, graphics/i_clientIcon12 )"	
+				// background fill
+				0="fill( x0 , y0, x1, y1, notificationColor )"
+				1="image( x1-21, y0+4, x1-2, y1+2, graphics/inbox_notification )"
 			}
 		}
-		"inbox_button_active:disabled"	
+		inbox_button_active:selected
 		{
-			"render"	
+			render_bg
 			{
-			}
-			"render_bg"	
-			{
-				"1"		"image( x1-22, y0+6, x1 -2, y1, graphics/i_clientIcon13 )"	
-			}
-		}
-		"announcement_button"	
-		{
-			"render_bg"	
-			{
-				"0"		"fill( x0, y0, x1, y1, dark_blue )"	
-				"1"		"image( x1-24, y0+4, x1 -2, y1 + 1, graphics/updatenone_notification )"	
+				// background fill
+
+				0="fill(  x0, y0, x1, y1, draculaAccent )"
+				1="image( x1-21, y0+4, x1-2, y1+2, graphics/inbox_notification )"
 			}
 		}
-		"announcement_button:hover"	
+
+		inbox_button_active:disabled
 		{
-			"render_bg"	
+			render {}
+			render_bg
 			{
-				"0"		"fill( x0, y0, x1, y1, darkblue )"	
-				"1"		"image( x1-24, y0+4, x1 -2, y1 + 1, graphics/updatenone_notification )"	
+				// background fill
+				1="image( x1-21, y0+4, x1-2, y1+2, graphics/inbox_notification_disabled )"
 			}
 		}
-		"announcement_button_active"	
+
+		announcement_button
 		{
-			"render_bg"	
+			render_bg
 			{
-				"0"		"fill(  x0, y0, x1, y1, AnnouncementBlue )"	
-				"1"		"image( x1-24, y0+4, x1 -2, y1 + 1, graphics/updatenew_notification )"	
+				// background fill
+				0="fill( x0, y0, x1, y1, draculaSelection )"
+				1="image( x1-24, y0+4, x1 -2, y1 + 1, graphics/updatenone_notification )"
 			}
 		}
-		"Menu"	
+
+
+		announcement_button:hover
 		{
-			"bgcolor"		"MenuBG1"	
-			"padding-right"		"4"	
-			"inset"		"2 2 2 2"	
-			"render_bg"	
+			render_bg
 			{
-				"0"		"gradient( x0, y0, x1, y0 + 140, MenuBG1, MenuBG1 )"	
-				"1"		"fill( x0, y0 + 140, x1, y1, MenuBG1 )"	
-				"2"		"fill( x0 + 1, y0, x1 - 1, y0 + 1, clientbg )"	
-				"3"		"fill( x0 + 1, y1 - 1, x1 - 1, y1, clientbg )"	
-				"4"		"fill( x0, y0 + 1, x0 + 1, y1 - 1, clientbg )"	
-				"5"		"fill( x1 - 1, y0 + 1, x1, y1 - 1, clientbg )"	
+				// background fill
+				0="fill( x0, y0, x1, y1, draculaAccent )"
+				1="image( x1-24, y0+4, x1 -2, y1 + 1, graphics/updatenone_notification )"
 			}
 		}
-		"parental_lock_button"	
+
+		announcement_button_active
 		{
-			"render_bg"	
+			render_bg
 			{
-				"0"		"fill( x0, y0, x1, y1, parental_lock_inactive1 )"	
-				"1"		"image( x0+9, y0+2, x1, y1, resource/notfamilyview )"	
+				// background fill
+				0="fill(  x0, y0, x1, y1, notificationColor )"
+				1="image( x1-24, y0+4, x1 -2, y1 + 1, graphics/updatenew_notification )"
 			}
 		}
-		"parental_lock_button:hover"	
+
+		Menu
 		{
-			"render_bg"	
+			bgcolor="dialogbg"
+			padding-right=4
+			inset="2 2 2 2"
+
+			render_bg
 			{
-				"0"		"fill( x0, y0, x1, y1, parental_lock_inactive3 )"	
-				"1"		"image( x0+9, y0+2, x1, y1, resource/notfamilyview )"	
+				0="fill( x0, y0, x1, y1 , MenuBG)"
 			}
 		}
-		"parental_lock_button:selected"	
+
+		parental_lock_button
 		{
-			"render_bg"	
+			render_bg
 			{
-				"0"		"fill( x0, y0, x1, y1, green6 )"	
-				"1"		"image( x0+9, y0+2, x1, y1, resource/familyview )"	
+				// background fill
+				0="fill( x0, y0, x1, y1, parental_lock_inactive1 )"
+				1="image( x0+9, y0+2, x1, y1, resource/notfamilyview )"
 			}
 		}
-		"parental_lock_button:selected:hover"	
+
+		parental_lock_button:hover
 		{
-			"render_bg"	
+			render_bg
 			{
-				"0"		"fill( x0, y0, x1, y1, green5 )"	
-				"1"		"image( x0+9, y0+2, x1, y1, resource/familyview )"	
+				// background fill
+				0="fill( x0, y0, x1, y1, parental_lock_inactive3 )"
+				1="image( x0+9, y0+2, x1, y1, resource/notfamilyview )"
 			}
+
 		}
-		"VRButtonExit"	[$OSX]
+
+		parental_lock_button:selected
 		{
-			"padding-left"		"0"	
-			"padding-top"		"8"	
-			"padding-right"		"0"	
-			"padding-bottom"		"0"	
-		}
-		"inboxmenuitem"	
-		{
-			"textcolor"		"ClientTextColor"	
-		}
-		"inboxmenuitem_active"	
-		{
-			"textcolor"		"ClientTextColor"	
-		}
-		"inboxmenuitem_active:hover"	
-		{
-			"textcolor"		"ClientTextColorHover"	
-		}
-		"FrameMinimizeButton"	
-		{
-			"render_bg"	
+			render_bg
 			{
+				// background fill
+				0="fill( x0, y0, x1, y1, green6 )"
+				1="image( x0+9, y0+2, x1, y1, resource/familyview )"
 			}
-			"image"		"graphics/i_clientIcon0"	
-			"inset"		"0 0 4 0"	
-			"inset"		"0 0 4 -8"	[$OSX]
-			"image"		"graphics/osx_win_dis"	[$OSX]
-			"image"		"graphics/osx_win_dis_new_dark"	[$OSX1010]
+
 		}
-		"FrameMinimizeButton:hover"	
+
+
+		parental_lock_button:selected:hover
 		{
-			"render_bg"	
+			render_bg
 			{
+				// background fill
+				0="fill( x0, y0, x1, y1, green5 )"
+				1="image( x0+9, y0+2, x1, y1, resource/familyview )"
 			}
-			"bgcolor"		"none"	
-			"inset"		"0 0 4 0"	
-			"inset"		"0 0 4 -8"	[$OSX]
-			"image"		"graphics/i_clientIcon6"	
-			"image"		"graphics/osx_min_hov"	[$OSX]
-			"image"		"graphics/osx_min_hov_new"	[$OSX1010]
+
 		}
-		"FrameMinimizeButton:framefocus"	[$OSX]
+
+
+		VRButtonExit [$OSX]
 		{
-			"render_bg"	
-			{
-			}
-			"inset"		"0 0 4 -8"	
-			"image"		"graphics/i_clientIcon0"	
-			"image"		"graphics/osx_min_def_new"	[$OSX1010]
+			padding-left=0
+			padding-top=8
+			padding-right=0
+			padding-bottom=0
 		}
-		"FrameMinimizeButton:framefocus:hover"	[$OSX]
+
+		inboxmenuitem
 		{
-			"render_bg"	
-			{
-			}
-			"inset"		"0 0 4 -8"	
-			"image"		"graphics/i_clientIcon6"	
-			"image"		"graphics/osx_min_hov_new"	[$OSX1010]
+			textcolor=inbox_inactive_text
 		}
-		"FrameMinimizeButton:active"	[$OSX]
+
+		inboxmenuitem_active
 		{
-			"render_bg"	
-			{
-			}
-			"inset"		"0 0 4 -8"	
-			"image"		"graphics/i_clientIcon6"	
-			"image"		"graphics/osx_min_down_new"	[$OSX1010]
+			textcolor=label
 		}
-		"FrameMaximizeButton"	
+
+		inboxmenuitem_active:hover
 		{
-			"render_bg"	
-			{
-			}
-			"inset"		"0 0 4 0"	
-			"inset"		"0 0 -2 -8"	[$OSX]
-			"image"		"graphics/i_clientIcon1"	
-			"image"		"graphics/osx_win_dis"	[$OSX]
-			"image"		"graphics/osx_win_dis_new_dark"	[$OSX1010]
+			textcolor=white
 		}
-		"FrameMaximizeButton:hover"	
+
+
+		//unique styles for the client main window
+		FrameMinimizeButton
 		{
-			"render_bg"	
-			{
-			}
-			"inset"		"0 0 4 0"	
-			"inset"		"0 0 -2 -8"	[$OSX]
-			"bgcolor"		"none"	
-			"image"		"graphics/i_clientIcon7"	
-			"image"		"graphics/osx_max_hov"	[$OSX]
-			"image"		"graphics/osx_max_hov_new"	[$OSX1010]
+			render_bg {}
+			image="graphics/win32_win_min"
+			inset="0 0 4 0"
+			inset="0 0 4 -8" [$OSX]
+			image="graphics/osx_win_dis"[$OSX]
+			image="graphics/osx_win_dis_new_dark"[$OSX1010]
 		}
-		"FrameMaximizeButton:framefocus"	
+
+		FrameMinimizeButton:hover
 		{
-			"render_bg"	
-			{
-			}
-			"inset"		"0 0 4 0"	
-			"inset"		"0 0 -2 -8"	[$OSX]
-			"bgcolor"		"none"	
-			"image"		"graphics/i_clientIcon1"	
-			"image"		"graphics/osx_max_def"	[$OSX]
-			"image"		"graphics/osx_max_def_new"	[$OSX1010]
+			render_bg {}
+			bgcolor="none"
+			inset="0 0 4 0"
+			inset="0 0 4 -8" [$OSX]
+			image="graphics/win32_win_min_hover"
+			image="graphics/osx_min_hov" [$OSX]
+			image="graphics/osx_min_hov_new" [$OSX1010]
 		}
-		"FrameMaximizeButton:framefocus:hover"	
+
+		FrameMinimizeButton:framefocus [$OSX]
 		{
-			"render_bg"	
-			{
-			}
-			"inset"		"0 0 4 0"	
-			"inset"		"0 0 -2 -8"	[$OSX]
-			"bgcolor"		"none"	
-			"image"		"graphics/i_clientIcon7"	
-			"image"		"graphics/osx_max_hov"	[$OSX]
-			"image"		"graphics/osx_max_hov_new"	[$OSX1010]
+			render_bg {}
+			inset="0 0 4 -8"
+			image="graphics/osx_min_def"
+			image="graphics/osx_min_def_new" [$OSX1010]
 		}
-		"FrameMaximizeButton:active"	
+
+		FrameMinimizeButton:framefocus:hover [$OSX]
 		{
-			"render_bg"	
-			{
-			}
-			"inset"		"0 0 4 0"	
-			"inset"		"0 0 -2 -8"	[$OSX]
-			"bgcolor"		"none"	
-			"image"		"graphics/i_clientIcon7"	
-			"image"		"graphics/osx_max_down"	[$OSX]
-			"image"		"graphics/osx_max_down_new"	[$OSX1010]
+			render_bg {}
+			inset="0 0 4 -8"
+			image="graphics/osx_min_hov"
+			image="graphics/osx_min_hov_new" [$OSX1010]
 		}
-		"FrameRestoreButton"	
+
+		FrameMinimizeButton:active [$OSX]
 		{
-			"render_bg"	
-			{
-			}
-			"inset"		"0 0 4 0"	
-			"inset"		"0 0 -2 -8"	[$OSX]
-			"image"		"graphics/i_clientIcon4"	
-			"image"		"graphics/osx_win_dis"	[$OSX]
-			"image"		"graphics/osx_win_dis_new_dark"	[$OSX1010]
+			render_bg {}
+			inset="0 0 4 -8"
+			image="graphics/osx_min_down"
+			image="graphics/osx_min_down_new" [$OSX1010]
 		}
-		"FrameRestoreButton:hover"	
+
+
+		// need the maximize button to have different styles for OSX & win32
+		FrameMaximizeButton
 		{
-			"render_bg"	
-			{
-			}
-			"inset"		"0 0 4 0"	
-			"inset"		"0 0 -2 -8"	[$OSX]
-			"bgcolor"		"none"	
-			"image"		"graphics/i_clientIcon10"	
-			"image"		"graphics/osx_max_hov"	[$OSX]
-			"image"		"graphics/osx_max_hov_new"	[$OSX1010]
+			render_bg {}
+			inset="0 0 4 0"
+			inset="0 0 -2 -8" [$OSX]
+			image="graphics/win32_win_max"
+			image="graphics/osx_win_dis" [$OSX]
+			image="graphics/osx_win_dis_new_dark" [$OSX1010]
 		}
-		"FrameRestoreButton:framefocus"	
+
+		FrameMaximizeButton:hover
 		{
-			"render_bg"	
-			{
-			}
-			"inset"		"0 0 4 0"	
-			"inset"		"0 0 -2 -8"	[$OSX]
-			"bgcolor"		"none"	
-			"image"		"graphics/i_clientIcon4"	
-			"image"		"graphics/osx_max_def"	[$OSX]
-			"image"		"graphics/osx_max_def_new"	[$OSX1010]
+			render_bg {}
+			inset="0 0 4 0"
+			inset="0 0 -2 -8" [$OSX]
+			bgcolor="none"
+			image="graphics/win32_win_max_hover"
+			image="graphics/osx_max_hov" [$OSX]
+			image="graphics/osx_max_hov_new" [$OSX1010]
 		}
-		"FrameRestoreButton:framefocus:hover"	
+
+		FrameMaximizeButton:framefocus
 		{
-			"render_bg"	
-			{
-			}
-			"inset"		"0 0 4 0"	
-			"inset"		"0 0 -2 -8"	[$OSX]
-			"bgcolor"		"none"	
-			"image"		"graphics/i_clientIcon10"	
-			"image"		"graphics/osx_max_hov"	[$OSX]
-			"image"		"graphics/osx_max_hov_new"	[$OSX1010]
+			render_bg {}
+			inset="0 0 4 0"
+			inset="0 0 -2 -8" [$OSX]
+			bgcolor="none"
+			image="graphics/win32_win_max"
+			image="graphics/osx_max_def" [$OSX]
+			image="graphics/osx_max_def_new" [$OSX1010]
 		}
-		"FrameRestoreButton:active"	
+
+		FrameMaximizeButton:framefocus:hover
 		{
-			"render_bg"	
-			{
-			}
-			"inset"		"0 0 4 0"	
-			"inset"		"0 0 -2 -8"	[$OSX]
-			"bgcolor"		"none"	
-			"image"		"graphics/i_clientIcon10"	
-			"image"		"graphics/osx_max_down"	[$OSX]
-			"image"		"graphics/osx_max_down_new"	[$OSX1010]
+			render_bg {}
+			inset="0 0 4 0"
+			inset="0 0 -2 -8" [$OSX]
+			bgcolor="none"
+			image="graphics/win32_win_max_hover"
+			image="graphics/osx_max_hov" [$OSX]
+			image="graphics/osx_max_hov_new" [$OSX1010]
 		}
-		"FrameCloseButton"	
+
+		FrameMaximizeButton:active
 		{
-			"render_bg"	
-			{
-			}
-			"inset"		"0 0 4 0"	
-			"inset"		"-7 0 4 -8"	[$OSX]
-			"image"		"graphics/i_clientIcon2"	
-			"image"		"graphics/osx_win_dis"	[$OSX]
-			"image"		"graphics/osx_win_dis_new_dark"	[$OSX1010]
+			render_bg {}
+			inset="0 0 4 0"
+			inset="0 0 -2 -8" [$OSX]
+			bgcolor="none"
+			image="graphics/win32_win_max_hover"
+			image="graphics/osx_max_down" [$OSX]
+			image="graphics/osx_max_down_new" [$OSX1010]
 		}
-		"FrameCloseButton:hover"	
+
+		// these are for when the maximize button becomes the restore button
+		FrameRestoreButton
 		{
-			"render_bg"	
-			{
-			}
-			"inset"		"0 0 4 0"	
-			"inset"		"-7 0 4 -8"	[$OSX]
-			"image"		"graphics/i_clientIcon8"	
-			"image"		"graphics/osx_close_hov"	[$OSX]
-			"image"		"graphics/osx_close_hov_new"	[$OSX1010]
+			render_bg {}
+			inset="0 0 4 0"
+			inset="0 0 -2 -8" [$OSX]
+			image="graphics/win32_win_restore"
+			image="graphics/osx_win_dis" [$OSX]
+			image="graphics/osx_win_dis_new_dark" [$OSX1010]
 		}
-		"FrameCloseButton:framefocus"	[$OSX]
+
+		FrameRestoreButton:hover
 		{
-			"render_bg"	
-			{
-			}
-			"inset"		"-7 0 4 -8"	
-			"bgcolor"		"none"	
-			"image"		"graphics/i_clientIcon2"	
-			"image"		"graphics/osx_close_def_new"	[$OSX1010]
+			render_bg {}
+			inset="0 0 4 0"
+			inset="0 0 -2 -8" [$OSX]
+			bgcolor="none"
+			image="graphics/win32_win_restore_hover"
+			image="graphics/osx_max_hov" [$OSX]
+			image="graphics/osx_max_hov_new" [$OSX1010]
 		}
-		"FrameCloseButton:framefocus:hover"	[$OSX]
+
+		FrameRestoreButton:framefocus
 		{
-			"render_bg"	
-			{
-			}
-			"inset"		"-7 0 4 -8"	
-			"bgcolor"		"none"	
-			"image"		"graphics/i_clientIcon8"	
-			"image"		"graphics/osx_close_hov_new"	[$OSX1010]
+			render_bg {}
+			inset="0 0 4 0"
+			inset="0 0 -2 -8" [$OSX]
+			bgcolor="none"
+			image="graphics/win32_win_restore"
+			image="graphics/osx_max_def" [$OSX]
+			image="graphics/osx_max_def_new" [$OSX1010]
 		}
-		"FrameCloseButton:active"	[$OSX]
+
+		FrameRestoreButton:framefocus:hover
 		{
-			"render_bg"	
-			{
-			}
-			"inset"		"-7 0 4 -8"	
-			"bgcolor"		"none"	
-			"image"		"graphics/i_clientIcon8"	
-			"image"		"graphics/osx_close_down_new"	[$OSX1010]
+			render_bg {}
+			inset="0 0 4 0"
+			inset="0 0 -2 -8" [$OSX]
+			bgcolor="none"
+			image="graphics/win32_win_restore_hover"
+			image="graphics/osx_max_hov" [$OSX]
+			image="graphics/osx_max_hov_new" [$OSX1010]
 		}
-		"FrameCloseButton:disabled"	
+
+		FrameRestoreButton:active
 		{
-			"render_bg"	
-			{
-			}
-			"inset"		"0 0 4 0"	
-			"inset"		"-7 0 4 -8"	[$OSX]
-			"bgcolor"		"none"	
-			"image"		"graphics/win32_win_close_disabled"	
-			"image"		"graphics/osx_win_dis"	[$OSX]
-			"image"		"graphics/osx_win_dis_new_dark"	[$OSX1010]
+			render_bg {}
+			inset="0 0 4 0"
+			inset="0 0 -2 -8" [$OSX]
+			bgcolor="none"
+			image="graphics/win32_win_restore_hover"
+			image="graphics/osx_max_down" [$OSX]
+			image="graphics/osx_max_down_new" [$OSX1010]
 		}
-		"UniverseLabel"	
+
+		FrameCloseButton
 		{
-			"padding-top"		"11"	
+			render_bg {}
+			inset="0 0 4 0"
+			inset="-7 0 4 -8" [$OSX]
+			image="graphics/win32_win_close"
+			image="graphics/osx_win_dis" [$OSX]
+			image="graphics/osx_win_dis_new_dark" [$OSX1010]
 		}
+
+		FrameCloseButton:hover
+		{
+			render_bg {}
+			inset="0 0 4 0"
+			inset="-7 0 4 -8" [$OSX]
+			image="graphics/win32_win_close_hover"
+			image="graphics/osx_close_hov" [$OSX]
+			image="graphics/osx_close_hov_new" [$OSX1010]
+		}
+
+		FrameCloseButton:framefocus [$OSX]
+		{
+			render_bg {}
+			inset="-7 0 4 -8"
+			bgcolor="none"
+			image="graphics/osx_close_def"
+			image="graphics/osx_close_def_new" [$OSX1010]
+		}
+
+		FrameCloseButton:framefocus:hover [$OSX]
+		{
+			render_bg {}
+			inset="-7 0 4 -8"
+			bgcolor="none"
+			image="graphics/osx_close_hov"
+			image="graphics/osx_close_hov_new" [$OSX1010]
+		}
+
+		FrameCloseButton:active [$OSX]
+		{
+			render_bg {}
+			inset="-7 0 4 -8"
+			bgcolor="none"
+			image="graphics/osx_close_down"
+			image="graphics/osx_close_down_new" [$OSX1010]
+		}
+
+		FrameCloseButton:disabled
+		{
+			render_bg {}
+			inset="0 0 4 0"
+			inset="-7 0 4 -8" [$OSX]
+			bgcolor="none"
+			image="graphics/win32_win_close_disabled"
+			image="graphics/osx_win_dis" [$OSX]
+			image="graphics/osx_win_dis_new_dark" [$OSX1010]
+		}
+
+		UniverseLabel
+		{
+			padding-top=11
+		}
+
 	}
-	"colors"	
+
+	colors
 	{
-		"support_flag_red"		"169 72 71 255"	
-		"support_hover_red1"		"193 94 93 255"	
-		"support_hover_red2"		"156 64 63 255"	
-		"inbox_active_text"		"text"	
-		"inbox_inactive_text"		"labeldisabled"	
-		"backdrop"		"20 20 20 255"	
-		"disabledborder"		"63 63 63 255"	
+		support_flag_red "169 72 71 255"
+
+		support_hover_red1 "193 94 93 255"
+		support_hover_red2 "156 64 63 255"
+
+		inbox_active_text "text"
+		inbox_inactive_text "labeldisabled"
+
+		backdrop "20 20 20 255"
+
+		disabledborder "63 63 63 255"
 	}
-	"layout"	
+
+	layout
 	{
-		"place"	
-		{
-			"control"		"UINavigatorPanel"	
-			"width"		"max"	
-			"height"		"max"	
-			"margin-right"		"1"	
-			"margin-left"		"1"	
-			"margin-bottom"		"40"	
-			"margin-top"		"22"	
-		}
-		"place"	
-		{
-			"control"		"UIStatusPanel"	
-			"width"		"max"	
-			"height"		"40"	
-			"align"		"bottom"	
-			"margin-bottom"		"18"	
-		}
-		"place"	[!$OSX]
-		{
-			"control"		"MenuBar"	
-			"align"		"top"	
-			"margin-top"		"5"	
-			"margin-left"		"2"	
-		}
-		"place"	[!$OSX]
-		{
-			"control"		"frame_minimize,frame_maximize,frame_close"	
-			"align"		"right"	
-			"margin-top"		"13"	
-			"margin-right"		"9"	
-			"spacing"		"-5"	
-		}
-		"place"	[$OSX]
-		{
-			"control"		"frame_close,frame_minimize,frame_maximize"	
-			"align"		"left"	
-			"margin-top"		"13"	
-			"margin-left"		"11"	
-			"spacing"		"-7"	
-		}
-		"place"	[$OSX]
-		{
-			"control"		"universe_label, EOLAlert, SupportAlert"	
-			"spacing"		"8"	
-			"start"		"frame_maximize"	
-			"align"		"left"	
-			"margin-top"		"-4"	
-			"margin-left"		"13"	
-			"height"		"24"	
-		}
-		"place"	[!$OSX]
-		{
-			"control"		"fullscreen"	
-			"align"		"right"	
-			"end-right"		"frame_minimize"	
-			"height"		"20"	
-			"width"		"30"	
-			"margin-right"		"8"	
-			"margin-top"		"11"	
-		}
-		"place"	[$OSX]
-		{
-			"control"		"fullscreen"	
-			"align"		"right"	
-			"height"		"20"	
-			"width"		"30"	
-			"margin-right"		"16"	
-			"margin-top"		"11"	
-		}
-		"place"	
-		{
-			"control"		"startvr, exitvr"	
-			"align"		"right"	
-			"end-right"		"fullscreen"	
-			"margin-right"		"4"	
-			"margin-top"		"10"	
-		}
-		"place"	
-		{
-			"control"		"AccountButton"	
-			"align"		"right"	
-			"end-right"		"startvr"	
-			"margin-top"		"9"	
-			"margin-right"		"8"	
-			"height"		"24"	
-		}
-		"place"	
-		{
-			"control"		"InboxButton"	
-			"align"		"right"	
-			"end-right"		"AccountButton"	
-			"margin-top"		"9"	
-			"margin-right"		"8"	
-			"height"		"24"	
-		}
-		"place"	
-		{
-			"control"		"AnnouncementButton"	
-			"align"		"right"	
-			"end-right"		"InboxButton"	
-			"margin-top"		"9"	
-			"margin-right"		"8"	
-			"height"		"24"	
-			"width"		"34"	
-		}
-		"place"	
-		{
-			"control"		"ParentalLockButton"	
-			"align"		"right"	
-			"end-right"		"AnnouncementButton"	
-			"margin-top"		"9"	
-			"margin-right"		"8"	
-			"height"		"24"	
-			"width"		"44"	
-		}
-		"place"	[!$OSX]
-		{
-			"control"		"universe_label, EOLAlert, SupportAlert"	
-			"spacing"		"8"	
-			"align"		"right"	
-			"end-right"		"ParentalLockButton"	
-			"margin-top"		"9"	
-			"margin-right"		"8"	
-			"height"		"24"	
-		}
-		"region"	
-		{
-			"name"		"bottom"	
-			"align"		"bottom"	
-			"width"		"max"	
-			"height"		"62"	
-		}
-		"place"	
-		{
-			"control"		"add_game"	
-			"x"		"14"	
-			"y"		"16"	
-			"region"		"bottom"	
-			"height"		"30"	
-		}
-		"place"	
-		{
-			"control"		"view_friends"	
-			"height"		"64"	
-			"width"		"160"	
-			"region"		"bottom"	
-			"align"		"right"	
-			"dir"		"right"	
-			"margin-right"		"16"	
-		}
-		"place"	
-		{
-			"control"		"frame_captiongrip"	
-			"margin"		"2"	
-			"width"		"max"	
-			"height"		"104"	
-		}
+		place { control="UINavigatorPanel" width=max height=max margin-right=1 margin-left=1 margin-bottom=40 margin-top=22 }
+
+		place { control="UIStatusPanel" width=max height=40 align=bottom  margin-bottom=18 }
+
+		place [!$OSX] { control="MenuBar" align=top margin-top=5 margin-left=2 }
+
+		// controls from left to right, otherwise depencencies are broken using end-right
+
+		place [!$OSX] { control="frame_minimize,frame_maximize,frame_close" align=right margin-top=13 margin-right=9 spacing=-5 }
+		place [$OSX]  { control="frame_close,frame_minimize,frame_maximize" align=left margin-top=13 margin-left=11 spacing=-7 }
+
+		place [$OSX]  { control="universe_label, EOLAlert, SupportAlert" spacing=8 start="frame_maximize" align=left margin-top=-4 margin-left=13 height=24 }
+
+		place [!$OSX] { control="fullscreen" align=right end-right="frame_minimize" height=20 width=30 margin-right=8 margin-top=11 }
+		place [$OSX]  { control="fullscreen" align=right height=20 width=30 margin-right=16 margin-top=11 }
+
+		place { control="startvr, exitvr" align=right end-right="fullscreen" margin-right=4 margin-top=10 }
+
+		place { control="AccountButton" align=right end-right="startvr" margin-top=9 margin-right=8 height=24 }
+		place { control="InboxButton" align=right end-right="AccountButton" margin-top=9 margin-right=8 height=24 }
+		place { control="AnnouncementButton" align=right end-right="InboxButton" margin-top=9 margin-right=8 height=24 width=34 }
+		place { control="ParentalLockButton" align=right end-right="AnnouncementButton" margin-top=9 margin-right=8 height=24 width=44 }
+		place [!$OSX] { control="universe_label, EOLAlert, SupportAlert" spacing=8 align=right end-right="ParentalLockButton" margin-top=9 margin-right=8 height=24 }
+
+		region { name=bottom align=bottom width=max height=62 }
+
+		place { control="add_game" x=14 y=16 region=bottom height=30}
+
+		place { control="view_friends" height=64 width=160 region=bottom align=right dir=right margin-right=16 }
+
+ 		// the title bar is missing, so increase the size of the grip
+		place { control="frame_captiongrip" margin=2 width=max height=104 }
 	}
 }

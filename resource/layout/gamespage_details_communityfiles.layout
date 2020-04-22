@@ -1,67 +1,50 @@
-"resource/layout/gamespage_details_communityfiles.layout"	
+"resource/layout/gamespage_details_communityfiles.layout"
 {
-	"controls"	
+	controls
 	{
-		"communityfilesdetails"	
-		{
-			"controlname"		"CGamesPage_Details_CommunityFiles"	
-			"style"		"communityfilesdetails"	
-		}
-		"workshopdetails"	
-		{
-			"controlname"		"CWorkshopDetailsPanel"	
-		}
-		"viewall"	
-		{
-			"controlname"		"Button"	
-			"labeltext"		"#steam_community_files_view_all"	
-			"command"		"ViewWorkshop"	
-		}
+		communityfilesdetails { controlname="CGamesPage_Details_CommunityFiles" style="communityfilesdetails" }
+		workshopdetails { controlname="CWorkshopDetailsPanel" }
+		viewall	{ controlname="Button" labeltext="#steam_community_files_view_all" command="ViewWorkshop" }
 	}
-	"colors"	
+
+	colors
 	{
-		"GameDetailsCommunityFiles.ExtraVerticalSpacing"		"60"	
-		"GameDetailsCommunityFiles.PanelSpacing"		"25"	
-		"RichText.InsetX"		"0"	
-		"RichText.InsetY"		"3"	
+		GameDetailsCommunityFiles.ExtraVerticalSpacing "60"
+		GameDetailsCommunityFiles.PanelSpacing "25"
+		RichText.InsetX "0"
+		RichText.InsetY "3" 
 	}
-	"styles"	
+
+	styles
 	{
-		"communityfilesdetails"	
-		{
-			"bgcolor"		"ClientInnerItemsBG"	
+		communityfilesdetails 
+		{ 
+			bgcolor=BackgroundStart
 		}
-		"infolabel"	
+		
+		infolabel
 		{
-			"font-size"		"16"	
-			"textcolor"		"Label"	
-		}
+			font-size=16
+			textcolor=Label
+		}	
 	}
-	"layout"	
+
+	layout
 	{
-		"region"	
+		region { name=body margin=10 width=max height=max }
+
+		place
 		{
-			"name"		"body"	
-			"margin"		"10"	
-			"width"		"max"	
-			"height"		"max"	
-		}
-		"place"	
-		{
-			"region"		"body"	
-			"width"		"max"	
-			"y"		"10"	
-			"control"		"workshopdetails,*communityfile"	
-			"dir"		"right"	
-			"spacing"		"8"	
-			"margin"		"0"	
-		}
-		"place"	
-		{
-			"region"		"body"	
-			"control"		"viewall"	
-			"align"		"bottom"	
-			"margin-bottom"		"5"	
-		}
+			region=body
+			width=max
+			y=10
+			control=workshopdetails,*communityfile
+			dir=right
+			spacing=8
+			margin=0
+		}		
+		
+		place { region=body control=viewall align=bottom margin-bottom=5 }
+
 	}
 }
