@@ -1,0 +1,84 @@
+:root{
+    --draculaBG: #282a36;
+    --draculaAccent: #44475a;
+    --draculaCFAccent: #ff79c6;
+    --draculaComment: #6272a4;
+    --draculaForeGround: #f8f8f2;
+
+    --draculaCyan: #8be9fd;
+    --draculaGreen: #50fa7b;
+    --draculaOrange: #ffb86c;
+    --draculaPink: #ff79c6;
+    --draculaPurple: #bd93f9;
+    --draculaRed: #ff5555;
+    --draculaYellow: #f1fa8c;
+}
+
+.gamelistsectionheader_Container_2sYIg {
+  border-right: none !important;
+
+  background: linear-gradient(to right, var(--draculaAccent) 40% , #282a36 100%);
+}
+
+  .gamelistsectionheader_Container_2sYIg.gamelistsectionheader_Selected_sXMOs {
+    /* Color of selected Category */
+    background: var(--draculaCFAccent);
+  }
+
+  .gamelistsectionheader_Container_2sYIg:hover {
+    /* Hovercolor hovering over Month/Category */
+    background: var(--draculaCFAccent);
+  }
+
+  /* Text in Section Header */
+  .gamelistsectionheader_SectionHeaderContent_3cV3O {
+    color: var(--draculaCFAccent);
+  }
+
+  .gamelistsectionheader_SectionHeaderContent_3cV3O:hover .gamelistsectionheader_SectionName_2mZ8L {
+    color: var(--draculaForeGround);
+  }
+
+  /* Icons */
+
+  .collapseicon_Container_3SFRZ .SVGIcon_PlusCircle {
+    margin-top: 0px;
+  }
+  
+  .collapseicon_CollapseIconParent_ehAsU .collapseicon_Container_3SFRZ {
+    stroke: rgba(255, 255, 255, 0.5) ;
+    /*stroke: var(--draculaCFAccent);*/
+    /* TODO Herausfinden ob hover farbe änderbar */
+  }
+
+
+  /* Count behind */
+  .gamelistsectionheader_SectionCount_29ute {
+    color: rgba(255, 255, 255, 0.5) ;
+  }
+
+
+/* The game entries */
+.gamelistentry_Container_2-O4Z {
+  
+
+  .gamelistentry_Container_2-O4Z.gamelistentry_Updating_1LVQp {
+    color: var(--draculaCyan); 
+
+  .gamelistentry_Container_2-O4Z.gamelistentry_Running_10Gdo {
+    color: var(--draculaGreen); }
+  .gamelistentry_Container_2-O4Z.gamelistentry_Running_10Gdo .gamelistentry_DownloadProgress_3uk3F {
+    color: var(--draculaGreen); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
