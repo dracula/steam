@@ -14,6 +14,58 @@
     --draculaYellow: #f1fa8c;
 }
 
+/* Kompletter Container links */
+.gamelistbar_Container_3x1Hk {
+  background-image: linear-gradient(to bottom, var(--draculaBG) 0%, var(--draculaBG) 20%);
+
+}
+
+/* Home and Search */
+.gamelistbar_GameListHomeAndSearch_2TKEa {
+  background-color: var(--draculaBG);
+}
+
+/* Home box + Collection Button BG*/
+.gamelisthome_Bar_3pSPl.gamelisthome_Selected_eNLOx, .gamelisthome_Bar_3pSPl {
+  background-color: var(--draculaAccent);
+}
+/* Hovermode */
+.gamelisthome_Bar_3pSPl.gamelisthome_Selected_eNLOx:hover, .gamelisthome_Bar_3pSPl:hover {
+  background-color: var(--draculaCFAccent);
+}
+
+/* Collection Button Inlet */
+.gamelisthome_CollectionIcon_nC-pL .gamelisthome_CollectionIconBox_2tyaV {
+  /*background: var(--draculaBG);*/
+  background: #8f8f8f;
+}
+
+/* Menu Header */
+.gamelistdropdown_Bar_1ZS_x .gamelistdropdown_MenuHeader_2PF_m {
+  background-color: var(--draculaAccent);
+}
+/* Hover */
+  .gamelistdropdown_Bar_1ZS_x .gamelistdropdown_MenuHeader_2PF_m:hover {
+    background-color: var(--draculaCFAccent);
+  }
+
+/* Dropdown Menu */
+.contextmenu_contextMenu_PP7LM {
+  background: var(--draculaAccent);
+}  
+
+/* Searchbar */
+.gamelistsearchbar_Container_20QAC .gamelistsearchbar_SearchInput_12vo5 .DialogTextInputBase {
+  background-color: var(--draculaAccent);
+}
+
+/* Advanced Search Settings */
+.gamelistsearchbar_Container_20QAC .gamelistsearchbar_AdvancedSearchContainer_vCCmY {
+  background-color: var(--draculaAccent);
+}
+
+
+
 .gamelistsectionheader_Container_2sYIg {
   border-right: none !important;
 
@@ -59,17 +111,17 @@
 
 
 /* The game entries */
-.gamelistentry_Container_2-O4Z {
-  
 
   .gamelistentry_Container_2-O4Z.gamelistentry_Updating_1LVQp {
-    color: var(--draculaCyan); 
+    color: var(--draculaCyan); } 
 
   .gamelistentry_Container_2-O4Z.gamelistentry_Running_10Gdo {
     color: var(--draculaGreen); }
+
   .gamelistentry_Container_2-O4Z.gamelistentry_Running_10Gdo .gamelistentry_DownloadProgress_3uk3F {
     color: var(--draculaGreen); }
-}
+
+
 
 
 
