@@ -58,12 +58,78 @@
 .gamelistsearchbar_Container_20QAC .gamelistsearchbar_SearchInput_12vo5 .DialogTextInputBase {
   background-color: var(--draculaAccent);
 }
+  .gamelistsearchbar_Container_20QAC .gamelistsearchbar_SearchInput_12vo5 .DialogTextInputBase:hover {
+    background-color: var(--draculaAccent);
+  }
+
 
 /* Advanced Search Settings */
 .gamelistsearchbar_Container_20QAC .gamelistsearchbar_AdvancedSearchContainer_vCCmY {
   background-color: var(--draculaAccent);
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+  /* Hover */
+  .gamelistsearchbar_Container_20QAC .gamelistsearchbar_AdvancedSearchContainer_vCCmY.gamelistsearchbar_Extended_31r1_, .gamelistsearchbar_Container_20QAC .gamelistsearchbar_AdvancedSearchContainer_vCCmY:not(.gamelistsearchbar_Disabled_1Gjk2):hover {
+    background-color: var(--draculaCFAccent);
+  }
+
+/* Game Tag */
+.gamelistsearchbar_FilterTag_3gzh_ {
+  background-color: var(--draculaCyan);
 }
 
+/* Popup */
+.gamelistsearchbar_Container_20QAC .gamelistsearchbar_AdvancedSearchContainer_vCCmY .gamelistsearchbar_AdvancedSearchPaneContainer_1dgAM .gamelistsearchbar_AdvancedSearchPane_Woh0k {
+  background-color: var(--draculaAccent); }
+  /* Pane transition to Popup */
+  .gamelistsearchbar_Container_20QAC .gamelistsearchbar_AdvancedSearchContainer_vCCmY .gamelistsearchbar_AdvancedSearchPaneContainer_1dgAM .gamelistsearchbar_AdvancedSearchPane_Woh0k:before {
+    background-color: var(--draculaAccent);
+  }
+  
+  /* Category Label */
+  .appfilterpane_Container_170Np .appfilterpane_FilterArea_1ennW .appfilterpane_FilterBucket_1axoi .appfilterpane_FilterBucketLabel_3iV2v {
+    color: var(--draculaCyan); 
+  }
+
+  /* Button */
+  button.DialogButton.Primary {
+    background: linear-gradient(to right, #6272a4 0%, #6192a3 80%);
+  }
+  /* Button:hover */
+  button.DialogButton.Primary:hover {
+    background: linear-gradient(to right, #6192a3 0%, #6272a4 80%);
+  }
+
+  /* Button:active */
+  button.DialogButton.Primary:enabled:active,
+  button.DialogButton.Primary:enabled:hover:active {
+    background: linear-gradient(to right, #6192a3 0%, #6272a4 80%);
+  }
+
+
+/* Context Menu */
+.library_ContextMenuAction_Z5iAX.Play {
+  background-color: var(--draculaGreen);
+}
+
+
+.contextmenu_contextMenuItem_1n7Wl:hover, .contextmenu_contextMenuItem_1n7Wl.contextmenu_active_18z-3 {
+  background-color: var(--draculaComment);
+}
+  /* Play Button Dropdown */
+  button.DialogButton.GreenPlay, 
+  button.DialogButton.GreenPlay:hover, 
+  button.DialogButton.GreenPlay:active, 
+  button.DialogButton.GreenPlay:active:hover {
+    background: linear-gradient(to right, #50fa7b 0%, #ffffff 80%);
+  }
+
+
+/* Dialog */
+.DialogContent, .DialogContentTransition {
+  background: var(--draculaBG);
+}
 
 
 .gamelistsectionheader_Container_2sYIg {
@@ -111,15 +177,27 @@
 
 
 /* The game entries */
+/* Game entry hover not selected */
+.gamelistentry_Container_2-O4Z:hover, .gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy {
+  background-color: var(--draculaAccent);
+}
 
-  .gamelistentry_Container_2-O4Z.gamelistentry_Updating_1LVQp {
-    color: var(--draculaCyan); } 
+/* Game entry selected */
+.gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z, .gamelistentry_Selected_1UBpA .gamelistentry_Container_2-O4Z {
+  background-color: var(--draculaCFAccent);
+}
+.gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z:hover, .gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy, .gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z :hover, .gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z .gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy, .gamelistentry_Selected_1UBpA .gamelistentry_Container_2-O4Z:hover, .gamelistentry_Selected_1UBpA .gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy, .gamelistentry_Selected_1UBpA .gamelistentry_Container_2-O4Z :hover, .gamelistentry_Selected_1UBpA .gamelistentry_Container_2-O4Z .gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy {
+  background-color: var(--draculaCFAccent);
+}
 
-  .gamelistentry_Container_2-O4Z.gamelistentry_Running_10Gdo {
-    color: var(--draculaGreen); }
+.gamelistentry_Container_2-O4Z.gamelistentry_Updating_1LVQp {
+  color: var(--draculaCyan); } 
 
-  .gamelistentry_Container_2-O4Z.gamelistentry_Running_10Gdo .gamelistentry_DownloadProgress_3uk3F {
-    color: var(--draculaGreen); }
+.gamelistentry_Container_2-O4Z.gamelistentry_Running_10Gdo {
+  color: var(--draculaGreen); }
+
+.gamelistentry_Container_2-O4Z.gamelistentry_Running_10Gdo .gamelistentry_DownloadProgress_3uk3F {
+  color: var(--draculaGreen); }
 
 
 
