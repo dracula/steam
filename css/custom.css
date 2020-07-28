@@ -76,8 +76,9 @@
 
 /* Game Tag */
 .gamelistsearchbar_FilterTag_3gzh_ {
-  background-color: var(--draculaCyan);
+  background-color: var(--draculaComment) !important
 }
+
 
 /* Popup */
 .gamelistsearchbar_Container_20QAC .gamelistsearchbar_AdvancedSearchContainer_vCCmY .gamelistsearchbar_AdvancedSearchPaneContainer_1dgAM .gamelistsearchbar_AdvancedSearchPane_Woh0k {
@@ -210,6 +211,71 @@
   background: radial-gradient(circle, rgba(46,50,66,1) 20%, rgba(40,42,54,1) 100%);
 }
 
+/* Single Collection Button */
+.allcollections_Collection_3IWn- {
+  background: var(--draculaAccent);
+}
+
+/* Game Page */
+.appdetails_Glassy_3Fmxx.appdetails_ScrollContainer_2l416 {
+  background: rgb(46,50,66);
+  background: radial-gradient(circle, rgba(46,50,66,1) 20%, rgba(40,42,54,1) 100%);
+}
+
+  /* Buttons upper right */
+  .appdetailsplaysection_MenuButton_3qDWQ {
+    background-color: var(--draculaAccent);
+  }
+
+  /* Would you recommend? */
+  .appdetailsspotlight_ReviewContainer_3LE-6 {
+    background-color: var(--draculaAccent);
+  }
+  .writereview_RatingContainer_2SAb6 {
+    background-color: var(--draculaAccent);
+  }
+  
+
+  /* Event Body */
+  .appactivityday_Event_UVeN0 .appactivityday_EventBody_NEMXh {
+    background: rgb(68,71,90);
+    background: linear-gradient(90deg, rgba(68,71,90,1) 0%, rgba(56,59,74,1) 100%);
+  } 
+
+  .appactivityday_Event_UVeN0 .appactivityday_EventBody_NEMXh.appactivityday_UserStatus_Yo3XX {
+    background: rgb(68,71,90);
+    background: linear-gradient(90deg, rgba(68,71,90,1) 0%, rgba(56,59,74,1) 100%);
+  }
+
+  /* RIGHT SIDE */
+
+  .appdetailssection_Highlight_38t1m{
+    background: #44475abb;
+  }
+
+  /* Achievment bg-color */
+  .appdetailsachievementssection_AdditionalItem_2aVnD {
+    background-color: var(--draculaAccent);
+  }
+
+  /* LEFT SIDE */
+  .appdetailscommunityfeed_HeaderStyles_2lNdD {
+    background: radial-gradient(circle at 0% 20%, rgba(94, 137, 194, 0.15) 0%, rgba(34, 34, 39, 0) 20%), linear-gradient(to bottom, #8be9fd 0%, rgba(85, 98, 121, 0.55) 2px, rgba(85, 98, 121, 0.15) 50%, rgba(34, 34, 39, 0) 100%);
+  }
+  
+  /* Community Content */
+
+  .appdetailscommunityfeed_ArtItem_1aP1b .appdetailscommunityfeed_BottomSection_3uabi {
+    background: var(--draculaAccent);
+  }
+
+  .appdetailscommunityfeed_CommunityItem_3QS6O {
+    background-color: var(--draculaAccent);
+  }
+
+  .appdetailscommunityfeed_Guide_-85o5 .appdetailscommunityfeed_TopSectionInner_1dJuv {
+    background-color: var(--draculaComment);
+  }
 
 
 
