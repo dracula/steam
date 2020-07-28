@@ -199,8 +199,16 @@
 .gamelistentry_Container_2-O4Z.gamelistentry_Running_10Gdo .gamelistentry_DownloadProgress_3uk3F {
   color: var(--draculaGreen); }
 
+/* Divider */
+.library_LibraryWindowDivider_276E6 {
+  background-color: var(--draculaCFAccent);
+}
 
-
+/* MAINWINDOW COLLECTION */
+.collectionview_OuterContainer_2sNr7, .allcollections_ScrollContainer_u1xD3 {
+  background: rgb(46,50,66);
+  background: radial-gradient(circle, rgba(46,50,66,1) 20%, rgba(40,42,54,1) 100%);
+}
 
 
 
