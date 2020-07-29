@@ -1,8 +1,8 @@
 #!/bin/bash
 echo "Installing CSS…"
 
-originalfile="../../../steamui/css/libraryroot.css"
-copiedfile="../../../steamui/css/steamlibraryroot.css"
+originalfile="../../steamui/css/libraryroot.css"
+copiedfile="../../steamui/css/steamlibraryroot.css"
 
 #stores word count of originalfile
 originalfilesize=$(wc -c $originalfile | awk '{print $1}')
@@ -20,7 +20,7 @@ else
   fi
 fi
 
-cd ../css/
+cd css/
 
 echo "copying custom css files into steamui/css"
 

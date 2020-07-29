@@ -205,6 +205,16 @@
   background-color: var(--draculaCFAccent);
 }
 
+/* Home */
+.libraryhome_LibraryHome_3Sb2o {
+  background-image: linear-gradient(to bottom, var(--draculaBG) 0%, var(--draculaBG) 100%);
+}
+.libraryhome_UpdatesContainer_17uEB {
+  background: linear-gradient(to bottom, var(--draculaAccent) 0%, var(--draculaAccent) 100%);
+}
+
+
+
 /* MAINWINDOW COLLECTION */
 .collectionview_OuterContainer_2sNr7, .allcollections_ScrollContainer_u1xD3 {
   background: rgb(46,50,66);
