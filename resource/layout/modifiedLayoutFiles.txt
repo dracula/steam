@@ -1,0 +1,7 @@
+List of files that have been modified for the theme and are definitely important.
+
+appdownloadpanel.layout
+downloadspage.layout
+downloadsummarypanel.layout
+
+
