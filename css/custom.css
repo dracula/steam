@@ -54,6 +54,12 @@
   background: var(--draculaAccent);
 }  
 
+/* Sroll To Top Button */
+.gamelistdropdown_ScrollToTop_uE7Pj .SVGIcon_Arrow {
+  background-color: var(--draculaAccent); 
+  border: 1px;
+}
+
 /* Searchbar */
 .gamelistsearchbar_Container_20QAC .gamelistsearchbar_SearchInput_12vo5 .DialogTextInputBase {
   background-color: var(--draculaAccent);
