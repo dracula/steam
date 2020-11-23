@@ -40,10 +40,10 @@ After a steam update you have to redo the following install instructions.
 
 #### Linux 
 1. execute `install.sh` to move the custom css files into the right folder
-2. if you start Steam per autostart, check how to alter the autostart instructions in your distro and add the start option
+2. if you start Steam per autostart, check how to alter the autostart instructions in your distro and add the start option `-noverifyfiles`
 
 ### Other OS & Manual installation
 1. rename `libraryroot.css` in `Steam/steamui/css` to `steamlibraryroot.css`
-2. move both .css files from this skin into this folder
-3. if you start Steam per autostart, check how to alter the autostart instructions in your OS and add the start option
+2. move both .css files (`custom.css` & `libraryroot.css`) from the skin folder into the css folder of steam 
+3. if you start Steam per autostart, check how to alter the autostart instructions in your OS and add the start option `-noverifyfiles`
 
