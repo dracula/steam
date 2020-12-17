@@ -6,6 +6,7 @@
 
 ## Install
 
+Newest Version: 201217  
 All instructions can be found at [draculatheme.com/steam](https://draculatheme.com/steam).
 
 ## Team
