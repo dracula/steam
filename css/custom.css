@@ -242,6 +242,9 @@
   .appdetailsplaysection_MenuButton_3qDWQ {
     background-color: var(--draculaAccent);
   }
+  .appdetailsplaysection_MenuButton_3qDWQ:hover {
+    background-color: var(--draculaComment);
+  }
 
   /* Would you recommend? */
   .appdetailsspotlight_ReviewContainer_3LE-6 {
