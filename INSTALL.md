@@ -43,7 +43,7 @@ After a steam update you have to redo the following install instructions.
 2. if you start Steam per autostart, check how to alter the autostart instructions in your distro and add the start option `-noverifyfiles`
 
 ### Other OS & Manual installation
-1. rename `libraryroot.css` in `Steam/steamui/css` to `steamlibraryroot.css`
-2. move both .css files (`custom.css` & `libraryroot.css`) from the skin folder into the css folder of steam 
+1. rename `5.css` in `Steam/steamui/css` to `steam5.css`
+2. move both .css files (`custom.css` & `5.css`) from the skin folder into the css folder of steam 
 3. if you start Steam per autostart, check how to alter the autostart instructions in your OS and add the start option `-noverifyfiles`
 
