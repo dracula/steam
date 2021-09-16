@@ -9,8 +9,6 @@ set copiedfile=..\..\steamui\css\steam5.css
 FOR /F "usebackq" %%A IN ('%originalfile%') DO set "originalfilesize=%%~zA"
 set /A originalfilesize=%originalfilesize% + 0
 
-set /A hundred = 100
-
 if %originalfilesize% gtr 100 (
 	echo Renaming 5.css
 	move %originalfile% %copiedfile%
