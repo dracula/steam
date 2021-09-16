@@ -42,8 +42,15 @@ After a steam update you have to redo the following install instructions.
 1. execute `install.sh` to move the custom css files into the right folder
 2. if you start Steam per autostart, check how to alter the autostart instructions in your distro and add the start option `-noverifyfiles`
 
+#### Windows 
+1. execute `install.bat` to move the custom css files into the right folder
+2. if you don't have autostart enabled, ignore these next steps
+   1. press Win + R, type `regedit` and press Enter
+   2. navigate to `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run` where you should see a key of type *REG_SZ* named **Steam**
+   3. double click the key, and add `-noverifyfiles` to the end
+3. modify your Steam shortcuts by right-clicking them, going to properties, and in the **Target** field add `-noverifyfiles`
+
 ### Other OS & Manual installation
 1. rename `5.css` in `Steam/steamui/css` to `steam5.css`
 2. move both .css files (`custom.css` & `5.css`) from the skin folder into the css folder of steam 
 3. if you start Steam per autostart, check how to alter the autostart instructions in your OS and add the start option `-noverifyfiles`
-
