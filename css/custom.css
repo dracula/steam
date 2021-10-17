@@ -341,7 +341,16 @@
   }
 
   .downloadgraph_DownloadGraph_1BxZD .downloadgraph_Gradient_RfMM3 {
-    background-image: none;
+    background-image: linear-gradient(to right, var(--draculaBG), rgba(46, 50, 66, 0) 20%);
+  }
+
+  div.MediumWindow .downloadgraph_DownloadGraph_1BxZD .downloadgraph_Gradient_RfMM3 {
+    background-image: linear-gradient(to right, var(--draculaBG), rgba(46, 50, 66, 0) 30%);
+  }
+
+  div.NarrowWindow .downloadgraph_DownloadGraph_1BxZD .downloadgraph_Gradient_RfMM3,
+  div.ShortWindow .downloadgraph_DownloadGraph_1BxZD .downloadgraph_Gradient_RfMM3{
+    background-image: linear-gradient(to right, var(--draculaBG), rgba(46, 50, 66, 0) 40%);
   }
 
   /* Graph */
