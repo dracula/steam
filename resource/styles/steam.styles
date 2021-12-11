@@ -11,7 +11,7 @@ steam.styles
     draculaAccent   =   "098 114 164 255"
     
     // If you want to change the color of the notifications left of your accountmenu you can do it here; default is pink
-    notificationColor=   "255 121 198 255"
+    notificationColor=   "189 147 249 255"
 
     draculaCyan	    =   "139 233 253 255"
     draculaGreen    =   "080 250 123 255"
