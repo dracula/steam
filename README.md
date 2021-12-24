@@ -2,12 +2,13 @@
 
 > A dark theme for [Steam](https://store.steampowered.com)
 
-![Screenshot](./screenshot.png)
+![Screenshot Library](./screenshots/screenshot_library.png)  
+![Screenshot Downloads](./screenshots/screenshot_download.png)
 
 ## Install
 
-Newest Version: 210116 
-All instructions can be found at [draculatheme.com/steam](https://draculatheme.com/steam).
+Newest Version: 211224  
+All installation instructions can be found at [draculatheme.com/steam](https://draculatheme.com/steam).
 
 ## Team
 

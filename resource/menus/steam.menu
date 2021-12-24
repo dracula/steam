@@ -118,7 +118,7 @@
 			shellcmd="steam://openurl/https://github.com/dracula/steam/issues/new/choose"
 		}
     Version {
-      text="Theme Version 211011"
+      text="Theme Version 211224"
     }
 	}
 }
