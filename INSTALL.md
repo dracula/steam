@@ -51,6 +51,6 @@ After a steam update you have to redo the following install instructions.
 3. modify your Steam shortcuts by right-clicking them, going to properties, and in the **Target** field add `-noverifyfiles`
 
 ### Other OS & Manual installation
-1. rename `5.css` in `Steam/steamui/css` to `steam5.css`
-2. move both .css files (`custom.css` & `5.css`) from the skin folder into the css folder of steam 
+1. in `Steam/steamui/css` rename `6.css` to `steam6.css` and `library.css` to `steamlibrary.css`
+2. move all .css files from the skin folder (`skins/dracula/css`) into the css folder of steam (`steam/steamui/css`)
 3. if you start Steam per autostart, check how to alter the autostart instructions in your OS and add the start option `-noverifyfiles`
