@@ -1,18 +1,4 @@
-:root{
-    --draculaBG: #282a36;
-    --draculaAccent: #44475a;
-    --draculaCFAccent: #ff79c6;
-    --draculaComment: #6272a4;
-    --draculaForeGround: #f8f8f2;
-
-    --draculaCyan: #8be9fd;
-    --draculaGreen: #50fa7b;
-    --draculaOrange: #ffb86c;
-    --draculaPink: #ff79c6;
-    --draculaPurple: #bd93f9;
-    --draculaRed: #ff5555;
-    --draculaYellow: #f1fa8c;
-}
+@import 'customroot.css';
 
 /* Kompletter Container links */
 .gamelistbar_Container_3x1Hk {
@@ -323,9 +309,88 @@
     background-color: var(--draculaComment);
   }
 
+/* New DOWNLOADS page */
+
+  .downloads_DownloadsPage_1bq4x {
+    background: radial-gradient(circle, rgba(46,50,66,1) 20%, rgba(40,42,54,1) 100%);
+  }
 
 
+  /* Background of Graph-Banner */
+  .downloadgraph_GraphAndStats_3KDkL {
+    background-color : var(--draculaBG);
+  }
+  
+  .downloadgraph_HeroAndLogo_3mZ2r.downloadgraph_Empty_pHDI1 {
+    background: linear-gradient(to right, var(--draculaCFAccent) 10%, var(--draculaBG) 100%);
+    -webkit-mask-image: radial-gradient(circle at 0%, var(--draculaBG) 30%, rgba(40, 42, 54, 0) 90%);
+  }
 
+  .downloadgraph_DownloadGraph_1BxZD .downloadgraph_Gradient_RfMM3 {
+    background-image: linear-gradient(to right, var(--draculaBG), rgba(46, 50, 66, 0) 20%);
+  }
+
+  div.MediumWindow .downloadgraph_DownloadGraph_1BxZD .downloadgraph_Gradient_RfMM3 {
+    background-image: linear-gradient(to right, var(--draculaBG), rgba(46, 50, 66, 0) 30%);
+  }
+
+  div.NarrowWindow .downloadgraph_DownloadGraph_1BxZD .downloadgraph_Gradient_RfMM3,
+  div.ShortWindow .downloadgraph_DownloadGraph_1BxZD .downloadgraph_Gradient_RfMM3{
+    background-image: linear-gradient(to right, var(--draculaBG), rgba(46, 50, 66, 0) 40%);
+  }
+
+  /* Graph */
+  /* Disk */
+  .downloadgraph_DownloadGraph_1BxZD .downloadgraph_GraphLine_3H2JW {
+    stroke: var(--draculaGreen);
+  }
+
+  .downloadgraph_DownloadGraphLegend_hGZq4 .downloadgraph_Disk_1QHr4 {
+    color: var(--draculaGreen);
+  }
+
+  /* Network */
+  .downloadgraph_DownloadGraph_1BxZD .downloadgraph_GraphBar_3raSL {
+    color: var(--draculaCyan);
+  }
+
+  .downloadgraph_DownloadGraphLegend_hGZq4 .downloadgraph_Network_33jqE svg {
+    color: var(--draculaCyan);
+  }
+
+  /* Splitter */
+  .downloads_TopBar_SEmVp {
+    background: linear-gradient(to right, var(--draculaCFAccent) 0%, var(--draculaCFAccent) 100%);
+  }
+
+  /* Active Download */
+  .downloads_SectionItem_1VNuY.downloads_Active_IbePL {
+    background-color: var(--draculaAccent);
+  }
+
+  .downloads_Active_IbePL .downloads_SectionList_OINnO {
+    border: 2px solid var(--draculaAccent);
+  }
+
+  .downloads_SectionItem_1VNuY.downloads_Active_IbePL .downloads_Button_3oavR.DialogButton:enabled, 
+  .downloads_SectionItem_1VNuY.downloads_Active_IbePL .downloads_Button_3oavR.DialogButton:enabled:hover {
+    background: var(--draculaCFAccent);
+  }
+
+  .downloads_SectionItemStatus_1Sygg .downloads_ProgressBar_1vMU1 div {
+    background-color: var(--draculaCFAccent);
+  }
+
+  .downloads_SectionList_OINnO.downloads_DropOption_2m6Q3.downloads_DragOver_d9VKG {
+    border:2px solid var(--draculaAccent);
+    background: var(--draculaComment);
+  }
+
+
+  /* Completed Downloads */
+  .downloads_SectionJumpBar_mw7VZ {
+    background-color: var(--draculaAccent);
+  }
 
 
 
