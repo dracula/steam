@@ -2,7 +2,7 @@
 
 > A dark theme for [Steam](https://store.steampowered.com)
 
-![Screenshot Library](./screenshots/screenshot_library.png)  
+![Screenshot Library](./screenshot.png)  
 ![Screenshot Downloads](./screenshots/screenshot_download.png)
 
 ## Install
