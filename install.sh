@@ -1,8 +1,8 @@
 #!/bin/bash
 echo "Installing CSS…"
 
-declare -a originalfiles=( "../../steamui/css/6.css" "../../steamui/css/library.css" )
-declare -a copiedfiles=( "../../steamui/css/steam6.css" "../../steamui/css/steamlibrary.css" )
+declare -a originalfiles=( "../../steamui/css/7.css" "../../steamui/css/library.css" )
+declare -a copiedfiles=( "../../steamui/css/steam7.css" "../../steamui/css/steamlibrary.css" )
 
 for i in "${!originalfiles[@]}"; do
 
