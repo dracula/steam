@@ -32,6 +32,15 @@ Use the terminal, Luke:
 5. open Steam and go to `Steam -> Settings -> Preferences` and open the section `Interface`
 6. select the skin `Dracula` or and restart Steam, done!
 
+#### [Homebrew](https://brew.sh)
+
+Easily install from [dracula/homebrew-install](https://github.com/dracula/homebrew-install/blob/master/Casks/dracula-steam.rb):
+
+``` sh
+brew tap dracula/install
+brew install --cask dracula-steam
+```
+
 ### Extended Installation
 Steam decided to make it harder to customize the library with new layout introduced in late 2019.  
 To customize the library now, you have to alter a specific .css file that's get changed back after every restart.
