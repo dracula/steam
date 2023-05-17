@@ -1,5 +1,7 @@
 # Dracula for [Steam](https://store.steampowered.com)
 
+> ⚠️ Attention: **Steam** (the platform) **no longer supports themes**, and this repository **no longer has active maintainers**. So it's just a search and reference theme.
+
 > A dark theme for [Steam](https://store.steampowered.com)
 
 ![Screenshot Library](./screenshot.png)  

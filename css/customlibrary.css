@@ -1,44 +1,59 @@
 @import 'customroot.css';
 
 /* Loading screen background */
-.index_Container_2mu1w.index_PreloadThrobber_2dqG9{
-    background: linear-gradient(to bottom, var(--draculaBG) 0%, var(--draculaBG) 100%);
+.index_Container_2mu1w.index_PreloadThrobber_2dqG9 {
+  background: linear-gradient(
+    to bottom,
+    var(--draculaBG) 0%,
+    var(--draculaBG) 100%
+  );
 }
 
 /* Loading screen dots */
 .index_Container_2mu1w .index_ThreeDots_1yjvY .index_Dot_Wd5cq {
-    background-color: var(--draculaCFAccent);
+  background-color: var(--draculaCFAccent);
 }
 
 /* Loading screen steam logo */
-.throbber_LoadingWrapper_2wAKy .SVGIcon_Throbber .throbber_bottomCircle_2qjZmpath {
-    fill: var(--draculaCFAccent);
+.throbber_LoadingWrapper_2wAKy
+  .SVGIcon_Throbber
+  .throbber_bottomCircle_2qjZmpath {
+  fill: var(--draculaCFAccent);
 }
 
-.throbber_LoadingWrapper_2wAKy .SVGIcon_Throbber .throbber_topCircle_1LZff circle {
-    stroke: var(--draculaCFAccent);
+.throbber_LoadingWrapper_2wAKy
+  .SVGIcon_Throbber
+  .throbber_topCircle_1LZff
+  circle {
+  stroke: var(--draculaCFAccent);
 }
 
 .throbber_LoadingWrapper_2wAKy .SVGIcon_Throbber path {
-    stroke: var(--draculaCFAccent);
+  stroke: var(--draculaCFAccent);
 }
 
-.throbber_LoadingWrapper_2wAKy .SVGIcon_Throbber .throbber_topCircle_1LZff circle {
-    stroke: var(--draculaCFAccent);
+.throbber_LoadingWrapper_2wAKy
+  .SVGIcon_Throbber
+  .throbber_topCircle_1LZff
+  circle {
+  stroke: var(--draculaCFAccent);
 }
 
-.throbber_LoadingWrapper_2wAKy .SVGIcon_Throbber .throbber_bottomCircle_2qjZm path {
-    fill: var(--draculaCFAccent);
+.throbber_LoadingWrapper_2wAKy
+  .SVGIcon_Throbber
+  .throbber_bottomCircle_2qjZm
+  path {
+  fill: var(--draculaCFAccent);
 }
 
 .throbber_LoadingWrapper_2wAKy .SVGIcon_Throbber .throbber_roundOuter_2K0Lz {
-    stroke: #8963be
+  stroke: #8963be;
 }
 
 .throbber_LoadingWrapper_2wAKy .SVGIcon_Throbber.throbber_blur_1ctjA path {
-    stroke: #986fd1
+  stroke: #986fd1;
 }
 
 .throbber_LoadingWrapper_2wAKy .throbber_ThrobberText_21nVi {
-    color: #9b66e4
+  color: #9b66e4;
 }
